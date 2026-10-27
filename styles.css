@@ -13,3 +13,4 @@ footer{background:#eee;padding:1rem;font-size:.85rem;text-align:center;margin-to
 .paid-cta{background:#eef6f0;border:2px solid #2e7d4f;border-radius:10px;padding:.8rem 1rem;margin:1.5rem 0}.paid-cta h2{margin-top:.2rem}
 .btn-paid{display:inline-block;background:#2e7d4f;color:#fff;font-weight:600;padding:.55rem 1rem;border-radius:8px;text-decoration:none;margin:.3rem .3rem 0 0}.btn-paid:hover{background:#246640}.btn-paid.alt{background:#fff;color:#2e7d4f;border:2px solid #2e7d4f}
 .paid-label{background:#eef6f0;border-left:4px solid #2e7d4f;padding:.6rem .8rem;font-size:.9rem}nav a.nav-paid{font-weight:700;color:#bfe8cc}
+.btn-secondary{background:#fff;color:inherit;border:1px solid currentColor;margin-left:.4rem}

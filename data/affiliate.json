@@ -1,0 +1,18 @@
+{
+  "amazon": { "tag": "rappelalertes-21", "enabled": true },
+  "awin": {
+    "enabled": false,
+    "awinaffid": null,
+    "merchants": {
+      "zooplus": { "mid": null },
+      "tractive": { "mid": null }
+    }
+  },
+  "tractive_direct": { "enabled": false, "url": null },
+  "notes": [
+    "Aucun identifiant inventé : tout reste null tant que Carole n'a pas été acceptée.",
+    "Awin : renseigner awinaffid (ID éditeur) + mid de chaque marchand, puis passer enabled à true.",
+    "Tractive direct : renseigner l'URL de suivi fournie par Tractive, puis enabled true.",
+    "Les boutons Zooplus/Tractive n'apparaissent que si enabled=true ET les IDs sont présents. Relancer python3 build.py."
+  ]
+}

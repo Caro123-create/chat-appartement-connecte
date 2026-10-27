@@ -1,6 +1,18 @@
-import urllib.parse, datetime
+import urllib.parse, datetime, json, os
 BASE="https://caro123-create.github.io/chat-appartement-connecte/"
 TAG="rappelalertes-21"
+AFF=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"data","affiliate.json")))
+def secondary(merchant, url_path=""):
+    """Bouton Zooplus/Tractive : rendu UNIQUEMENT si activé et IDs réels présents."""
+    a=AFF.get("awin",{}); mid=a.get("merchants",{}).get(merchant,{}).get("mid")
+    label={"zooplus":"Voir chez Zooplus","tractive":"Voir chez Tractive"}[merchant]
+    if a.get("enabled") and a.get("awinaffid") and mid and url_path:
+        u=f"https://www.awin1.com/cread.php?awinmid={mid}&awinaffid={a['awinaffid']}&ued="+urllib.parse.quote(url_path,safe="")
+    elif merchant=="tractive" and AFF.get("tractive_direct",{}).get("enabled") and AFF["tractive_direct"].get("url"):
+        u=AFF["tractive_direct"]["url"]
+    else:
+        return ""
+    return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
 TODAY="2026-10-27"
 def amz(q,label=None):
@@ -351,7 +363,7 @@ page("budget-kit-chat-appartement-connecte.html",
 <div class="pick"><h3>Un traceur sans abonnement</h3><p>Un AirTag ou un équivalent Android sur un collier de sécurité sert de filet de sécurité pour un chat d’intérieur. Voir <a href="collier-gps-chat-sans-abonnement.html">GPS chat sans abonnement</a>.</p>{amz("porte AirTag collier chat sécurité","porte-AirTag")}</div>
 <h2>Niveau 3 — Équipement complet (gros budget)</h2>
 <div class="pick"><h3>Une litière automatique</h3><p>C’est l’investissement le plus lourd, et celui qui change le plus le quotidien en appartement (odeurs, corvée). À réserver quand le reste est en place et que vous avez mesuré l’emplacement. Voir notre <a href="meilleure-litiere-automatique-2026.html">sélection 2026</a> et notre guide <a href="litiere-automatique-petit-appartement.html">litière auto en petit appartement</a>.</p>{amz("litière automatique autonettoyante chat","litières automatiques")}</div>
-<div class="pick"><h3>Un vrai GPS avec abonnement</h3><p>Seulement si votre chat sort ou a déjà fugué. Comparez dans <a href="gps-chat-tractive-vs-airtag.html">Tractive vs AirTag</a>.</p>{amz("Tractive GPS chat CAT 6 Mini")}</div>
+<div class="pick"><h3>Un vrai GPS avec abonnement</h3><p>Seulement si votre chat sort ou a déjà fugué. Comparez dans <a href="gps-chat-tractive-vs-airtag.html">Tractive vs AirTag</a>.</p>{amz("Tractive GPS chat CAT 6 Mini")}{secondary("tractive","https://tractive.com/fr")}</div>
 <h2>Kit par profil</h2>
 <table><thead><tr><th>Votre situation</th><th>Priorité</th><th>Ensuite</th></tr></thead><tbody>
 <tr><td>Longues journées de travail</td><td>Distributeur + fontaine</td><td>Caméra</td></tr>
@@ -414,6 +426,8 @@ page("affiliation.html",
 <p>Les prix, disponibilités et caractéristiques sont susceptibles d’évoluer : la page du vendeur fait foi au moment de l’achat.</p>
 <h2>Produit payant</h2>
 <p>Le guide « Chat d’appartement connecté : le plan en 7 jours » est un produit numérique payant, édité par Chat Appartement Connecté et vendu séparément via Gumroad (voir la <a href="guide.html">page du guide</a>). Les liens vers Gumroad ne sont pas des liens d’affiliation : ils mènent à notre propre produit.</p>
+<h2>Réseaux à venir (Awin / Zooplus / Tractive)</h2>
+<p>Nous prévoyons d’ajouter des liens d’affiliation vers <strong>Zooplus</strong> et <strong>Tractive</strong>, via le réseau <strong>Awin</strong> ou le programme partenaire de Tractive. <strong>Ces partenariats ne sont pas encore actifs</strong> : aucun lien de ce type n’est présent sur le site à ce jour. Lorsqu’ils le seront, les boutons concernés (« Voir chez Zooplus », « Voir chez Tractive ») seront signalés comme liens affiliés, avec la même règle : commission éventuelle, sans surcoût pour vous, sans influence sur nos recommandations.</p>
 <h2>Éditeur</h2>
 <p>Site édité à titre personnel par la responsable de publication du projet Chat Appartement Connecté. Contact : via le dépôt GitHub du projet.</p>
 <h2>Hébergement</h2>
