@@ -27,6 +27,7 @@ NAV=[("top-5-equipements-chat-appartement-2026.html","Top 5 équipements 2026"),
      ("camera-surveillance-chat-appartement.html","Caméra chat"),
      ("collier-gps-chat-sans-abonnement.html","GPS sans abonnement"),
      ("litiere-automatique-petit-appartement.html","Litière petit appart"),
+     ("litiere-automatique-chat-appartement.html","Litière chat appart"),
      ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
@@ -88,6 +89,7 @@ page("index.html",
 <li>Vous travaillez de longues journées : commencez par le <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> et la <a href="meilleure-fontaine-eau-chat-2026.html">fontaine à eau</a>.</li>
 <li>L’odeur de litière envahit le studio : lisez notre <a href="meilleure-litiere-automatique-2026.html">guide des litières automatiques</a>, puis le duel <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit</a>.</li>
 <li>Votre chat a accès au balcon ou s’échappe parfois : comparez <a href="gps-chat-tractive-vs-airtag.html">Tractive et AirTag</a>, ou voyez les options de <a href="collier-gps-chat-sans-abonnement.html">GPS sans abonnement</a>.</li>
+<li>Vous hésitez sur une litière automatique : notre <a href="litiere-automatique-chat-appartement.html">guide d’achat litière automatique chat appartement</a> (bruit, odeur, taille, Wi-Fi).</li>
 <li>Vous vivez dans un studio : notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a> (bruit, taille, odeurs).</li>
 <li>Vous voulez voir votre chat en journée : notre guide <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
@@ -442,6 +444,64 @@ page("top-5-equipements-chat-appartement-2026.html",
 <p>Pour un plan par budget et par profil, voyez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</p>
 <p class="note">Aucun appareil ne remplace votre présence, des jeux quotidiens ni l’avis d’un vétérinaire. Un changement soudain de consommation d’eau, d’appétit ou de passages à la litière doit être signalé au vétérinaire.</p>''')
 
+# ---------- 11 litière automatique chat appartement (SEO)
+page("litiere-automatique-chat-appartement.html",
+ "Litière automatique chat appartement : guide d’achat 2026",
+ "Litière automatique chat appartement : bruit, odeur, taille, Wi-Fi. Litter-Robot 4, PetKit Pura Max 2 et Neakasa M1 comparés, coût d’usage et placement.",
+ "Litière automatique chat appartement : comment bien choisir en 2026",
+ f'''<p class="lead">En appartement, la litière n’est jamais loin : à quelques mètres du canapé, de la cuisine ou du lit. Une <strong>litière automatique pour chat d’appartement</strong> peut vraiment changer le quotidien — moins d’odeur, plus de corvée de ramassage chaque jour — à condition de choisir un modèle adapté à votre logement et à votre chat. Ce guide passe en revue les quatre critères qui comptent en intérieur (bruit, odeur, taille, Wi-Fi), compare trois modèles réels et vous aide à estimer le coût d’usage. Nous n’affichons pas de prix précis : ils changent souvent, vérifiez-les sur la page du vendeur.</p>
+<h2>Une litière automatique en appartement : pour qui ?</h2>
+<ul>
+<li><strong>Oui</strong> si votre chat est adulte (pas de chaton), en bonne santé, plutôt tranquille, et si l’odeur de litière gêne dans un logement sans grande pièce dédiée.</li>
+<li><strong>Oui</strong> si vous avez deux chats ou de longues journées d’absence : le bac reste propre entre deux passages.</li>
+<li><strong>Plutôt non</strong> si votre chat est très craintif, si vous ne pouvez pas dégager un emplacement d’environ 60 × 60 cm près d’une prise, ou si le budget est serré : un bac classique bien entretenu reste une solution honnête.</li>
+</ul>
+<h2>Les 4 critères à vérifier en appartement</h2>
+<h3>1. Le bruit</h3>
+<p>Chaque cycle de nettoyage fait tourner un globe ou un tambour pendant une à deux minutes. Les fabricants publient peu de mesures comparables ; méfiez-vous des chiffres de décibels non sourcés. En pratique, regardez surtout : le <strong>délai réglable</strong> avant nettoyage (le chat ne doit pas être surpris), un <strong>mode nuit / ne pas déranger</strong> qui suspend les cycles sur une plage horaire, et la stabilité de l’appareil sur un <strong>sol dur</strong> (pas de tapis épais, qui fausse aussi les capteurs de poids).</p>
+<h3>2. L’odeur</h3>
+<p>Le principal intérêt en intérieur : les agglomérats partent dans un tiroir fermé après chaque passage. Mais c’est ce tiroir qui sent s’il déborde. Vérifiez sa capacité, le type de sac (standard ou propriétaire), la présence d’un filtre ou d’un désodorisant, et utilisez une litière <strong>agglomérante</strong> compatible. Évitez les parfums trop forts : beaucoup de chats les fuient.</p>
+<h3>3. La taille et l’encombrement</h3>
+<p>Une litière automatique est bien plus grande qu’un bac. Mesurez la <strong>hauteur disponible</strong> (sous une fenêtre ou un plan de travail), la profondeur <em>avec</em> la place pour sortir le tiroir, l’espace devant l’entrée et la prise électrique la plus proche. Un modèle bas ou ouvert se loge plus facilement dans un studio.</p>
+<h3>4. Le Wi-Fi et l’application</h3>
+<p>Les modèles connectés fonctionnent presque tous en <strong>Wi-Fi 2,4 GHz uniquement</strong> : si votre box n’émet qu’un réseau mixte, il faudra parfois activer une bande séparée. L’application sert à régler le délai et le mode nuit, à recevoir une alerte quand le tiroir est plein, et à suivre le nombre de passages et le poids du chat. Un changement net de fréquence est un signal à montrer au vétérinaire.</p>
+<h2>Comparatif : 3 litières automatiques adaptées à l’appartement</h2>
+<table><thead><tr><th></th><th>Litter-Robot 4</th><th>PetKit Pura Max 2</th><th>Neakasa M1</th></tr></thead><tbody>
+<tr><td>Format</td><td>Globe fermé, haut</td><td>Fermé, bas et large</td><td>Ouvert (sans toit)</td></tr>
+<tr><td>Hauteur (environ)</td><td>75 cm</td><td>55 cm</td><td>51 cm (prévoir ~70 cm libres selon la marque)</td></tr>
+<tr><td>Entrée</td><td>Très large (~40 × 40 cm)</td><td>Plus étroite (~25 × 20 cm)</td><td>Ouverte, accès par le dessus</td></tr>
+<tr><td>Poids du chat (auto)</td><td>À partir de 1,36 kg selon le manuel</td><td>1,5 à 8 kg, plus de 6 mois</td><td>1 à 15 kg selon la marque</td></tr>
+<tr><td>Application</td><td>Whisker, Wi-Fi 2,4 GHz</td><td>PetKit, Wi-Fi 2,4 GHz</td><td>Neakasa, Wi-Fi 2,4 GHz</td></tr>
+<tr><td>Point fort en appart</td><td>Grands chats, multi-chats, suivi détaillé</td><td>Compacte en hauteur, désodorisant</td><td>Moins imposante, rassure les chats qui fuient les espaces fermés</td></tr>
+<tr><td>Point faible</td><td>Hauteur, prix</td><td>Entrée étroite pour un gros gabarit</td><td>Projections de litière moins contenues</td></tr>
+</tbody></table>
+<p class="note">Données issues des fiches et manuels des fabricants ; elles peuvent varier selon les versions. Vérifiez toujours la fiche du modèle exact avant d’acheter.</p>
+<div class="pick"><h3>Litter-Robot 4 (Whisker) — si vous avez la hauteur</h3>
+<p>La référence pour un grand chat ou un foyer multi-chats : très grande entrée, capteurs laser, application complète, et sacs standards acceptés selon la marque. En appartement, sa hauteur d’environ 75 cm impose un emplacement dédié (salle de bain, entrée). Notre <a href="litter-robot-4-vs-petkit-pura-max-2.html">duel Litter-Robot 4 vs PetKit Pura Max 2</a> détaille la comparaison.</p>{amz("Litter-Robot 4")}</div>
+<div class="pick"><h3>PetKit Pura Max 2 — le compromis compact</h3>
+<p>Plus basse, avec désodorisant intégré et mode « ne pas déranger » dans l’application. Bon choix pour un chat de taille moyenne dans un logement où la hauteur manque. Son entrée plus étroite est à vérifier pour un gros gabarit.</p>{amz("PetKit Pura Max 2")}</div>
+<div class="pick"><h3>Neakasa M1 — l’alternative ouverte</h3>
+<p>Sans toit, elle paraît moins massive et convient aux chats qui refusent les litières fermées. La marque annonce un mode chaton et des capteurs infrarouges et de poids qui arrêtent le cycle. Contrepartie : un peu plus de projections, d’où l’intérêt d’un tapis. Vérifiez le type de litière recommandé (agglomérante minérale de préférence).</p>{amz("Neakasa M1 litière automatique")}</div>
+<h2>Coût d’usage : le vrai budget sur 2–3 ans</h2>
+<ul>
+<li><strong>Sacs</strong> : standards (Litter-Robot 4, selon Whisker) ou propriétaires (PetKit, Neakasa) — comparez le prix au mois.</li>
+<li><strong>Filtres et désodorisants</strong> : cartouches, filtres à charbon, recharges de spray selon les modèles.</li>
+<li><strong>Litière</strong> : une litière agglomérante de bonne qualité ; le tamisage automatique réduit souvent le gaspillage par rapport à un bac ramassé à la main.</li>
+<li><strong>Électricité</strong> : faible, mais l’appareil reste branché en permanence.</li>
+</ul>
+<p>Faites le calcul avant d’acheter : sur deux ou trois ans, les consommables peuvent représenter une part importante du prix d’achat.</p>
+<h2>Où la placer dans un appartement ?</h2>
+<ol><li><strong>Salle de bain</strong> : sol dur, ventilation, souvent le meilleur choix si la porte reste accessible au chat.</li>
+<li><strong>Entrée ou couloir</strong> : bien si une prise est proche et le passage modéré.</li>
+<li><strong>À éviter</strong> : à côté des gamelles ou de la fontaine, dans un placard non aéré, au pied du lit, ou sur un tapis.</li>
+<li><strong>Laissez de l’espace</strong> autour (certaines marques déconseillent de coller l’appareil au mur) et devant l’entrée.</li></ol>
+<h2>Réussir la transition</h2>
+<p>Installez l’appareil éteint à côté de l’ancien bac avec un peu de litière usagée, laissez le chat l’explorer quelques jours, puis activez les cycles avec un délai long. Gardez le bac classique tant que l’adoption n’est pas complète, et observez les premiers cycles.</p>
+<h2>Notre avis</h2>
+<p>Pour la plupart des chats d’appartement, la <strong>PetKit Pura Max 2</strong> est le compromis le plus facile à loger. Avec un grand chat et de la hauteur disponible, le <strong>Litter-Robot 4</strong> reste la référence. Si votre chat fuit les espaces fermés, regardez une litière ouverte comme la <strong>Neakasa M1</strong>. Pour aller plus loin : notre <a href="meilleure-litiere-automatique-2026.html">sélection des meilleures litières automatiques 2026</a> et notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a> (studio, bruit, odeurs).</p>
+<p>Pas sûr qu’une litière automatique soit votre priorité ? Faites d’abord notre <a href="telechargement-audit.html">audit gratuit en 1 jour</a>, puis vérifiez chaque achat avec la <a href="checklist.html">checklist shopping du chat connecté</a> ou suivez le <a href="guide.html">plan en 7 jours</a> (produits payants via Gumroad).</p>
+<p class="note">Un chat qui se met soudain à éviter sa litière ou à y aller beaucoup plus souvent doit être vu par un vétérinaire.</p>''')
+
 # ---------- guide payant
 page("guide.html",
  "Chat d’appartement connecté : le plan en 7 jours – guide PDF 12 €",
@@ -500,7 +560,7 @@ page("telechargement-audit.html",
 {ML_FORM}
 <p class="note">Vous préférez sans inscription ? <a href="produits/lead-magnet-audit-1-jour.pdf" download>Télécharger le PDF directement</a> · <a href="produits/lead-magnet-audit-1-jour.html">Lire en ligne</a>.</p>
 <h2>Et ensuite ?</h2>
-<p>Une fois l’audit fait, le <a href="guide.html">plan en 7 jours</a> vous guide étape par étape (litière, eau, repas, sécurité, budget). <a href="{GUMROAD}" target="_blank" rel="noopener">Voir le guide sur Gumroad ({PRICE})</a> — produit payant, pas un lien d’affiliation. Ou commencez par notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant gratuit</a>.</p>''',related=False,head_extra=ML_HEAD)
+<p>Une fois l’audit fait, le <a href="guide.html">plan en 7 jours</a> vous guide étape par étape (litière, eau, repas, sécurité, budget). <a href="{GUMROAD}" target="_blank" rel="noopener">Voir le guide sur Gumroad ({PRICE})</a> — produit payant, pas un lien d’affiliation. Ou commencez par notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant gratuit</a>. Si l’audit pointe la litière, lisez notre <a href="litiere-automatique-chat-appartement.html">guide litière automatique pour chat d’appartement</a>.</p>''',related=False,head_extra=ML_HEAD)
 
 # ---------- affiliation
 page("affiliation.html",
@@ -557,6 +617,6 @@ page("checklist.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</li></ul>
 <p>Détails : <a href="affiliation.html">affiliation &amp; mentions légales</a>. Pour commencer gratuitement : <a href="telechargement-audit.html">audit gratuit (PDF)</a>.</p>''',related=False)
 
-urls=["","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+urls=["","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
