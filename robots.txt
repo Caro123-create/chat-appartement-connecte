@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caro123-create.github.io/chat-appartement-connecte/sitemap.xml
