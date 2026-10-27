@@ -15,9 +15,13 @@ NAV=[("meilleure-litiere-automatique-2026.html","Litière automatique"),
      ("collier-gps-chat-sans-abonnement.html","GPS sans abonnement"),
      ("litiere-automatique-petit-appartement.html","Litière petit appart"),
      ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget")]
+GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
+PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
+PRICE="12 €"
+CTA_BANNER=f'''<aside class="paid-cta"><p><strong>Guide payant — {PRODUCT} ({PRICE})</strong><br>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p><p><a class="btn-paid" href="guide.html">Découvrir le plan en 7 jours</a></p><p class="note">Produit numérique payant, vendu séparément via Gumroad. Ce n’est pas un lien d’affiliation Amazon.</p></aside>'''
 DISC='<p class="disc"><strong>Liens affiliés :</strong> en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises. Cela ne change pas le prix pour vous. Prix et disponibilités variables : vérifiez toujours sur la page du vendeur.</p>'
 def page(fn,title,desc,h1,body,related=True):
-    nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)
+    nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a>'
     rel=""
     if related:
         rel='<section class="related"><h2>À lire aussi</h2><ul>'+"".join(f'<li><a href="{f}">{n}</a></li>' for f,n in NAV if f!=fn)+'</ul></section>'
@@ -34,8 +38,9 @@ def page(fn,title,desc,h1,body,related=True):
 <header><a class="logo" href="./">🐱 {SITE}</a><nav>{nav}</nav></header>
 <main>
 <h1>{h1}</h1>
-{DISC if fn not in ("affiliation.html",) else ""}
+{DISC if fn not in ("affiliation.html","guide.html") else ""}
 {body}
+{CTA_BANNER if fn not in ("index.html","guide.html","affiliation.html") else ""}
 {rel}
 </main>
 <footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 27 octobre 2026.</p>
@@ -51,6 +56,10 @@ page("index.html",
  "Guides d’achat indépendants pour chat d’appartement : litière automatique, GPS Tractive ou AirTag, fontaine à eau, distributeur de croquettes, caméra, kit débutant.",
  "Équiper son chat d’appartement avec des objets connectés utiles",
  f'''<p class="lead">Un chat qui vit en intérieur dépend entièrement de son environnement : une litière propre, de l’eau qui donne envie de boire, des repas réguliers même quand vous rentrez tard. Les objets connectés peuvent aider — à condition de bien les choisir. Ici, on compare les modèles réels du marché, sans promesse miracle, avec les points qui comptent vraiment en appartement : bruit, encombrement, coût d’usage et sécurité.</p>
+<section class="paid-cta home"><h2>Nouveau : le plan en 7 jours (guide payant, 12 €)</h2>
+<p>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup. Une étape par jour, dans le bon ordre, avec checklist et tableau budget.</p>
+<p><a class="btn-paid" href="guide.html">Voir le contenu du plan</a> <a class="btn-paid alt" href="{GUMROAD}" target="_blank" rel="noopener">Acheter sur Gumroad – 12 €</a></p>
+<p class="note">Produit numérique payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. Il est distinct des liens d’affiliation Amazon du site.</p></section>
 <h2>Nos guides</h2>
 <ul class="cards">{cards}</ul>
 <h2>Notre méthode</h2>
@@ -363,6 +372,38 @@ page("budget-kit-chat-appartement-connecte.html",
 <h2>Notre avis</h2>
 <p>Commencez par une <strong>fontaine</strong> et un <strong>distributeur programmable</strong>, ajoutez une <strong>caméra sans abonnement</strong> si vous êtes souvent absent, et gardez la <strong>litière automatique</strong> pour quand vous serez sûr de votre emplacement et de votre budget.</p>''')
 
+# ---------- guide payant
+page("guide.html",
+ "Chat d’appartement connecté : le plan en 7 jours – guide PDF 12 €",
+ "Le plan en 7 jours pour équiper votre chat d’appartement (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup. Guide numérique à 12 €.",
+ PRODUCT,
+ f'''<p class="paid-label"><strong>Produit payant</strong> — guide numérique vendu {PRICE} via Gumroad. Cette page n’est pas un lien d’affiliation.</p>
+<p class="lead">En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p>
+<p>Nos guides gratuits comparent les appareils un par un. Ce plan les remet <strong>dans l’ordre</strong> : une étape par jour, environ 20 à 45 minutes, pour observer d’abord, acheter ensuite et installer progressivement. Vous pouvez aussi l’étaler sur deux semaines.</p>
+<h2>Ce que contient le plan</h2>
+<ol>
+<li><strong>Jour 1 — L’audit des besoins</strong> : votre logement, votre rythme, votre chat.</li>
+<li><strong>Jour 2 — La litière</strong> : bac classique ou automatique, et où la placer.</li>
+<li><strong>Jour 3 — L’eau</strong> : fontaine ou non, et comment la faire adopter.</li>
+<li><strong>Jour 4 — Les repas</strong> : distributeur programmable, portions, absences.</li>
+<li><strong>Jour 5 — Sécurité, caméra et GPS</strong> : ce qui est utile selon votre chat.</li>
+<li><strong>Jour 6 — Le budget</strong> : trois scénarios (50 €, 200 € ou 500 €).</li>
+<li><strong>Jour 7 — Installation, tests et checklist finale</strong>.</li>
+</ol>
+<p>En plus : les erreurs à éviter, une <strong>checklist imprimable</strong> et un <strong>tableau budget à remplir</strong>.</p>
+<h2>Pour qui ?</h2>
+<ul><li>Vous vivez en appartement ou en studio avec un ou deux chats d’intérieur.</li>
+<li>Vous débutez avec les applis et le Wi-Fi et voulez des explications simples.</li>
+<li>Vous voulez dépenser au bon endroit plutôt que tout acheter d’un coup.</li></ul>
+<p class="note">Ce n’est pas un comparatif exhaustif de tous les modèles, ni un avis vétérinaire. Aucun appareil ne remplace votre présence ou un pet-sitter pour une longue absence. Les prix sont donnés en fourchettes indicatives.</p>
+<div class="paid-cta"><p><strong>{PRODUCT}</strong><br>Guide numérique (PDF) — <strong>{PRICE}</strong></p>
+<p><a class="btn-paid" href="{GUMROAD}" target="_blank" rel="noopener">Acheter le plan sur Gumroad – {PRICE}</a></p>
+<p class="note">Paiement et livraison du fichier gérés par Gumroad. Prix TTC affiché sur Gumroad au moment de l’achat.</p></div>
+<h2>Guide payant ou liens d’affiliation : quelle différence ?</h2>
+<ul><li><strong>Ce guide</strong> est un produit payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. En l’achetant, vous payez directement ce contenu.</li>
+<li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Amazon ne vend pas ce guide.</li></ul>
+<p>Plus de détails sur notre page <a href="affiliation.html">affiliation &amp; mentions légales</a>. Vous préférez commencer gratuitement ? Lisez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant et budget</a>.</p>''',related=False)
+
 # ---------- affiliation
 page("affiliation.html",
  "Affiliation et mentions légales – Chat Appartement Connecté",
@@ -371,6 +412,8 @@ page("affiliation.html",
  '''<h2>Liens affiliés</h2>
 <p>Ce site contient des liens affiliés, signalés par les boutons « Voir sur Amazon ». <strong>En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</strong> Si vous achetez après avoir cliqué, nous pouvons percevoir une commission, sans surcoût pour vous. Cette rémunération n’influence pas nos recommandations ; les marques citées ne nous ont pas payés pour apparaître.</p>
 <p>Les prix, disponibilités et caractéristiques sont susceptibles d’évoluer : la page du vendeur fait foi au moment de l’achat.</p>
+<h2>Produit payant</h2>
+<p>Le guide « Chat d’appartement connecté : le plan en 7 jours » est un produit numérique payant, édité par Chat Appartement Connecté et vendu séparément via Gumroad (voir la <a href="guide.html">page du guide</a>). Les liens vers Gumroad ne sont pas des liens d’affiliation : ils mènent à notre propre produit.</p>
 <h2>Éditeur</h2>
 <p>Site édité à titre personnel par la responsable de publication du projet Chat Appartement Connecté. Contact : via le dépôt GitHub du projet.</p>
 <h2>Hébergement</h2>
@@ -380,6 +423,6 @@ page("affiliation.html",
 <h2>Confidentialité et cookies</h2>
 <p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>''',related=False)
 
-urls=["","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","affiliation.html"]
+urls=["","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
