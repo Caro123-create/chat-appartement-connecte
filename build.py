@@ -31,9 +31,10 @@ GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
 CTA_BANNER=f'''<aside class="paid-cta"><p><strong>Guide payant — {PRODUCT} ({PRICE})</strong><br>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p><p><a class="btn-paid" href="guide.html">Découvrir le plan en 7 jours</a></p><p class="note">Produit numérique payant, vendu séparément via Gumroad. Ce n’est pas un lien d’affiliation Amazon.</p></aside>'''
+AUDIT_LINK='<p class="note">Pas encore prêt à acheter ? Commencez par notre <a href="telechargement-audit.html">audit gratuit en 1 jour (PDF)</a>.</p>'
 DISC='<p class="disc"><strong>Liens affiliés :</strong> en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises. Cela ne change pas le prix pour vous. Prix et disponibilités variables : vérifiez toujours sur la page du vendeur.</p>'
 def page(fn,title,desc,h1,body,related=True):
-    nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a>'
+    nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a><a href="telechargement-audit.html">Audit gratuit (PDF)</a>'
     rel=""
     if related:
         rel='<section class="related"><h2>À lire aussi</h2><ul>'+"".join(f'<li><a href="{f}">{n}</a></li>' for f,n in NAV if f!=fn)+'</ul></section>'
@@ -50,9 +51,9 @@ def page(fn,title,desc,h1,body,related=True):
 <header><a class="logo" href="./">🐱 {SITE}</a><nav>{nav}</nav></header>
 <main>
 <h1>{h1}</h1>
-{DISC if fn not in ("affiliation.html","guide.html") else ""}
+{DISC if fn not in ("affiliation.html","guide.html","telechargement-audit.html") else ""}
 {body}
-{CTA_BANNER if fn not in ("index.html","guide.html","affiliation.html") else ""}
+{(CTA_BANNER+AUDIT_LINK) if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html") else ""}
 {rel}
 </main>
 <footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 27 octobre 2026.</p>
@@ -71,7 +72,8 @@ page("index.html",
 <section class="paid-cta home"><h2>Nouveau : le plan en 7 jours (guide payant, 12 €)</h2>
 <p>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup. Une étape par jour, dans le bon ordre, avec checklist et tableau budget.</p>
 <p><a class="btn-paid" href="guide.html">Voir le contenu du plan</a> <a class="btn-paid alt" href="{GUMROAD}" target="_blank" rel="noopener">Acheter sur Gumroad – 12 €</a></p>
-<p class="note">Produit numérique payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. Il est distinct des liens d’affiliation Amazon du site.</p></section>
+<p class="note">Produit numérique payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. Il est distinct des liens d’affiliation Amazon du site.</p>
+<p class="note">Envie de commencer gratuitement ? Téléchargez notre <a href="telechargement-audit.html">audit en 1 jour (checklist PDF gratuite)</a>.</p></section>
 <h2>Nos guides</h2>
 <ul class="cards">{cards}</ul>
 <h2>Notre méthode</h2>
@@ -416,6 +418,22 @@ page("guide.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Amazon ne vend pas ce guide.</li></ul>
 <p>Plus de détails sur notre page <a href="affiliation.html">affiliation &amp; mentions légales</a>. Vous préférez commencer gratuitement ? Lisez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant et budget</a>.</p>''',related=False)
 
+# ---------- lead magnet gratuit
+page("telechargement-audit.html",
+ "Audit gratuit en 1 jour : ce dont votre chat d’appartement a vraiment besoin",
+ "Checklist gratuite d’une page : en une journée, découvrez ce dont votre chat d’appartement a besoin et ce qu’il est inutile d’acheter.",
+ "L’audit gratuit en 1 jour",
+ f'''<p class="paid-label"><strong>Gratuit</strong> — checklist PDF à télécharger, sans inscription. Cette page ne contient pas de lien d’affiliation.</p>
+<p class="lead">En une journée et une seule page à cocher, découvrez ce dont votre chat d’appartement a vraiment besoin — et surtout ce qu’il est inutile d’acheter.</p>
+<p>Observez votre chat, votre logement et votre rythme, cochez, puis ne dépensez qu’au bon endroit. Comptez environ une heure d’observation répartie sur la journée.</p>
+<h2>Ce que contient l’audit</h2>
+<ul><li>Une checklist d’une page : litière, eau, repas, activité, sécurité, absences.</li>
+<li>Un mini guide pour lire vos résultats, savoir quoi prioriser… et ce qu’il est souvent inutile d’acheter.</li></ul>
+<p><a class="btn-paid" href="produits/lead-magnet-audit-1-jour.pdf" download>Télécharger l’audit (PDF gratuit)</a></p>
+<p class="note">Vous préférez lire en ligne ? <a href="produits/lead-magnet-audit-1-jour.html">Version web de l’audit</a>.</p>
+<h2>Et ensuite ?</h2>
+<p>Une fois l’audit fait, le <a href="guide.html">plan en 7 jours</a> vous guide étape par étape (litière, eau, repas, sécurité, budget). <a href="{GUMROAD}" target="_blank" rel="noopener">Voir le guide sur Gumroad ({PRICE})</a> — produit payant, pas un lien d’affiliation. Ou commencez par notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant gratuit</a>.</p>''',related=False)
+
 # ---------- affiliation
 page("affiliation.html",
  "Affiliation et mentions légales – Chat Appartement Connecté",
@@ -437,6 +455,6 @@ page("affiliation.html",
 <h2>Confidentialité et cookies</h2>
 <p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>''',related=False)
 
-urls=["","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","affiliation.html"]
+urls=["","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
