@@ -18,7 +18,8 @@ TODAY="2026-10-27"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
-NAV=[("meilleure-litiere-automatique-2026.html","Litière automatique"),
+NAV=[("top-5-equipements-chat-appartement-2026.html","Top 5 équipements 2026"),
+     ("meilleure-litiere-automatique-2026.html","Litière automatique"),
      ("gps-chat-tractive-vs-airtag.html","GPS chat"),
      ("meilleure-fontaine-eau-chat-2026.html","Fontaine à eau"),
      ("distributeur-croquettes-connecte.html","Distributeur connecté"),
@@ -83,6 +84,7 @@ page("index.html",
 <p>Nous partons des fiches et manuels des fabricants, des retours d’utilisateurs et des contraintes concrètes d’un logement (surface, prises, Wi-Fi 2,4 GHz). Quand une donnée n’est pas claire ou varie selon les versions, nous le disons plutôt que d’inventer un chiffre. Les prix changent souvent : nous n’en affichons pas de précis, vérifiez-les sur la page du vendeur.</p>
 <h2>Par où commencer ?</h2>
 <ul>
+<li>Vous voulez l’essentiel en une page : notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements pour chat d’appartement 2026</a>.</li>
 <li>Vous travaillez de longues journées : commencez par le <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> et la <a href="meilleure-fontaine-eau-chat-2026.html">fontaine à eau</a>.</li>
 <li>L’odeur de litière envahit le studio : lisez notre <a href="meilleure-litiere-automatique-2026.html">guide des litières automatiques</a>, puis le duel <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit</a>.</li>
 <li>Votre chat a accès au balcon ou s’échappe parfois : comparez <a href="gps-chat-tractive-vs-airtag.html">Tractive et AirTag</a>, ou voyez les options de <a href="collier-gps-chat-sans-abonnement.html">GPS sans abonnement</a>.</li>
@@ -389,6 +391,57 @@ page("budget-kit-chat-appartement-connecte.html",
 <h2>Notre avis</h2>
 <p>Commencez par une <strong>fontaine</strong> et un <strong>distributeur programmable</strong>, ajoutez une <strong>caméra sans abonnement</strong> si vous êtes souvent absent, et gardez la <strong>litière automatique</strong> pour quand vous serez sûr de votre emplacement et de votre budget.</p>''')
 
+# ---------- 10 top 5
+page("top-5-equipements-chat-appartement-2026.html",
+ "Top 5 équipements chat d’appartement 2026 : l’essentiel connecté",
+ "Les 5 équipements connectés les plus utiles pour un chat d’appartement en 2026 : litière automatique, fontaine, distributeur, GPS Tractive, caméra. Critères et pour qui.",
+ "Top 5 équipements chat d’appartement 2026",
+ f'''<p class="lead">Un chat d’intérieur dépend entièrement de ce que vous mettez à sa disposition. Parmi tous les objets connectés du marché, cinq familles apportent un vrai bénéfice en appartement. Voici, pour chacune, les critères à vérifier, pour qui elle vaut le coup, et le guide détaillé à lire avant d’acheter. Nous n’affichons pas de prix : ils changent souvent, vérifiez-les sur la page du vendeur.</p>
+<h2>En résumé</h2>
+<table><thead><tr><th>Équipement</th><th>Utile surtout si…</th><th>Priorité</th></tr></thead><tbody>
+<tr><td>Fontaine à eau</td><td>votre chat boit peu ou mange des croquettes</td><td>Haute, petit budget</td></tr>
+<tr><td>Distributeur de croquettes</td><td>vous rentrez tard ou le chat réclame tôt</td><td>Haute</td></tr>
+<tr><td>Litière automatique</td><td>les odeurs gênent dans un petit logement</td><td>Moyenne, gros budget</td></tr>
+<tr><td>Caméra intérieure</td><td>vous êtes souvent absent et voulez vérifier</td><td>Confort</td></tr>
+<tr><td>GPS / traceur</td><td>balcon, fugue passée, chat qui sort</td><td>Selon le chat</td></tr>
+</tbody></table>
+<div class="pick"><h3>1. Litière automatique</h3>
+<p><strong>Ce qu’elle apporte :</strong> les déchets sont tamisés et stockés dans un tiroir fermé après chaque passage. En studio, c’est le meilleur levier contre les odeurs.</p>
+<p><strong>Critères :</strong> poids minimum du chat (pas de chaton), hauteur et place pour sortir le tiroir, litière agglomérante compatible, capteurs de sécurité, mode nuit, coût des sacs et filtres sur 2–3 ans, Wi-Fi 2,4 GHz.</p>
+<p><strong>Pour qui :</strong> chat adulte, logement où la litière est proche des pièces de vie, budget confortable. À éviter si le chat est très craintif ou si l’emplacement n’est pas mesuré.</p>
+<p>À lire : <a href="meilleure-litiere-automatique-2026.html">meilleures litières automatiques 2026</a>, <a href="litiere-automatique-petit-appartement.html">litière auto en petit appartement</a> et le duel <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit</a>.</p>
+{amz("litière automatique autonettoyante chat","litières automatiques")}</div>
+<div class="pick"><h3>2. Fontaine à eau</h3>
+<p><strong>Ce qu’elle apporte :</strong> une eau qui circule et filtrée incite beaucoup de chats à boire davantage.</p>
+<p><strong>Critères :</strong> pompe sans fil (plus facile à nettoyer), bruit léger, 1,5 à 3 L pour un chat, inox ou céramique, filtres de rechange faciles à trouver. La connexion (alerte niveau d’eau) est un bonus.</p>
+<p><strong>Pour qui :</strong> presque tous les chats d’appartement, surtout ceux nourris aux croquettes. C’est l’achat le plus rentable pour commencer.</p>
+<p>À lire : <a href="meilleure-fontaine-eau-chat-2026.html">meilleure fontaine à eau pour chat 2026</a>.</p>
+{amz("fontaine à eau chat pompe sans fil","fontaines")}</div>
+<div class="pick"><h3>3. Distributeur de croquettes connecté</h3>
+<p><strong>Ce qu’il apporte :</strong> des petits repas à heures fixes, même quand vous rentrez tard, et des alertes en cas de bourrage ou de réservoir bas.</p>
+<p><strong>Critères :</strong> batterie ou piles de secours, programme qui continue sans Wi-Fi, réservoir hermétique, bol inox amovible, taille de croquettes acceptée, deux bols si plusieurs chats.</p>
+<p><strong>Pour qui :</strong> longues journées de travail, chat qui réclame à l’aube, week-ends ponctuels (avec quelqu’un qui passe au-delà).</p>
+<p>À lire : <a href="distributeur-croquettes-connecte.html">bien choisir un distributeur connecté</a>.</p>
+{amz("distributeur croquettes chat programmable wifi","distributeurs")}</div>
+<div class="pick"><h3>4. GPS pour chat (Tractive) ou traceur</h3>
+<p><strong>Ce qu’il apporte :</strong> retrouver un chat qui a fugué. Un vrai GPS comme Tractive suit en temps réel via le réseau mobile (abonnement obligatoire) ; un AirTag ou un traceur Bluetooth sert de filet de sécurité sans abonnement, sans suivi continu.</p>
+<p><strong>Critères :</strong> temps réel ou non, abonnement, autonomie, poids adapté au gabarit du chat, collier à ouverture de sécurité, compatibilité iPhone/Android.</p>
+<p><strong>Pour qui :</strong> chat avec accès au balcon ou à l’extérieur, ou qui a déjà fugué : GPS. Chat strictement d’intérieur : traceur sans abonnement + identification à jour.</p>
+<p>À lire : <a href="gps-chat-tractive-vs-airtag.html">Tractive ou AirTag</a> et <a href="collier-gps-chat-sans-abonnement.html">GPS chat sans abonnement</a>.</p>
+{amz("Tractive GPS chat CAT 6 Mini")}{secondary("tractive","https://tractive.com/fr")}</div>
+<div class="pick"><h3>5. Caméra intérieure</h3>
+<p><strong>Ce qu’elle apporte :</strong> vérifier en journée que le chat va bien, a mangé ou n’est pas resté enfermé.</p>
+<p><strong>Critères :</strong> motorisée (pan/tilt) pour couvrir une pièce, vision nocturne, stockage microSD sans abonnement, détection réglable, sécurité du compte (mot de passe, double authentification), mode confidentialité.</p>
+<p><strong>Pour qui :</strong> propriétaires souvent absents qui veulent être rassurés. Les modèles à lanceur de friandises plaisent aux chats gourmands.</p>
+<p>À lire : <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</p>
+{amz("caméra surveillance intérieure motorisée wifi microSD","caméras")}</div>
+<h2>Par quoi commencer ?</h2>
+<ol><li><strong>Fontaine</strong> et <strong>distributeur</strong> : impact direct sur le quotidien du chat, budget limité.</li>
+<li><strong>Caméra</strong> si vous êtes souvent absent ; <strong>traceur</strong> si le chat a accès au balcon.</li>
+<li><strong>Litière automatique</strong> quand l’emplacement est mesuré et le budget prêt.</li></ol>
+<p>Pour un plan par budget et par profil, voyez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</p>
+<p class="note">Aucun appareil ne remplace votre présence, des jeux quotidiens ni l’avis d’un vétérinaire. Un changement soudain de consommation d’eau, d’appétit ou de passages à la litière doit être signalé au vétérinaire.</p>''')
+
 # ---------- guide payant
 page("guide.html",
  "Chat d’appartement connecté : le plan en 7 jours – guide PDF 12 €",
@@ -485,6 +538,6 @@ page("checklist.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</li></ul>
 <p>Détails : <a href="affiliation.html">affiliation &amp; mentions légales</a>. Pour commencer gratuitement : <a href="telechargement-audit.html">audit gratuit (PDF)</a>.</p>''',related=False)
 
-urls=["","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+urls=["","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
