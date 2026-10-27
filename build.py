@@ -521,7 +521,15 @@ page("affiliation.html",
 <h2>Contenu</h2>
 <p>Les guides sont fournis à titre informatif et ne constituent pas un avis vétérinaire. En cas de doute sur la santé de votre chat, consultez un vétérinaire.</p>
 <h2>Confidentialité et cookies</h2>
-<p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>''',related=False)
+<p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>
+<h2 id="newsletter">Newsletter / emails (RGPD)</h2>
+<p>Le formulaire de la page <a href="telechargement-audit.html">audit gratuit</a> collecte votre adresse email afin de vous envoyer l’audit PDF et des conseils liés au chat d’appartement connecté.</p>
+<ul><li><strong>Prestataire :</strong> les emails sont gérés via MailerLite (outil d’emailing), qui héberge la liste d’inscrits pour notre compte. Le formulaire est chargé depuis MailerLite et peut déposer les cookies techniques nécessaires à son fonctionnement.</li>
+<li><strong>Base légale :</strong> votre consentement (inscription volontaire).</li>
+<li><strong>Désinscription :</strong> en 1 clic via le lien présent dans chaque email.</li>
+<li><strong>Pas de revente :</strong> vos emails ne sont ni vendus ni partagés à des tiers à des fins commerciales.</li>
+<li><strong>Durée :</strong> conservation jusqu’à votre désinscription.</li>
+<li><strong>Vos droits :</strong> accès, rectification, effacement, opposition — à exercer auprès du responsable du traitement (l’éditeur du site, voir « Éditeur » ci-dessus) ou en répondant à l’un de nos emails. Vous pouvez aussi saisir la CNIL.</li></ul>''',related=False)
 
 page("checklist.html",
  "Checklist shopping du chat connecté – PDF 6,90 €",
