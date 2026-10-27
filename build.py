@@ -68,8 +68,8 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 # ---------- index
 cards="".join(f'<li><a href="{f}"><strong>{n}</strong></a></li>' for f,n in NAV)
 page("index.html",
- "Chat Appartement Connecté – guides litières auto, GPS, fontaines 2026",
- "Guides d’achat indépendants pour chat d’appartement : litière automatique, GPS Tractive ou AirTag, fontaine à eau, distributeur de croquettes, caméra, kit débutant.",
+ "Objets connectés pour chat d'appartement – Guide 2026",
+ "Litière automatique, fontaine, GPS, distributeur : nos guides indépendants pour bien équiper votre chat d'appartement. Audit gratuit en 1 jour.",
  "Équiper son chat d’appartement avec des objets connectés utiles",
  f'''<p class="lead">Un chat qui vit en intérieur dépend entièrement de son environnement : une litière propre, de l’eau qui donne envie de boire, des repas réguliers même quand vous rentrez tard. Les objets connectés peuvent aider — à condition de bien les choisir. Ici, on compare les modèles réels du marché, sans promesse miracle, avec les points qui comptent vraiment en appartement : bruit, encombrement, coût d’usage et sécurité.</p>
 <section class="paid-cta home"><h2>Nouveau : le plan en 7 jours (guide payant, 12 €)</h2>
