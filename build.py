@@ -40,7 +40,7 @@ CHECKLIST_GUMROAD="https://fluenthub.gumroad.com/l/dcbmyx"
 CHECKLIST_PRICE="6,90 €"
 CTA_BANNER=f'''<aside class="paid-cta"><p><strong>Guide payant — {PRODUCT} ({PRICE})</strong><br>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p><p><a class="btn-paid" href="guide.html">Découvrir le plan en 7 jours</a></p><p class="note">Produit numérique payant, vendu séparément via Gumroad. Ce n’est pas un lien d’affiliation Amazon.</p></aside>'''
 AUDIT_LINK='<p class="note">Pas encore prêt à acheter ? Commencez par notre <a href="telechargement-audit.html">audit gratuit en 1 jour (PDF)</a>.</p>'
-DISC='<p class="disc"><strong>Liens affiliés :</strong> en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises. Cela ne change pas le prix pour vous. Prix et disponibilités variables : vérifiez toujours sur la page du vendeur.</p>'
+DISC='<p class="disc">Liens affiliés Amazon — nous pouvons toucher une commission sans surcoût pour vous.</p>'
 def page(fn,title,desc,h1,body,related=True,head_extra=""):
     nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a><a class="nav-paid" href="checklist.html">Checklist (6,90 €)</a><a href="telechargement-audit.html">Audit gratuit (PDF)</a>'
     rel=""
@@ -59,13 +59,13 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 <header><a class="logo" href="./">🐱 {SITE}</a><nav>{nav}</nav></header>
 <main>
 <h1>{h1}</h1>
-{DISC if fn not in ("affiliation.html","guide.html","telechargement-audit.html","checklist.html") else ""}
 {body}
 {(CTA_BANNER+AUDIT_LINK) if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html","checklist.html") else ""}
 {rel}
+{DISC if fn not in ("affiliation.html","guide.html","telechargement-audit.html","checklist.html") else ""}
 </main>
 <footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 28 octobre 2026.</p>
-<p>En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises. <a href="affiliation.html">Affiliation &amp; mentions légales</a></p>
+<p>Partenaire Amazon · <a href="affiliation.html">Affiliation &amp; mentions légales</a></p>
 <p>Nos guides ne remplacent pas l’avis d’un vétérinaire.</p></footer>
 </body></html>'''
     open(fn,"w").write(html)
