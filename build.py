@@ -26,7 +26,9 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("meilleure-fontaine-eau-chat-2026.html","Fontaine à eau"),
      ("distributeur-croquettes-connecte.html","Distributeur connecté"),
      ("litter-robot-4-vs-petkit-pura-max-2.html","Litter-Robot 4 vs PetKit"),
+     ("litter-robot-4-avis-2026.html","Litter-Robot 4 : avis"),
      ("camera-surveillance-chat-appartement.html","Caméra chat"),
+     ("camera-chat-friandises-2026.html","Caméra à friandises"),
      ("collier-gps-chat-sans-abonnement.html","GPS sans abonnement"),
      ("litiere-automatique-petit-appartement.html","Litière petit appart"),
      ("litiere-automatique-chat-appartement.html","Litière chat appart"),
@@ -96,6 +98,7 @@ page("index.html",
 <li>Vous hésitez sur une litière automatique : notre <a href="litiere-automatique-chat-appartement.html">guide d’achat litière automatique chat appartement</a> (bruit, odeur, taille, Wi-Fi).</li>
 <li>Vous vivez dans un studio : notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a> (bruit, taille, odeurs).</li>
 <li>Vous voulez voir votre chat en journée : notre guide <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</li>
+<li>Vous hésitez à investir dans le haut de gamme : notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 (2026)</a> et notre guide <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>''',related=False)
 
@@ -129,7 +132,7 @@ page("meilleure-litiere-automatique-2026.html",
 <li>Gardez un bac classique tant que l’adoption n’est pas totale.</li>
 <li>Ne posez pas l’appareil sur un tapis épais : les capteurs de poids se dérèglent.</li></ol>
 <h2>Notre avis</h2>
-<p>Pour la majorité des appartements, la <strong>PetKit Pura Max 2</strong> offre le meilleur équilibre. Si vous avez un grand chat ou plusieurs chats et le budget, le <strong>Litter-Robot 4</strong> reste la référence. Détail complet dans notre <a href="litter-robot-4-vs-petkit-pura-max-2.html">comparatif Litter-Robot 4 vs PetKit</a>.</p>''')
+<p>Pour la majorité des appartements, la <strong>PetKit Pura Max 2</strong> offre le meilleur équilibre. Si vous avez un grand chat ou plusieurs chats et le budget, le <strong>Litter-Robot 4</strong> reste la référence. Détail complet dans notre <a href="litter-robot-4-vs-petkit-pura-max-2.html">comparatif Litter-Robot 4 vs PetKit</a> et notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 2026</a>.</p>''')
 
 # ---------- 2 GPS
 page("gps-chat-tractive-vs-airtag.html",
@@ -236,7 +239,7 @@ page("litter-robot-4-vs-petkit-pura-max-2.html",
 <div class="duo"><div class="pick"><h3>Litter-Robot 4</h3><p>Pour : grands chats, multi-chats, suivi détaillé.</p>{amz("Litter-Robot 4")}</div>
 <div class="pick"><h3>PetKit Pura Max 2</h3><p>Pour : chat moyen, peu de hauteur disponible, budget plus serré, écosystème PetKit.</p>{amz("PetKit Pura Max 2")}</div></div>
 <h2>Verdict</h2>
-<p>Budget et grand chat : <strong>Litter-Robot 4</strong>. Appartement compact et chat de taille moyenne : <strong>PetKit Pura Max 2</strong>. Pour d’autres options, voyez notre <a href="meilleure-litiere-automatique-2026.html">sélection des meilleures litières automatiques 2026</a>.</p>''')
+<p>Budget et grand chat : <strong>Litter-Robot 4</strong>. Appartement compact et chat de taille moyenne : <strong>PetKit Pura Max 2</strong>. Pour d’autres options, voyez notre <a href="meilleure-litiere-automatique-2026.html">sélection des meilleures litières automatiques 2026</a>. Vous visez le Litter-Robot 4 ? Lisez notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 2026</a> (coût d’usage, encombrement, pour qui).</p>''')
 
 # ---------- 6 caméra
 page("camera-surveillance-chat-appartement.html",
@@ -259,7 +262,7 @@ page("camera-surveillance-chat-appartement.html",
 <p><strong>Pour qui :</strong> la plupart des appartements, budget maîtrisé, pas d’abonnement voulu.</p>{amz("caméra surveillance intérieure motorisée wifi microSD","caméras motorisées")}</div>
 <div class="pick"><h3>2. Caméra pour animaux avec lanceur de friandises</h3>
 <p>Furbo, Petcube et d’autres proposent des caméras qui lancent une friandise à distance. Ludique, et utile pour associer la caméra à quelque chose de positif. Attention : certaines fonctions avancées (alertes intelligentes, historique vidéo) passent par un abonnement. Lisez la fiche produit avant d’acheter.</p>
-<p><strong>Pour qui :</strong> chat gourmand, propriétaire qui veut interagir et pas seulement regarder.</p>{amz("caméra chat distributeur friandises","caméras à friandises")}</div>
+<p><strong>Pour qui :</strong> chat gourmand, propriétaire qui veut interagir et pas seulement regarder. Comparatif détaillé : <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</p>{amz("caméra chat distributeur friandises","caméras à friandises")}</div>
 <div class="pick"><h3>3. Distributeur de croquettes avec caméra</h3>
 <p>Un seul appareil pour nourrir et voir : la caméra est placée au-dessus du bol, donc vous voyez surtout le chat… quand il mange. Bon choix si vous vouliez de toute façon un distributeur. Détails dans notre <a href="distributeur-croquettes-connecte.html">guide des distributeurs connectés</a>.</p>{amz("distributeur croquettes chat caméra wifi","distributeurs avec caméra")}</div>
 <h2>Où placer la caméra ?</h2>
@@ -638,6 +641,111 @@ page("equipement-chat-appartement.html",
 <p>L’équipement d’un chat d’appartement tient d’abord en quelques basiques bien choisis : <strong>litière propre, eau et nourriture séparées, griffoir, hauteur, cachette, caisse de transport et fenêtres sécurisées</strong>. Le connecté (fontaine, distributeur, litière automatique, caméra, GPS) vient ensuite, un objet à la fois, pour répondre à un problème précis. Pour tout mettre en place dans l’ordre, suivez le <a href="guide.html">plan en 7 jours</a> (produit payant).</p>
 <p class="note">Cette checklist ne remplace pas l’avis d’un vétérinaire. Une première visite après l’adoption permet de faire le point sur la santé, la vaccination, l’identification et l’alimentation de votre chat ; tout changement soudain d’appétit, de consommation d’eau ou de passages à la litière doit lui être signalé.</p>''')
 
+# ---------- 14 Litter-Robot 4 avis (AOV élevé)
+page("litter-robot-4-avis-2026.html",
+ "Litter-Robot 4 : avis 2026, pour qui ça vaut le coup",
+ "Litter-Robot 4 : notre avis 2026. Pour qui il vaut le prix, poids minimum du chat, encombrement en appartement, coût des sacs et filtres, alternatives.",
+ "Litter-Robot 4 : notre avis 2026 — pour qui ça vaut vraiment le coup",
+ f'''<p class="lead">Le <strong>Litter-Robot 4</strong> (Whisker) est l’une des litières automatiques les plus chères et les plus connues du marché. Avant d’investir, la vraie question n’est pas « est-il bon ? » mais « est-il fait pour <em>votre</em> chat et <em>votre</em> appartement ? ». Voici notre avis d’achat, construit à partir des manuels et de l’assistance du fabricant, sans faux témoignages ni prix inventés : le tarif change souvent, vérifiez-le sur la page du vendeur.</p>
+<h2>Notre avis en bref</h2>
+<table><thead><tr><th>Ça vaut le coup si…</th><th>Passez votre tour si…</th></tr></thead><tbody>
+<tr><td>Vous avez un grand chat ou plusieurs chats adultes</td><td>Vous avez un chaton ou un chat très léger</td></tr>
+<tr><td>Vous disposez d’environ 75 cm de hauteur libre</td><td>La litière doit tenir sous une fenêtre basse ou un lavabo</td></tr>
+<tr><td>Vous voulez un suivi détaillé (passages, poids) dans l’application</td><td>Vous voulez juste moins d’odeurs avec un budget serré</td></tr>
+<tr><td>Votre chat utilise déjà une litière agglomérante</td><td>Votre chat n’accepte que les granulés bois ou le silice</td></tr>
+</tbody></table>
+<div class="pick"><h3>Litter-Robot 4 (Whisker)</h3><p>Le modèle haut de gamme de référence : globe rotatif, grande entrée, capteurs à l’entrée et mesure du poids, application Whisker.</p>{amz("Litter-Robot 4","Litter-Robot 4")}</div>
+<h2>Les points forts</h2>
+<ul>
+<li><strong>Une très grande entrée</strong> (environ 40 × 40 cm selon le fabricant) : rassurant pour un grand gabarit ou un chat qui refuse les ouvertures étroites.</li>
+<li><strong>La détection</strong> : capteurs à l’entrée et mesure du poids pour lancer le cycle après le passage du chat, avec un délai réglable.</li>
+<li><strong>L’application Whisker</strong> : historique des passages, poids du chat, niveau du tiroir et de la litière, mode nuit. Un changement net de fréquence ou de poids est un signal à montrer au vétérinaire.</li>
+<li><strong>Les sacs</strong> : selon l’assistance Whisker, des sacs-poubelle standards de taille adaptée conviennent — pas d’obligation de consommables propriétaires pour cette partie.</li>
+<li><strong>Le multi-chats</strong> : la reconnaissance par le poids fonctionne mieux quand les chats ont des poids bien différents.</li>
+</ul>
+<h2>Les limites à connaître avant d’acheter</h2>
+<ul>
+<li><strong>L’encombrement</strong> : environ 75 × 56 × 69 cm (H × L × P) et près de 11 kg d’après le manuel. Comptez en plus la place pour sortir le tiroir à déchets.</li>
+<li><strong>Le poids minimum du chat</strong> : 1,36 kg pour le fonctionnement automatique selon Whisker. Pas d’automatique pour un chaton ; attendez qu’il soit adulte et bien installé.</li>
+<li><strong>Le type de litière</strong> : il faut une litière agglomérante. Les granulés et les cristaux ne conviennent pas au tamisage.</li>
+<li><strong>Le prix d’entrée</strong> : c’est un investissement important. Il ne se justifie que si vous comptez l’utiliser plusieurs années.</li>
+<li><strong>Le Wi-Fi</strong> : connexion en Wi-Fi 2,4 GHz. L’essentiel (nettoyage) fonctionne sans Internet, mais réglages et alertes passent par l’application.</li>
+</ul>
+<h2>Coût d’usage : sacs, filtres, litière</h2>
+<p>Le prix d’achat n’est qu’une partie de la facture. Avant de vous décider, faites le calcul sur <strong>deux ou trois ans</strong> :</p>
+<ol>
+<li><strong>La litière agglomérante</strong> : c’est le poste principal, comme avec un bac classique. Le tamisage automatique évite souvent de jeter la litière propre, ce qui peut limiter le gaspillage.</li>
+<li><strong>Les sacs</strong> : sacs standards de taille adaptée (selon Whisker) ou sacs vendus par la marque, au choix.</li>
+<li><strong>Le filtre à charbon</strong> du tiroir : à remplacer régulièrement selon les recommandations du fabricant. Vérifiez sa disponibilité et son prix avant l’achat.</li>
+<li><strong>L’électricité</strong> : modeste, mais l’appareil reste branché en permanence.</li>
+</ol>
+<p>Comparez avec les consommables de la PetKit Pura Max 2 (sacs et cartouches de la marque) dans notre duel <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit Pura Max 2</a>.</p>
+<div class="pick"><h3>Litière agglomérante compatible</h3><p>Choisissez une litière minérale ou végétale <em>agglomérante</em>, peu poussiéreuse et sans parfum fort, que votre chat accepte déjà.</p>{amz("litière agglomérante chat sans parfum","litières agglomérantes")}</div>
+<h2>En appartement : où le placer ?</h2>
+<ul>
+<li><strong>Mesurez la hauteur</strong> sous étagère, fenêtre ou plan de travail : environ 75 cm sont nécessaires.</li>
+<li><strong>Sol dur et stable</strong> : un tapis épais perturbe la mesure du poids et fait vibrer l’appareil.</li>
+<li><strong>Loin de la chambre</strong> ou avec le mode nuit activé si le logement est petit : chaque cycle de rotation dure quelques minutes.</li>
+<li><strong>Accès dégagé</strong> autour de l’entrée et devant le tiroir.</li>
+</ul>
+<p>Si la hauteur manque, lisez notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a>.</p>
+<h2>Réussir la transition</h2>
+<ol>
+<li>Installez l’appareil <strong>éteint</strong>, rempli de la litière habituelle, à côté de l’ancien bac.</li>
+<li>Quand le chat l’utilise sans hésiter, activez le cycle automatique avec un délai long.</li>
+<li>Observez les premiers cycles et gardez l’ancien bac quelques jours.</li>
+<li>Ne retirez le bac classique que lorsque le chat a adopté le Litter-Robot.</li>
+</ol>
+<h2>Les alternatives au Litter-Robot 4</h2>
+<div class="duo"><div class="pick"><h3>PetKit Pura Max 2</h3><p>Plus basse (environ 55 cm), plus facile à loger ; entrée plus étroite. Notre comparatif complet : <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit</a>.</p>{amz("PetKit Pura Max 2","PetKit Pura Max 2")}</div>
+<div class="pick"><h3>Autres litières automatiques premium</h3><p>Neakasa, Catlink, PetSafe ScoopFree… Principes différents (globe, râteau, modèle ouvert) : vérifiez poids minimum, litière acceptée et consommables.</p>{amz("litière automatique autonettoyante premium","litières auto premium")}</div></div>
+<p>Pour une sélection plus large, voyez notre <a href="meilleure-litiere-automatique-2026.html">guide des meilleures litières automatiques 2026</a> et notre <a href="litiere-automatique-chat-appartement.html">guide d’achat litière automatique chat appartement</a>.</p>
+<h2>Verdict</h2>
+<p>Le <strong>Litter-Robot 4 vaut le coup</strong> pour un foyer avec un grand chat ou plusieurs chats adultes, une litière agglomérante déjà adoptée et la hauteur disponible. Pour un studio, un chat de taille moyenne ou un budget plus serré, la <strong>PetKit Pura Max 2</strong> ou un modèle bas est souvent plus raisonnable. Pas sûr qu’une litière automatique soit la bonne priorité ? Faites d’abord notre <a href="telechargement-audit.html">audit gratuit en 1 jour</a>, puis suivez le <a href="guide.html">plan en 7 jours</a> pour acheter dans le bon ordre.</p>
+<div class="pick"><h3>Vérifier le prix actuel</h3><p>Les prix varient selon la période et le vendeur : comparez les offres avant de commander.</p>{amz("Whisker Litter-Robot 4 litière automatique","offres Litter-Robot 4")}</div>
+<p class="note">Une litière automatique ne remplace pas l’observation de votre chat. Un changement soudain du nombre de passages, des efforts pour uriner, du sang ou une malpropreté nouvelle justifient de consulter un vétérinaire rapidement — surtout chez un chat mâle.</p>''')
+
+# ---------- 15 caméra chat friandises (AOV élevé)
+page("camera-chat-friandises-2026.html",
+ "Caméra chat avec lanceur de friandises 2026 : Furbo, Petcube et critères",
+ "Caméra chat avec lanceur de friandises en 2026 : Furbo, Petcube et alternatives. Audio 2 voies, abonnement cloud ou microSD, vie privée en appartement.",
+ "Caméra chat avec lanceur de friandises : Furbo, Petcube et les critères 2026",
+ f'''<p class="lead">Voir son chat, lui parler et lui lancer une friandise depuis le bureau : c’est la promesse des <strong>caméras pour animaux avec lanceur de friandises</strong>, dont les plus connues sont <strong>Furbo</strong> et <strong>Petcube</strong>. Ce sont des caméras premium, plus chères qu’une caméra domestique classique, et souvent accompagnées d’un abonnement. Voici comment savoir si l’achat se justifie pour votre chat, et quoi vérifier avant de commander. Nous n’affichons pas de prix : ils évoluent souvent, vérifiez-les sur la page du vendeur.</p>
+<h2>Caméra à friandises ou caméra classique ?</h2>
+<table><thead><tr><th></th><th>Caméra à friandises (Furbo, Petcube…)</th><th>Caméra intérieure classique</th></tr></thead><tbody>
+<tr><td>Interaction</td><td>Lancer de friandise, audio 2 voies</td><td>Audio 2 voies sur beaucoup de modèles</td></tr>
+<tr><td>Alertes « animal »</td><td>Souvent, parfois sous abonnement</td><td>Variable selon la marque</td></tr>
+<tr><td>Stockage vidéo</td><td>Surtout cloud, abonnement fréquent</td><td>Souvent microSD sans abonnement</td></tr>
+<tr><td>Budget</td><td>Élevé (+ abonnement éventuel)</td><td>Plus modéré</td></tr>
+<tr><td>Pour qui</td><td>Chat gourmand, longues journées, envie d’interagir</td><td>Juste vérifier que tout va bien</td></tr>
+</tbody></table>
+<p>Si vous voulez seulement jeter un coup d’œil, notre <a href="camera-surveillance-chat-appartement.html">guide caméra de surveillance pour chat d’appartement</a> détaille les caméras motorisées avec microSD, sans abonnement.</p>
+<h2>Furbo : l’interaction avant tout</h2>
+<p>Furbo s’est fait connaître avec ses caméras pour chiens à lancer de friandises, et propose aussi une version pensée pour les chats. Le principe : un réservoir de petites friandises sèches, un bouton dans l’application pour en lancer une, une caméra grand angle ou rotative selon le modèle et l’audio bidirectionnel. Les alertes intelligentes et l’historique vidéo passent généralement par l’abonnement de la marque (Furbo Nanny). Vérifiez sur la fiche ce qui reste utilisable <strong>sans</strong> abonnement : direct, lancer, audio.</p>
+<div class="pick"><h3>Caméras Furbo</h3><p>Pour : interaction ludique, application simple. Vérifiez : version chat ou chien, taille de friandises acceptée, fonctions incluses sans abonnement.</p>{amz("Furbo caméra chat","Furbo")}</div>
+<h2>Petcube : une gamme plus large</h2>
+<p>Petcube propose plusieurs caméras, dont des modèles à friandises (gamme Bites) et des caméras simples. Comme chez Furbo, une partie des fonctions avancées (historique vidéo dans le cloud, alertes enrichies) dépend d’un abonnement (Petcube Care). Comparez les modèles : rotation ou non, vision nocturne, stockage local possible ou non, taille du réservoir.</p>
+<div class="pick"><h3>Caméras Petcube à friandises</h3><p>Pour : choix de modèles, audio 2 voies. Vérifiez : modèle à friandises (Bites) ou non, abonnement, emplacement microSD.</p>{amz("Petcube Bites caméra friandises","Petcube")}</div>
+<h2>Les critères qui comptent</h2>
+<ul>
+<li><strong>Lanceur adapté aux chats</strong> : taille et forme des friandises acceptées, distance de lancer, bruit du mécanisme (certains chats s’en effraient au début).</li>
+<li><strong>Audio 2 voies</strong> : utile pour rassurer ou appeler, mais certains chats sont perturbés d’entendre votre voix sans vous voir. Testez-le en votre présence.</li>
+<li><strong>Abonnement cloud vs microSD</strong> : c’est le vrai coût caché. Un abonnement mensuel pèse sur la facture à 2–3 ans. Une caméra avec <strong>microSD</strong> enregistre en local, sans abonnement — vérifiez si le modèle visé l’accepte.</li>
+<li><strong>Champ de vision</strong> : grand angle fixe dans un studio, rotation à 360° pour couvrir une pièce plus grande.</li>
+<li><strong>Vision nocturne</strong> : indispensable pour regarder le soir ou en hiver.</li>
+<li><strong>Wi-Fi 2,4 GHz</strong> : la plupart des caméras ne se connectent qu’à cette bande ; vérifiez la portée dans la pièce visée.</li>
+<li><strong>Stabilité</strong> : un chat curieux renverse ce qui est posé au bord. Placez la caméra à plat, sur un meuble stable, câble protégé.</li>
+</ul>
+<h2>Vie privée en appartement</h2>
+<p>Une caméra intérieure filme aussi les humains. Prévenez colocataires, pet-sitter ou aide-ménagère : filmer quelqu’un à son insu chez vous peut poser un problème juridique. Côté sécurité : mot de passe unique, double authentification du compte quand elle existe, mises à jour de l’application et du firmware. Préférez un modèle qui permet de <strong>désactiver la caméra ou de programmer des plages</strong> quand vous êtes à la maison. Avec le cloud, vos vidéos sont stockées chez le fabricant : lisez sa politique de confidentialité. Avec la microSD, elles restent chez vous.</p>
+<h2>Friandises : la bonne dose</h2>
+<p>Le lancer de friandises est un jeu, pas un repas. Réservez quelques friandises sèches de petite taille, adaptées au lanceur, et retirez-les de la ration quotidienne. Pour un chat en surpoids, utilisez quelques croquettes de sa ration habituelle à la place.</p>
+<div class="pick"><h3>Autres caméras chat avec friandises</h3><p>D’autres marques proposent des caméras à friandises ou des distributeurs avec caméra : vérifiez abonnement, microSD et avis sur la fiabilité du lanceur.</p>{amz("caméra chat lanceur de friandises wifi","caméras à friandises")}</div>
+<div class="pick"><h3>Alternative : distributeur de croquettes avec caméra</h3><p>Un seul appareil pour nourrir aux heures fixes et voir le chat au moment du repas. Voir notre <a href="distributeur-croquettes-connecte.html">guide des distributeurs connectés</a>.</p>{amz("distributeur croquettes chat caméra wifi","distributeurs avec caméra")}</div>
+<h2>Notre avis</h2>
+<p>Une <strong>caméra à friandises</strong> vaut le coup si votre chat est gourmand, si vous êtes absent de longues journées et si vous voulez <em>interagir</em> plutôt que simplement regarder. Faites le calcul de l’abonnement sur 2–3 ans et vérifiez les fonctions disponibles sans lui. Si vous voulez seulement vérifier que tout va bien, une caméra motorisée avec microSD suffit : voyez notre <a href="camera-surveillance-chat-appartement.html">guide caméra de surveillance</a>. Pour savoir quoi acheter en priorité, commencez par l’<a href="telechargement-audit.html">audit gratuit en 1 jour</a> ou suivez le <a href="guide.html">plan en 7 jours</a>.</p>
+<p class="note">Une caméra ne remplace ni votre présence ni un pet-sitter pour les absences de plus d’un week-end. Un chat qui mange moins, se cache ou change de comportement à l’écran doit être vu par un vétérinaire.</p>''')
+
 # ---------- guide payant
 page("guide.html",
  "Chat d’appartement connecté : le plan en 7 jours – guide PDF 12 €",
@@ -753,6 +861,6 @@ page("checklist.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</li></ul>
 <p>Détails : <a href="affiliation.html">affiliation &amp; mentions légales</a>. Pour commencer gratuitement : <a href="telechargement-audit.html">audit gratuit (PDF)</a>.</p>''',related=False)
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
