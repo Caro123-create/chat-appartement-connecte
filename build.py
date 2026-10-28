@@ -14,11 +14,12 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-10-27"
+TODAY="2026-10-28"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
-NAV=[("objets-connectes-chat.html","Objets connectés chat"),
+NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
+     ("objets-connectes-chat.html","Objets connectés chat"),
      ("top-5-equipements-chat-appartement-2026.html","Top 5 équipements 2026"),
      ("meilleure-litiere-automatique-2026.html","Litière automatique"),
      ("gps-chat-tractive-vs-airtag.html","GPS chat"),
@@ -61,7 +62,7 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 {(CTA_BANNER+AUDIT_LINK) if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html","checklist.html") else ""}
 {rel}
 </main>
-<footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 27 octobre 2026.</p>
+<footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 28 octobre 2026.</p>
 <p>En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises. <a href="affiliation.html">Affiliation &amp; mentions légales</a></p>
 <p>Nos guides ne remplacent pas l’avis d’un vétérinaire.</p></footer>
 </body></html>'''
@@ -86,6 +87,7 @@ page("index.html",
 <p>Nous partons des fiches et manuels des fabricants, des retours d’utilisateurs et des contraintes concrètes d’un logement (surface, prises, Wi-Fi 2,4 GHz). Quand une donnée n’est pas claire ou varie selon les versions, nous le disons plutôt que d’inventer un chiffre. Les prix changent souvent : nous n’en affichons pas de précis, vérifiez-les sur la page du vendeur.</p>
 <h2>Par où commencer ?</h2>
 <ul>
+<li>Vous accueillez un chat ou faites le point : notre <a href="equipement-chat-appartement.html">checklist complète de l’équipement pour chat d’appartement</a> (indispensable, utile, superflu).</li>
 <li>Vous découvrez le sujet : notre panorama des <a href="objets-connectes-chat.html">objets connectés pour chat</a> (litière, fontaine, distributeur, GPS, caméra) et l’ordre d’achat conseillé.</li>
 <li>Vous voulez l’essentiel en une page : notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements pour chat d’appartement 2026</a>.</li>
 <li>Vous travaillez de longues journées : commencez par le <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> et la <a href="meilleure-fontaine-eau-chat-2026.html">fontaine à eau</a>.</li>
@@ -363,7 +365,7 @@ page("budget-kit-chat-appartement-connecte.html",
  "Budget : équiper un chat d’appartement en connecté (kit débutant)",
  f'''<p class="lead">Fontaine, distributeur, caméra, litière automatique, GPS… Tout acheter d’un coup coûte cher et n’est pas nécessaire. Ce guide vous aide à prioriser selon votre mode de vie et votre budget, en commençant par ce qui apporte le plus au chat. Nous n’affichons pas de prix précis, car ils changent souvent : vérifiez-les sur la page du vendeur.</p>
 <h2>La règle : d’abord le chat, ensuite les gadgets</h2>
-<p>Avant tout objet connecté, un chat d’intérieur a besoin d’un arbre à chat ou d’espaces en hauteur, de griffoirs, de jeux quotidiens avec vous et d’une litière propre. Le connecté vient <em>en plus</em>, pour vous faciliter la vie quand vous êtes absent.</p>
+<p>Avant tout objet connecté, un chat d’intérieur a besoin d’un arbre à chat ou d’espaces en hauteur, de griffoirs, de jeux quotidiens avec vous et d’une litière propre. Le connecté vient <em>en plus</em>, pour vous faciliter la vie quand vous êtes absent. Notre <a href="equipement-chat-appartement.html">checklist équipement chat d’appartement</a> liste cette base indispensable.</p>
 <h2>Niveau 1 — Kit débutant (petit budget)</h2>
 <p>Les deux objets qui ont l’impact le plus direct sur le quotidien du chat :</p>
 <div class="pick"><h3>Une fontaine à eau</h3><p>Elle incite beaucoup de chats à boire davantage. Un modèle simple non connecté suffit pour commencer ; la version connectée ajoute des alertes de niveau d’eau. Voir notre <a href="meilleure-fontaine-eau-chat-2026.html">guide des fontaines</a>.</p>{amz("fontaine à eau chat pompe sans fil","fontaines")}</div>
@@ -443,7 +445,7 @@ page("top-5-equipements-chat-appartement-2026.html",
 <ol><li><strong>Fontaine</strong> et <strong>distributeur</strong> : impact direct sur le quotidien du chat, budget limité.</li>
 <li><strong>Caméra</strong> si vous êtes souvent absent ; <strong>traceur</strong> si le chat a accès au balcon.</li>
 <li><strong>Litière automatique</strong> quand l’emplacement est mesuré et le budget prêt.</li></ol>
-<p>Pour un plan par budget et par profil, voyez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</p>
+<p>Pour un plan par budget et par profil, voyez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>. Pour l’équipement de base (arbre à chat, griffoir, caisse de transport, gamelles, litière), voyez notre <a href="equipement-chat-appartement.html">checklist complète équipement chat d’appartement</a>.</p>
 <p class="note">Aucun appareil ne remplace votre présence, des jeux quotidiens ni l’avis d’un vétérinaire. Un changement soudain de consommation d’eau, d’appétit ou de passages à la litière doit être signalé au vétérinaire.</p>''')
 
 # ---------- 11 litière automatique chat appartement (SEO)
@@ -550,6 +552,7 @@ page("objets-connectes-chat.html",
 <li><strong>Litière automatique</strong> quand l’emplacement est mesuré et le budget prêt.</li>
 <li><strong>GPS ou caméra</strong> selon votre situation (chat qui sort, absences longues).</li>
 </ol>
+<p>Avant le connecté, vérifiez que la base est en place avec notre <a href="equipement-chat-appartement.html">checklist équipement chat d’appartement</a> (arbre à chat, griffoir, transport, litière, sécurité).</p>
 <p>Pour un budget détaillé par scénario, voyez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a> et notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>
 <h2>Les pièges à éviter</h2>
 <ul>
@@ -561,6 +564,79 @@ page("objets-connectes-chat.html",
 <h2>Notre avis</h2>
 <p>Les objets connectés pour chat sont utiles quand ils répondent à un problème précis : odeur (litière automatique), hydratation (fontaine), horaires (distributeur), fugue (GPS), absence (caméra). Commencez petit, observez votre chat, puis investissez là où le bénéfice est réel. Pour tout faire dans l’ordre, suivez le <a href="guide.html">plan en 7 jours</a> ou vérifiez chaque achat avec la <a href="checklist.html">checklist shopping du chat connecté</a> (produits payants via Gumroad). Retour à <a href="./">l’accueil</a> pour tous nos guides.</p>
 <p class="note">Aucun appareil ne remplace votre présence, des jeux quotidiens ni l’avis d’un vétérinaire. Un changement soudain de consommation d’eau, d’appétit ou de passages à la litière doit être signalé au vétérinaire.</p>''')
+
+# ---------- 13 équipement chat d'appartement (SEO head term, checklist)
+page("equipement-chat-appartement.html",
+ "Équipement chat d'appartement : checklist complète 2026",
+ "Équipement chat d'appartement : checklist complète 2026. Arbre à chat, griffoir, litière, gamelles, transport, sécurité, puis le connecté vraiment utile.",
+ "Équipement chat d’appartement : la checklist complète (2026)",
+ f'''<p class="lead">Un chat qui ne sort pas vit tout entier dans votre logement : c’est donc à vous de lui offrir de quoi grimper, griffer, se cacher, boire, manger et faire ses besoins dans de bonnes conditions. Cette <strong>checklist de l’équipement pour chat d’appartement</strong> fait le tri entre l’<strong>indispensable</strong> (à avoir dès le premier jour), l’<strong>utile</strong> (à ajouter quand le chat a pris ses marques) et le <strong>superflu</strong>. Les objets connectés arrivent en dernier, seulement s’ils règlent un vrai problème. Nous n’affichons pas de prix : ils changent souvent, vérifiez-les sur la page du vendeur.</p>
+<h2>La checklist en un tableau</h2>
+<table><thead><tr><th>Équipement</th><th>Niveau</th><th>Pourquoi en appartement</th></tr></thead><tbody>
+<tr><td>Bac à litière + litière + pelle</td><td>Indispensable</td><td>Premier jour, avant même l’arrivée du chat</td></tr>
+<tr><td>Gamelles eau et nourriture</td><td>Indispensable</td><td>Idéalement séparées, loin de la litière</td></tr>
+<tr><td>Griffoir</td><td>Indispensable</td><td>Protège canapé et murs, besoin naturel du chat</td></tr>
+<tr><td>Arbre à chat ou espaces en hauteur</td><td>Indispensable</td><td>Compense l’absence d’extérieur, observe et se repose en hauteur</td></tr>
+<tr><td>Caisse de transport</td><td>Indispensable</td><td>Vétérinaire, déménagement, urgence</td></tr>
+<tr><td>Couchage / cachettes</td><td>Indispensable</td><td>Un chat a besoin d’endroits pour se retirer</td></tr>
+<tr><td>Jouets interactifs (canne à pêche…)</td><td>Indispensable</td><td>Seule façon de « chasser » en intérieur</td></tr>
+<tr><td>Brosse, coupe-griffes</td><td>Utile</td><td>Selon le pelage et l’usure naturelle des griffes</td></tr>
+<tr><td>Filet de balcon / sécurité fenêtres</td><td>Indispensable si balcon ou fenêtres ouvertes</td><td>Prévient chutes et fugues</td></tr>
+<tr><td>Fontaine à eau</td><td>Utile</td><td>Incite beaucoup de chats à boire davantage</td></tr>
+<tr><td>Distributeur programmable</td><td>Utile selon vos horaires</td><td>Repas réguliers quand vous rentrez tard</td></tr>
+<tr><td>Litière automatique</td><td>Confort (gros budget)</td><td>Odeurs dans un petit logement</td></tr>
+<tr><td>Caméra, GPS</td><td>Selon situation</td><td>Absences longues, chat qui peut s’échapper</td></tr>
+</tbody></table>
+<h2>Arbre à chat et griffoir : la base d’un chat d’intérieur</h2>
+<p>En appartement, l’espace au sol est limité : il faut donc donner au chat de la <strong>hauteur</strong>. Un arbre à chat stable, des étagères murales ou le haut d’un meuble dégagé lui permettent d’observer, de se reposer et d’éviter les conflits avec un autre animal. Le <strong>griffoir</strong> est tout aussi important : griffer est un besoin (entretien des griffes, marquage, étirement), pas un caprice.</p>
+<ul>
+<li><strong>Stabilité avant tout</strong> : un arbre qui vacille sera boudé. Préférez une base large, ou une fixation au mur pour les modèles hauts.</li>
+<li><strong>Placement</strong> : près d’une fenêtre (le chat aime regarder dehors) et dans une pièce de vie, pas isolé dans une chambre fermée.</li>
+<li><strong>Griffoirs variés</strong> : vertical (poteau en sisal) et horizontal (carton), placés là où le chat griffe déjà — souvent près de son couchage et de l’entrée.</li>
+</ul>
+<div class="pick"><h3>Arbres à chat pour appartement</h3><p>Cherchez un modèle adapté à la hauteur sous plafond et au gabarit de votre chat, avec plateformes larges et poteaux en sisal.</p>{amz("arbre à chat appartement stable","arbres à chat")}</div>
+<div class="pick"><h3>Griffoirs</h3><p>Un poteau vertical assez haut pour que le chat s’étire complètement, et un griffoir carton au sol en complément.</p>{amz("griffoir chat sisal vertical","griffoirs")}</div>
+<h2>Couchage et transport</h2>
+<p>Le chat choisit souvent son propre coin pour dormir : un panier, un coussin sur une plateforme de l’arbre ou un simple carton peuvent convenir. Prévoyez au moins une <strong>cachette</strong> (niche, igloo, dessous de lit accessible) où il peut se retirer, surtout dans les premiers jours ou si vous recevez du monde.</p>
+<p>La <strong>caisse de transport</strong> est indispensable dès le départ, ne serait-ce que pour la première visite chez le vétérinaire. Un modèle rigide qui s’ouvre aussi par le dessus facilite l’examen et la mise en caisse. Laissez-la ouverte dans le logement avec un plaid : le chat l’associera à un lieu familier plutôt qu’au vétérinaire.</p>
+<div class="pick"><h3>Caisses de transport</h3><p>Privilégiez une caisse rigide, bien ventilée, avec ouverture par le dessus et fermeture sûre.</p>{amz("caisse transport chat rigide ouverture dessus","caisses de transport")}</div>
+<h2>Eau et nourriture : gamelles, fontaine, distributeur</h2>
+<p>Gamelles en <strong>inox ou céramique</strong>, faciles à laver, larges et peu profondes pour ne pas gêner les moustaches. Placez l’eau à l’écart de la nourriture et toujours loin de la litière. Beaucoup de chats nourris aux croquettes boivent peu : c’est là qu’une <strong>fontaine à eau</strong> devient intéressante. Si vous avez des horaires irréguliers, un <strong>distributeur programmable</strong> assure des repas à heure fixe.</p>
+<div class="pick"><h3>Gamelles</h3><p>Inox ou céramique, plates et stables. Une gamelle surélevée peut convenir à certains chats.</p>{amz("gamelle chat inox céramique","gamelles")}</div>
+<div class="pick"><h3>Quand passer au connecté : fontaine et distributeur</h3><p>Une fontaine simple suffit pour commencer ; la version connectée ajoute des alertes de niveau d’eau. Pour le distributeur, exigez une alimentation de secours et un programme qui fonctionne sans Wi-Fi. Détails dans nos guides <a href="meilleure-fontaine-eau-chat-2026.html">fontaine à eau</a> et <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a>.</p>{amz("fontaine à eau chat pompe sans fil","fontaines")}</div>
+<h2>Litière : bac classique d’abord</h2>
+<p>Pour démarrer, un <strong>bac classique</strong> (ouvert ou couvert selon les préférences du chat) assez grand pour qu’il s’y retourne, une litière qu’il accepte et une pelle suffisent. Placez-le dans un endroit calme, accessible en permanence et aéré (salle de bain, entrée), loin des gamelles. Ramassez chaque jour : un bac sale est l’une des causes fréquentes de malpropreté.</p>
+<p>La <strong>litière automatique</strong> vient plus tard, pour un chat adulte bien installé, si les odeurs posent problème dans un petit logement. Mesurez l’emplacement avant d’acheter et gardez l’ancien bac pendant la transition. Voir notre <a href="litiere-automatique-chat-appartement.html">guide litière automatique chat appartement</a>.</p>
+<div class="pick"><h3>Bacs à litière</h3><p>Choisissez un bac assez grand pour le gabarit adulte de votre chat ; le couvercle limite les projections mais certains chats le refusent.</p>{amz("bac à litière chat grand","bacs à litière")}</div>
+<h2>Sécurité : fenêtres, balcon, identification</h2>
+<ul>
+<li><strong>Fenêtres et balcon</strong> : un chat peut tomber ou s’échapper par une fenêtre ouverte ou un balcon. Un filet de protection ou des moustiquaires renforcées sont la meilleure prévention. Méfiez-vous des fenêtres oscillo-battantes, où un chat peut se coincer.</li>
+<li><strong>Plantes et produits</strong> : certaines plantes d’intérieur et fleurs coupées (le lys notamment) sont toxiques pour le chat ; rangez produits ménagers et médicaments.</li>
+<li><strong>Câbles et petits objets</strong> : élastiques, fils, ficelles peuvent être avalés.</li>
+<li><strong>Identification</strong> : en France, l’identification (puce ou tatouage) est obligatoire pour les chats de plus de 7 mois nés après le 1<sup>er</sup> janvier 2012. Gardez vos coordonnées à jour au fichier I-CAD.</li>
+<li><strong>Traceur ou caméra</strong> : seulement si votre chat peut sortir ou si vous êtes souvent absent. Voir <a href="gps-chat-tractive-vs-airtag.html">GPS chat : Tractive ou AirTag</a>, <a href="collier-gps-chat-sans-abonnement.html">GPS sans abonnement</a> et notre <a href="camera-surveillance-chat-appartement.html">guide caméra pour chat</a>.</li>
+</ul>
+<div class="pick"><h3>Filets de protection balcon et fenêtre</h3><p>Vérifiez les conditions de fixation autorisées par votre bail ou votre copropriété avant d’installer.</p>{amz("filet protection chat balcon fenêtre","filets de protection")}</div>
+<h2>Dans quel ordre acheter ?</h2>
+<ol>
+<li><strong>Avant l’arrivée</strong> : bac + litière + pelle, gamelles, caisse de transport, griffoir, un couchage ou une cachette, quelques jouets.</li>
+<li><strong>Première semaine</strong> : arbre à chat ou espaces en hauteur, sécurisation des fenêtres et du balcon.</li>
+<li><strong>Quand le chat a pris ses marques</strong> : fontaine à eau, puis distributeur si vos horaires l’exigent.</li>
+<li><strong>Plus tard, si besoin réel</strong> : litière automatique, caméra, traceur. Voir notre panorama des <a href="objets-connectes-chat.html">objets connectés pour chat</a> et notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements connectés 2026</a>.</li>
+</ol>
+<p>Pour répartir le budget par niveau, consultez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant et budget</a>. Pas sûr de ce dont votre chat a vraiment besoin ? Faites d’abord notre <a href="telechargement-audit.html">audit gratuit en 1 jour</a>.</p>
+<h2>Indispensable ou superflu ? Les pièges à éviter</h2>
+<ul>
+<li><strong>Tout acheter d’un coup</strong> : le chat a besoin de temps pour adopter chaque nouvel objet, et ses préférences (type de litière, de couchage) se découvrent à l’usage.</li>
+<li><strong>Un arbre à chat instable ou trop petit</strong> : il finit inutilisé. Mieux vaut un modèle solide qu’un modèle à multiples gadgets.</li>
+<li><strong>Remplacer le jeu par des gadgets</strong> : un jouet laser automatique ne remplace pas une séance de jeu avec vous ; terminez toujours par une proie que le chat peut attraper.</li>
+<li><strong>Des produits trop parfumés</strong> (litière, désodorisant) : beaucoup de chats les fuient.</li>
+<li><strong>Le connecté avant la base</strong> : une litière automatique ne compense pas l’absence de griffoir ou de hauteur.</li>
+<li><strong>Compter sur les appareils pour une longue absence</strong> : au-delà d’un week-end, faites passer quelqu’un.</li>
+</ul>
+<h2>Notre avis</h2>
+<p>L’équipement d’un chat d’appartement tient d’abord en quelques basiques bien choisis : <strong>litière propre, eau et nourriture séparées, griffoir, hauteur, cachette, caisse de transport et fenêtres sécurisées</strong>. Le connecté (fontaine, distributeur, litière automatique, caméra, GPS) vient ensuite, un objet à la fois, pour répondre à un problème précis. Pour tout mettre en place dans l’ordre, suivez le <a href="guide.html">plan en 7 jours</a> (produit payant).</p>
+<p class="note">Cette checklist ne remplace pas l’avis d’un vétérinaire. Une première visite après l’adoption permet de faire le point sur la santé, la vaccination, l’identification et l’alimentation de votre chat ; tout changement soudain d’appétit, de consommation d’eau ou de passages à la litière doit lui être signalé.</p>''')
 
 # ---------- guide payant
 page("guide.html",
@@ -677,6 +753,6 @@ page("checklist.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</li></ul>
 <p>Détails : <a href="affiliation.html">affiliation &amp; mentions légales</a>. Pour commencer gratuitement : <a href="telechargement-audit.html">audit gratuit (PDF)</a>.</p>''',related=False)
 
-urls=["","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","camera-surveillance-chat-appartement.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
