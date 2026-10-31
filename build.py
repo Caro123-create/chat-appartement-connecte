@@ -41,6 +41,48 @@ CHECKLIST_PRICE="6,90 €"
 CTA_BANNER=f'''<aside class="paid-cta"><p><strong>Guide payant — {PRODUCT} ({PRICE})</strong><br>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p><p><a class="btn-paid" href="guide.html">Découvrir le plan en 7 jours</a></p><p class="note">Produit numérique payant, vendu séparément via Gumroad. Ce n’est pas un lien d’affiliation Amazon.</p></aside>'''
 AUDIT_LINK='<p class="note">Pas encore prêt à acheter ? Commencez par notre <a href="telechargement-audit.html">audit gratuit en 1 jour (PDF)</a>.</p>'
 DISC='<p class="disc">Liens affiliés Amazon — nous pouvons toucher une commission sans surcoût pour vous.</p>'
+
+# ---------- AdSense (ca-pub-6018788861622975) — RGPD : meta seule dans <head>, script chargé uniquement après consentement
+ADS_PUB="ca-pub-6018788861622975"
+ADS_META=f'<meta name="google-adsense-account" content="{ADS_PUB}">'
+ADS_TXT="google.com, pub-6018788861622975, DIRECT, f08c47fec0942fa0\n"
+CONSENT=f"""<!-- cookie-consent:start -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+<div class="cookie-banner-inner">
+<p>{SITE} utilise des cookies pour l’affiliation Amazon et, si vous acceptez, pour la publicité (Google AdSense). Vous pouvez accepter ou refuser les cookies non essentiels. <a href="affiliation.html#cookies">Confidentialité &amp; cookies</a></p>
+<div class="cookie-banner-actions">
+<button type="button" class="cookie-refuse" id="cookie-refuse">Refuser</button>
+<button type="button" class="cookie-accept" id="cookie-accept">Accepter</button>
+</div></div></div>
+<script>
+/* v2-consent-gated: AdSense loads ONLY after consent === 'accepted' */
+(function(){{
+  var KEY='chatappartementconnecte_cookie_consent';
+  function loadAds(){{
+    if(window.__siteAdsLoaded) return; window.__siteAdsLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADS_PUB}';
+    document.head.appendChild(s);
+  }}
+  var v=null; try{{ v=localStorage.getItem(KEY); }}catch(e){{}}
+  if(v==='accepted') loadAds();
+  var b=document.getElementById('cookie-banner');
+  if(!b) return;
+  function set(val){{ try{{ localStorage.setItem(KEY,val);}}catch(e){{}} b.hidden=true; if(val==='accepted') loadAds(); }}
+  if(v==='accepted'||v==='refused'){{ b.hidden=true; return; }}
+  b.hidden=false;
+  document.getElementById('cookie-accept').onclick=function(){{ set('accepted'); }};
+  document.getElementById('cookie-refuse').onclick=function(){{ set('refused'); }};
+}})();
+</script>
+<!-- cookie-consent:end -->
+"""
+
+# ASINs Amazon FR vérifiés (31/10/2026) : liens /dp/ sur les pages AOV, sinon recherche Amazon
+DP_PAGES={
+ "litter-robot-4-avis-2026.html":{"Litter-Robot 4":"B0CFTFRZ43","litière agglomérante chat sans parfum":"B0CTCFWBQC","PetKit Pura Max 2":"B0D9QJZ7FG","Whisker Litter-Robot 4 litière automatique":"B0CFTFRZ43"},
+ "camera-chat-friandises-2026.html":{"Furbo caméra chat":"B0C4XXBY44","Petcube Bites caméra friandises":"B09FF89CC3","distributeur croquettes chat caméra wifi":"B0DMNN4CSZ"},
+}
 def page(fn,title,desc,h1,body,related=True,head_extra=""):
     nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a><a class="nav-paid" href="checklist.html">Checklist (6,90 €)</a><a href="telechargement-audit.html">Audit gratuit (PDF)</a>'
     rel=""
@@ -49,6 +91,7 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
     canon=BASE+("" if fn=="index.html" else fn)
     html=f'''<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
+{ADS_META}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -67,7 +110,9 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 <footer><p>{SITE} — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 28 octobre 2026.</p>
 <p>Partenaire Amazon · <a href="affiliation.html">Affiliation &amp; mentions légales</a></p>
 <p>Nos guides ne remplacent pas l’avis d’un vétérinaire.</p></footer>
-</body></html>'''
+{CONSENT}</body></html>'''
+    for q,asin in DP_PAGES.get(fn,{}).items():
+        html=html.replace("https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG,f"https://www.amazon.fr/dp/{asin}?tag={TAG}")
     open(fn,"w").write(html)
 
 # ---------- index
@@ -824,8 +869,8 @@ page("affiliation.html",
 <p>GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
 <h2>Contenu</h2>
 <p>Les guides sont fournis à titre informatif et ne constituent pas un avis vétérinaire. En cas de doute sur la santé de votre chat, consultez un vétérinaire.</p>
-<h2>Confidentialité et cookies</h2>
-<p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>
+<h2 id="cookies">Confidentialité et cookies</h2>
+<p>Ce site n’utilise pas d’outil de mesure d’audience. Il peut afficher des publicités via Google AdSense : Google et ses partenaires utilisent alors des cookies pour diffuser des annonces et mesurer leur performance. Ces cookies ne sont chargés qu’après votre accord via le bandeau (boutons « Accepter » / « Refuser ») ; pour changer d’avis, effacez les données du site dans votre navigateur. En savoir plus : <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">publicité Google</a>. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>
 <h2 id="newsletter">Newsletter / emails (RGPD)</h2>
 <p>Le formulaire de la page <a href="telechargement-audit.html">audit gratuit</a> collecte votre adresse email afin de vous envoyer l’audit PDF et des conseils liés au chat d’appartement connecté.</p>
 <ul><li><strong>Prestataire :</strong> les emails sont gérés via MailerLite (outil d’emailing), qui héberge la liste d’inscrits pour notre compte. Le formulaire est chargé depuis MailerLite et peut déposer les cookies techniques nécessaires à son fonctionnement.</li>
@@ -864,3 +909,18 @@ page("checklist.html",
 urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
+open("ads.txt","w").write(ADS_TXT)
+_css=open("styles.css").read()
+if ".cookie-banner{" not in _css:
+    open("styles.css","w").write(_css.rstrip("\n")+"""
+/* Cookie consent banner */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:1rem 1.25rem;box-shadow:0 -4px 20px rgba(0,0,0,.25);font-size:.95rem;line-height:1.45}
+.cookie-banner[hidden]{display:none!important}
+.cookie-banner a{color:#93c5fd;text-decoration:underline}
+.cookie-banner-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.75rem 1rem;align-items:center;justify-content:space-between}
+.cookie-banner p{margin:0;flex:1 1 280px}
+.cookie-banner-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+.cookie-banner button{border:0;border-radius:8px;padding:.55rem 1rem;font:inherit;cursor:pointer}
+.cookie-banner .cookie-accept{background:#16a34a;color:#fff}
+.cookie-banner .cookie-refuse{background:#374151;color:#f9fafb}
+""")

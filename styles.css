@@ -14,3 +14,13 @@ footer{background:#eee;padding:1rem;font-size:.85rem;text-align:center;margin-to
 .btn-paid{display:inline-block;background:#2e7d4f;color:#fff;font-weight:600;padding:.55rem 1rem;border-radius:8px;text-decoration:none;margin:.3rem .3rem 0 0}.btn-paid:hover{background:#246640}.btn-paid.alt{background:#fff;color:#2e7d4f;border:2px solid #2e7d4f}
 .paid-label{background:#eef6f0;border-left:4px solid #2e7d4f;padding:.6rem .8rem;font-size:.9rem}nav a.nav-paid{font-weight:700;color:#bfe8cc}
 .btn-secondary{background:#fff;color:inherit;border:1px solid currentColor;margin-left:.4rem}
+/* Cookie consent banner */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#1f2937;color:#f9fafb;padding:1rem 1.25rem;box-shadow:0 -4px 20px rgba(0,0,0,.25);font-size:.95rem;line-height:1.45}
+.cookie-banner[hidden]{display:none!important}
+.cookie-banner a{color:#93c5fd;text-decoration:underline}
+.cookie-banner-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.75rem 1rem;align-items:center;justify-content:space-between}
+.cookie-banner p{margin:0;flex:1 1 280px}
+.cookie-banner-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+.cookie-banner button{border:0;border-radius:8px;padding:.55rem 1rem;font:inherit;cursor:pointer}
+.cookie-banner .cookie-accept{background:#16a34a;color:#fff}
+.cookie-banner .cookie-refuse{background:#374151;color:#f9fafb}

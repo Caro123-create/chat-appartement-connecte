@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
+<meta name="google-adsense-account" content="ca-pub-6018788861622975">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Affiliation et mentions légales – Chat Appartement Connecté</title>
 <meta name="description" content="Mentions légales, politique d’affiliation (Partenaire Amazon) et confidentialité du site Chat Appartement Connecté.">
@@ -23,8 +24,8 @@
 <p>GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
 <h2>Contenu</h2>
 <p>Les guides sont fournis à titre informatif et ne constituent pas un avis vétérinaire. En cas de doute sur la santé de votre chat, consultez un vétérinaire.</p>
-<h2>Confidentialité et cookies</h2>
-<p>Ce site ne dépose pas de cookie publicitaire et n’utilise pas d’outil de mesure d’audience. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>
+<h2 id="cookies">Confidentialité et cookies</h2>
+<p>Ce site n’utilise pas d’outil de mesure d’audience. Il peut afficher des publicités via Google AdSense : Google et ses partenaires utilisent alors des cookies pour diffuser des annonces et mesurer leur performance. Ces cookies ne sont chargés qu’après votre accord via le bandeau (boutons « Accepter » / « Refuser ») ; pour changer d’avis, effacez les données du site dans votre navigateur. En savoir plus : <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">publicité Google</a>. En cliquant sur un lien Amazon, vous êtes soumis à la politique de confidentialité d’Amazon, qui peut utiliser des cookies pour attribuer la commission.</p>
 <h2 id="newsletter">Newsletter / emails (RGPD)</h2>
 <p>Le formulaire de la page <a href="telechargement-audit.html">audit gratuit</a> collecte votre adresse email afin de vous envoyer l’audit PDF et des conseils liés au chat d’appartement connecté.</p>
 <ul><li><strong>Prestataire :</strong> les emails sont gérés via MailerLite (outil d’emailing), qui héberge la liste d’inscrits pour notre compte. Le formulaire est chargé depuis MailerLite et peut déposer les cookies techniques nécessaires à son fonctionnement.</li>
@@ -40,4 +41,34 @@
 <footer><p>Chat Appartement Connecté — guides indépendants pour équiper un chat d’intérieur. Mis à jour le 28 octobre 2026.</p>
 <p>Partenaire Amazon · <a href="affiliation.html">Affiliation &amp; mentions légales</a></p>
 <p>Nos guides ne remplacent pas l’avis d’un vétérinaire.</p></footer>
+<!-- cookie-consent:start -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+<div class="cookie-banner-inner">
+<p>Chat Appartement Connecté utilise des cookies pour l’affiliation Amazon et, si vous acceptez, pour la publicité (Google AdSense). Vous pouvez accepter ou refuser les cookies non essentiels. <a href="affiliation.html#cookies">Confidentialité &amp; cookies</a></p>
+<div class="cookie-banner-actions">
+<button type="button" class="cookie-refuse" id="cookie-refuse">Refuser</button>
+<button type="button" class="cookie-accept" id="cookie-accept">Accepter</button>
+</div></div></div>
+<script>
+/* v2-consent-gated: AdSense loads ONLY after consent === 'accepted' */
+(function(){
+  var KEY='chatappartementconnecte_cookie_consent';
+  function loadAds(){
+    if(window.__siteAdsLoaded) return; window.__siteAdsLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6018788861622975';
+    document.head.appendChild(s);
+  }
+  var v=null; try{ v=localStorage.getItem(KEY); }catch(e){}
+  if(v==='accepted') loadAds();
+  var b=document.getElementById('cookie-banner');
+  if(!b) return;
+  function set(val){ try{ localStorage.setItem(KEY,val);}catch(e){} b.hidden=true; if(val==='accepted') loadAds(); }
+  if(v==='accepted'||v==='refused'){ b.hidden=true; return; }
+  b.hidden=false;
+  document.getElementById('cookie-accept').onclick=function(){ set('accepted'); };
+  document.getElementById('cookie-refuse').onclick=function(){ set('refused'); };
+})();
+</script>
+<!-- cookie-consent:end -->
 </body></html>
