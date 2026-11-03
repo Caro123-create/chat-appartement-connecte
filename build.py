@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-10-28"
+TODAY="2026-11-03"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -32,7 +32,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("collier-gps-chat-sans-abonnement.html","GPS sans abonnement"),
      ("litiere-automatique-petit-appartement.html","Litière petit appart"),
      ("litiere-automatique-chat-appartement.html","Litière chat appart"),
-     ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget")]
+     ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget"),
+     ("jouet-interactif-chat-appartement-2026.html","Jouet interactif")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -144,6 +145,7 @@ page("index.html",
 <li>Vous vivez dans un studio : notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a> (bruit, taille, odeurs).</li>
 <li>Vous voulez voir votre chat en journée : notre guide <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</li>
 <li>Vous hésitez à investir dans le haut de gamme : notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 (2026)</a> et notre guide <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</li>
+<li>Votre chat s’ennuie quand vous êtes absent : notre guide <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif automatique pour chat d’appartement</a> (balle, laser, plume).</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>''',related=False)
 
@@ -906,9 +908,66 @@ page("checklist.html",
 <li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous.</li></ul>
 <p>Détails : <a href="affiliation.html">affiliation &amp; mentions légales</a>. Pour commencer gratuitement : <a href="telechargement-audit.html">audit gratuit (PDF)</a>.</p>''',related=False)
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- jouet interactif (2026-11-03)
+page("jouet-interactif-chat-appartement-2026.html",
+ "Jouet interactif automatique pour chat d'appartement : lequel choisir ? (2026)",
+ "Balle roulante intelligente, laser automatique, plume électronique : quel jouet interactif choisir pour occuper ton chat d'appartement quand tu n'es pas là ?",
+ "Jouet interactif automatique pour chat d’appartement : lequel choisir ?",
+ f'''<figure class="hero"><img src="images/jouet-interactif-chat-hero.webp" width="1024" height="576" alt="Chat tigré qui joue avec une balle roulante automatique et une plume rotative dans un salon d’appartement lumineux" loading="eager"></figure>
+<p class="lead">Un chat d’intérieur s’ennuie vite quand tu pars travailler. Un jouet interactif automatique ne remplace pas une vraie séance de jeu avec toi, mais il peut lui offrir quelques moments de chasse dans la journée. Voici les trois familles de jouets qui marchent le mieux en appartement, avec ce qu’il faut vérifier avant d’acheter : bruit, autonomie, sécurité et facilité d’entretien.</p>
+<h2>Les 3 points à vérifier avant d’acheter</h2>
+<ul>
+<li><strong>Le bruit</strong> : en appartement, un moteur qui grince sur le parquet peut gêner les voisins du dessous. Privilégie les modèles annoncés « silencieux » et les coques en plastique souple.</li>
+<li><strong>Le mode automatique</strong> : un bon jouet se met en veille tout seul après quelques minutes puis se réveille quand le chat le touche. Sans ça, la batterie se vide et le chat se lasse.</li>
+<li><strong>La sécurité</strong> : pas de petites pièces qui se détachent facilement, une plume ou un embout remplaçable, et une recharge USB plutôt que des piles que le chat pourrait atteindre.</li>
+</ul>
+<h2>1. La balle roulante intelligente</h2>
+<div class="pick"><figure><img src="images/jouet-chat-balle-automatique.webp" width="1024" height="768" alt="Balle roulante automatique blanche et bleue avec plume, posée sur un parquet clair, patte de chat gris qui s’approche" loading="lazy"></figure>
+<h3>Pour le chat qui aime courser</h3>
+<p>La balle se déplace seule, change de direction quand elle touche un meuble et s’arrête après une courte session. C’est le jouet le plus polyvalent pour un salon ou un couloir. Choisis un modèle rechargeable en USB, avec plusieurs vitesses et une mise en veille automatique. Évite-la si ton logement a beaucoup de tapis épais : elle y roule mal.</p>
+{amz("balle interactive automatique chat rechargeable","balles interactives")}</div>
+<h2>2. Le laser automatique</h2>
+<div class="pick"><figure><img src="images/jouet-chat-laser-automatique.webp" width="1024" height="768" alt="Petit jouet laser automatique blanc posé sur une table basse, chat noir qui observe le point rouge sur le tapis" loading="lazy"></figure>
+<h3>Pour le chat très joueur, à petites doses</h3>
+<p>Posé sur un meuble, il projette un point lumineux qui bouge au sol selon un parcours aléatoire. Il occupe beaucoup d’espace sans rien encombrer, ce qui est pratique en studio. Attention : certains chats deviennent frustrés par une « proie » qu’ils n’attrapent jamais. Garde des séances courtes, avec minuterie, et termine toujours par un jouet qu’il peut vraiment attraper. Le faisceau ne doit jamais viser les yeux.</p>
+{amz("jouet laser automatique chat minuterie","lasers automatiques")}</div>
+<h2>3. La plume électronique (jouet cache-cache)</h2>
+<div class="pick"><figure><img src="images/jouet-chat-plume-electronique.webp" width="1024" height="768" alt="Jouet électronique rond avec une plume qui sort des trous, chat roux qui bondit dessus sur un tapis blanc" loading="lazy"></figure>
+<h3>Pour le chat qui aime guetter</h3>
+<p>Une base ronde fait apparaître et disparaître une plume par des trous, ou fait tourner une tige sous un tissu. Ça imite une proie qui se cache, et beaucoup de chats adorent bondir dessus. C’est le jouet le plus stable : il ne roule pas sous le canapé. Vérifie que les plumes de rechange sont fournies, car elles s’abîment vite.</p>
+{amz("jouet chat électronique plume interactif","plumes électroniques")}</div>
+<h2>Quel jouet pour quel chat ?</h2>
+<table><thead><tr><th>Profil</th><th>Jouet conseillé</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Jeune chat très actif</td><td>Balle roulante</td><td>Bruit sur parquet</td></tr>
+<tr><td>Chat qui chasse les reflets</td><td>Laser automatique</td><td>Séances courtes, finir par une vraie proie</td></tr>
+<tr><td>Chat plus calme ou âgé</td><td>Plume électronique</td><td>Plumes de rechange</td></tr>
+<tr><td>Studio, peu de place</td><td>Laser ou plume</td><td>Placer hors des zones de passage</td></tr>
+</tbody></table>
+<h2>Conseils pour que ton chat ne s’en lasse pas</h2>
+<ul>
+<li>Ne laisse pas le jouet en accès libre toute la journée : sors-le, puis range-le. La nouveauté compte beaucoup pour un chat.</li>
+<li>Alterne deux ou trois jouets différents d’une semaine à l’autre.</li>
+<li>Associe le jeu à un repas : un <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> juste après une session reproduit le cycle chasse puis repas.</li>
+<li>Si tu veux voir comment il joue en ton absence, une <a href="camera-chat-friandises-2026.html">caméra à friandises</a> permet aussi d’interagir à distance.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Un jouet automatique suffit-il à occuper un chat seul toute la journée ?</h3>
+<p>Non. Il apporte quelques moments de stimulation, mais un chat d’appartement a aussi besoin d’un arbre à chat, de cachettes et de vraies séances de jeu avec toi. Vois notre <a href="equipement-chat-appartement.html">checklist équipement chat d’appartement</a>.</p>
+<h3>Les jouets laser sont-ils déconseillés ?</h3>
+<p>Ils ne sont pas à bannir, mais à utiliser avec modération : séances courtes, jamais dans les yeux, et toujours une proie attrapable à la fin pour éviter la frustration.</p>
+<h3>Rechargeable ou à piles ?</h3>
+<p>Rechargeable en USB, de préférence : pas de compartiment à piles que le chat pourrait ouvrir, et moins de déchets.</p>
+<h3>Mon chat a peur du jouet, que faire ?</h3>
+<p>Laisse-le d’abord éteint quelques jours pour qu’il le renifle, puis lance-le à vitesse lente, à distance. Si ton chat montre un stress inhabituel, parles-en à ton vétérinaire.</p>
+<h2>Notre avis</h2>
+<p>Pour la plupart des chats d’appartement, la <strong>balle roulante rechargeable avec mise en veille</strong> est le meilleur premier achat. Ajoute une <strong>plume électronique</strong> pour un chat plus posé, et garde le laser pour des séances courtes. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/jouet-interactif-chat-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
-open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\n")
+IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"]}
+open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
+open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
 _css=open("styles.css").read()
 if ".cookie-banner{" not in _css:
