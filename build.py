@@ -33,7 +33,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("litiere-automatique-petit-appartement.html","Litière petit appart"),
      ("litiere-automatique-chat-appartement.html","Litière chat appart"),
      ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget"),
-     ("jouet-interactif-chat-appartement-2026.html","Jouet interactif")]
+     ("jouet-interactif-chat-appartement-2026.html","Jouet interactif"),
+     ("filet-protection-balcon-chat-appartement.html","Filet balcon")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -145,6 +146,7 @@ page("index.html",
 <li>Vous vivez dans un studio : notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a> (bruit, taille, odeurs).</li>
 <li>Vous voulez voir votre chat en journée : notre guide <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</li>
 <li>Vous hésitez à investir dans le haut de gamme : notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 (2026)</a> et notre guide <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</li>
+<li>Votre chat profite du balcon ou des fenêtres ouvertes : notre guide <a href="filet-protection-balcon-chat-appartement.html">filet de protection balcon pour chat</a> (filet, poteaux sans perçage, grille de fenêtre).</li>
 <li>Votre chat s’ennuie quand vous êtes absent : notre guide <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif automatique pour chat d’appartement</a> (balle, laser, plume).</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>''',related=False)
@@ -963,9 +965,67 @@ page("jouet-interactif-chat-appartement-2026.html",
 <p>Pour la plupart des chats d’appartement, la <strong>balle roulante rechargeable avec mise en veille</strong> est le meilleur premier achat. Ajoute une <strong>plume électronique</strong> pour un chat plus posé, et garde le laser pour des séances courtes. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/jouet-interactif-chat-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- filet balcon (2026-11-09)
+page("filet-protection-balcon-chat-appartement.html",
+ "Filet de protection balcon pour chat : lequel choisir en appartement ? (2026)",
+ "Filet anti-chute, kit avec poteaux télescopiques sans perçage, grille de fenêtre : comment sécuriser ton balcon et tes fenêtres quand ton chat vit en appartement.",
+ "Filet de protection balcon pour chat : lequel choisir en appartement ?",
+ f'''<figure class="hero"><img src="images/filet-balcon-chat-hero.webp" width="1280" height="720" alt="Chat tigré assis sur un balcon parisien fermé par un filet de protection transparent, plantes en pot et toits en arrière-plan" loading="eager"></figure>
+<p class="lead">Un chat d’appartement adore le balcon : air frais, oiseaux, soleil. Mais un oiseau qui passe ou un bruit soudain suffit pour qu’il saute ou glisse de la rambarde, même s’il est d’habitude prudent. La solution la plus simple pour en profiter sans stress, c’est un filet de protection. Voici les trois options qui marchent le mieux en appartement, locataire ou propriétaire, et ce qu’il faut vérifier avant d’acheter.</p>
+<h2>Les 4 points à vérifier avant d’acheter</h2>
+<ul>
+<li><strong>La maille</strong> : une maille d’environ 3 cm empêche le chat de passer la tête. Au-delà, il peut s’y coincer ou s’y faufiler.</li>
+<li><strong>La matière</strong> : nylon ou polyéthylène traité anti-UV, pour qu’il ne devienne pas cassant après un été au soleil. Un fil renforcé résiste mieux aux griffes.</li>
+<li><strong>La couleur</strong> : noir ou transparent. Le noir se voit moins de l’intérieur et abîme moins la vue.</li>
+<li><strong>La fixation</strong> : chevilles, crochets adhésifs ou poteaux télescopiques. Si tu es locataire, vérifie ton bail ou le règlement de copropriété avant de percer.</li>
+</ul>
+<h2>1. Le filet anti-chute en rouleau</h2>
+<div class="pick"><figure><img src="images/filet-protection-chat-kit.webp" width="1152" height="864" alt="Rouleau de filet de protection noir pour chat avec crochets adhésifs, colliers de serrage et mètre ruban posés sur un parquet clair" loading="lazy"></figure>
+<h3>Pour fermer tout le balcon, du sol au plafond</h3>
+<p>C’est la solution la plus complète et la moins chère au mètre carré. Le filet se vend souvent en kit (filet, crochets, cordelette, colliers de serrage) dans plusieurs dimensions, par exemple 3 × 2 m ou 6 × 3 m. Mesure largeur et hauteur de ton balcon et prends un peu plus large : tu pourras toujours couper. Le filet doit monter jusqu’au plafond ou au balcon du dessus, sinon un chat déterminé passera par le haut.</p>
+{amz("filet protection chat balcon","filets de protection")}</div>
+<h2>2. Le kit avec poteaux télescopiques sans perçage</h2>
+<div class="pick"><figure><img src="images/filet-chat-poteaux-telescopiques.webp" width="1152" height="864" alt="Balcon avec deux poteaux télescopiques blancs tenant un filet noir pour chat, chat gris assis sur le carrelage en terre cuite" loading="lazy"></figure>
+<h3>Pour les locataires qui ne veulent pas percer</h3>
+<p>Des poteaux réglables se bloquent entre le sol et le plafond du balcon, puis le filet s’accroche dessus. Rien à percer, et tout se démonte au déménagement. Vérifie la hauteur maximale des poteaux (souvent jusqu’à 2,5 ou 3 m) et la présence d’embouts antidérapants. C’est un peu plus cher qu’un filet seul, mais c’est l’option la plus propre en location.</p>
+{amz("poteau télescopique filet chat balcon sans perçage","kits avec poteaux")}</div>
+<h2>3. La grille de fenêtre pour chat</h2>
+<div class="pick"><figure><img src="images/grille-fenetre-chat.webp" width="1152" height="864" alt="Chat roux assis sur le rebord d’une fenêtre ouverte protégée par une grille blanche réglable pour chat" loading="lazy"></figure>
+<h3>Pour aérer sans balcon</h3>
+<p>Pas de balcon, mais des fenêtres que tu ouvres souvent ? Une grille extensible se cale dans l’encadrement et laisse passer l’air. C’est aussi la bonne solution pour les fenêtres oscillo-battantes, dans lesquelles un chat peut se coincer : il existe des grilles en forme de triangle prévues pour ces ouvertures. Choisis un modèle en métal plutôt qu’en plastique fin.</p>
+{amz("grille protection fenêtre chat extensible","grilles de fenêtre")}</div>
+<h2>Quelle solution pour quel logement ?</h2>
+<table><thead><tr><th>Situation</th><th>Solution conseillée</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Propriétaire, grand balcon</td><td>Filet en rouleau fixé avec chevilles</td><td>Fermer jusqu’au plafond</td></tr>
+<tr><td>Locataire</td><td>Kit avec poteaux télescopiques</td><td>Hauteur maximale des poteaux</td></tr>
+<tr><td>Pas de balcon</td><td>Grille de fenêtre</td><td>Bien mesurer l’ouverture</td></tr>
+<tr><td>Fenêtre oscillo-battante</td><td>Grille triangulaire spéciale</td><td>Modèle adapté à la largeur</td></tr>
+</tbody></table>
+<h2>Bien installer le filet</h2>
+<ul>
+<li>Tends-le bien : un filet trop mou fait un hamac où le chat peut grimper.</li>
+<li>Ne laisse aucun espace de plus de quelques centimètres sur les côtés, en bas et en haut.</li>
+<li>Range ce qui pourrait servir de marchepied (chaise, jardinière haute) loin des bords.</li>
+<li>Contrôle l’état du filet chaque printemps, surtout les points d’attache.</li>
+<li>Ajoute de quoi profiter du balcon : un coussin, un point d’eau ou une <a href="meilleure-fontaine-eau-chat-2026.html">fontaine à eau</a> près de la porte-fenêtre, et quelques plantes non toxiques pour les chats.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Mon chat est très prudent, un filet est-il vraiment utile ?</h3>
+<p>Oui. Même un chat calme peut sauter sur un insecte ou un oiseau, ou glisser d’une rambarde humide. Le filet est une précaution simple et peu coûteuse.</p>
+<h3>Ai-je le droit d’installer un filet sur mon balcon ?</h3>
+<p>Un filet discret est généralement toléré, mais le règlement de copropriété peut encadrer l’aspect extérieur de la façade. En location, un kit sans perçage évite les discussions. En cas de doute, demande d’abord au syndic ou au propriétaire.</p>
+<h3>Le chat peut-il déchirer le filet ?</h3>
+<p>Un filet de qualité en fil renforcé résiste aux griffes du quotidien. Un chat qui s’acharne dessus peut l’user à la longue : inspecte-le régulièrement et propose-lui un <a href="equipement-chat-appartement.html">griffoir ou un arbre à chat</a> pour se défouler ailleurs.</p>
+<h3>Et si mon chat s’échappe quand même ?</h3>
+<p>Un traceur sur un collier de sécurité aide à le retrouver vite. Vois notre guide <a href="collier-gps-chat-sans-abonnement.html">GPS chat sans abonnement</a>.</p>
+<h2>Notre avis</h2>
+<p>Si tu es locataire, le <strong>kit avec poteaux télescopiques</strong> est le meilleur compromis : sûr, sans perçage, démontable. Propriétaire avec un grand balcon, le <strong>filet en rouleau</strong> fixé solidement revient moins cher. Sans balcon, une <strong>grille de fenêtre</strong> suffit pour aérer tranquille. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/filet-balcon-chat-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
-IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"]}
+IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
+ "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
