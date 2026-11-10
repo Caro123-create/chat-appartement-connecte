@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-03"
+TODAY="2026-11-10"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -34,7 +34,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("litiere-automatique-chat-appartement.html","Litière chat appart"),
      ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget"),
      ("jouet-interactif-chat-appartement-2026.html","Jouet interactif"),
-     ("filet-protection-balcon-chat-appartement.html","Filet balcon")]
+     ("filet-protection-balcon-chat-appartement.html","Filet balcon"),
+     ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -147,6 +148,7 @@ page("index.html",
 <li>Vous voulez voir votre chat en journée : notre guide <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a>.</li>
 <li>Vous hésitez à investir dans le haut de gamme : notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 (2026)</a> et notre guide <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</li>
 <li>Votre chat profite du balcon ou des fenêtres ouvertes : notre guide <a href="filet-protection-balcon-chat-appartement.html">filet de protection balcon pour chat</a> (filet, poteaux sans perçage, grille de fenêtre).</li>
+<li>Votre chat griffe le canapé ou grimpe partout : notre guide <a href="arbre-a-chat-petit-appartement.html">arbre à chat pour petit appartement</a> (arbre compact, étagères murales, griffoir en carton).</li>
 <li>Votre chat s’ennuie quand vous êtes absent : notre guide <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif automatique pour chat d’appartement</a> (balle, laser, plume).</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>''',related=False)
@@ -1022,10 +1024,68 @@ page("filet-protection-balcon-chat-appartement.html",
 <p>Si tu es locataire, le <strong>kit avec poteaux télescopiques</strong> est le meilleur compromis : sûr, sans perçage, démontable. Propriétaire avec un grand balcon, le <strong>filet en rouleau</strong> fixé solidement revient moins cher. Sans balcon, une <strong>grille de fenêtre</strong> suffit pour aérer tranquille. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/filet-balcon-chat-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- arbre à chat petit appartement (2026-11-10)
+page("arbre-a-chat-petit-appartement.html",
+ "Arbre à chat pour petit appartement : lequel choisir ? (2026)",
+ "Arbre à chat compact, étagères murales avec griffoir, griffoir en carton : comment offrir de la hauteur et un coin à griffer à ton chat quand l’appartement est petit.",
+ "Arbre à chat pour petit appartement : lequel choisir ?",
+ f'''<figure class="hero"><img src="images/arbre-chat-petit-appartement-hero.webp" width="1280" height="720" alt="Chat tigré couché en haut d’un arbre à chat compact en sisal, dans le coin d’un salon lumineux d’appartement parisien" loading="eager"></figure>
+<p class="lead">En appartement, ton chat n’a pas de jardin ni d’arbres à escalader. Il a pourtant besoin de deux choses chaque jour : griffer pour entretenir ses griffes et marquer son territoire, et prendre de la hauteur pour observer tranquillement. Sans solution prévue pour ça, il se rabat sur le canapé et le haut des meubles. Bonne nouvelle : pas besoin d’un arbre géant de deux mètres. Voici les trois options qui marchent le mieux quand la place manque.</p>
+<h2>Les 4 points à vérifier avant d’acheter</h2>
+<ul>
+<li><strong>La stabilité</strong> : un arbre qui bouge quand le chat saute dessus lui fait peur, et il ne l’utilisera plus. Regarde la largeur du socle et le poids total, et préfère un modèle qui peut se fixer au mur.</li>
+<li><strong>L’encombrement au sol</strong> : mesure le coin prévu. Un socle d’environ 40 × 40 cm suffit souvent pour un modèle compact.</li>
+<li><strong>Le revêtement des poteaux</strong> : la corde de sisal est la plus résistante aux griffes. La moquette seule s’abîme vite.</li>
+<li><strong>Le gabarit de ton chat</strong> : un grand chat a besoin de plateformes larges et de poteaux épais. Vérifie le poids maximal indiqué par le fabricant.</li>
+</ul>
+<h2>1. L’arbre à chat compact</h2>
+<div class="pick"><figure><img src="images/arbre-chat-compact.webp" width="1152" height="864" alt="Petit arbre à chat beige à deux poteaux en sisal, deux plateformes en peluche et un hamac, posé sur un parquet clair contre un mur blanc" loading="lazy"></figure>
+<h3>Le tout-en-un pour un coin de salon</h3>
+<p>Un modèle de 80 cm à 1,20 m réunit griffoir, perchoir et parfois une niche ou un hamac sur une petite surface. C’est la solution la plus simple : tu le poses près d’une fenêtre et ton chat a un poste d’observation à lui. Choisis des poteaux en sisal assez épais et une plateforme du haut bien rembourrée, c’est souvent là qu’il passera ses siestes.</p>
+{amz("arbre à chat compact petit espace sisal","arbres à chat compacts")}</div>
+<h2>2. Les étagères murales avec griffoir</h2>
+<div class="pick"><figure><img src="images/griffoir-mural-etageres-chat.webp" width="1152" height="864" alt="Chat gris qui grimpe sur des étagères murales en bois fixées à un mur blanc, à côté d’un panneau griffoir vertical en sisal" loading="lazy"></figure>
+<h3>Pour gagner de la hauteur sans prendre de place au sol</h3>
+<p>Des marches et des plateformes fixées au mur créent un parcours en hauteur, et un panneau en sisal vertical sert de griffoir. Rien au sol, et ton chat profite de toute la hauteur sous plafond. Il faut percer et fixer solidement chaque élément dans un mur porteur ou avec des chevilles adaptées. En location, demande d’abord l’accord du propriétaire, ou opte plutôt pour l’arbre compact.</p>
+{amz("étagère murale chat griffoir sisal","étagères murales")}</div>
+<h2>3. Le griffoir en carton</h2>
+<div class="pick"><figure><img src="images/griffoir-carton-chat.webp" width="1152" height="864" alt="Chat roux qui s’étire et griffe un griffoir en carton ondulé en forme de vague posé sur un tapis de salon" loading="lazy"></figure>
+<h3>Le complément pas cher à mettre partout</h3>
+<p>Un griffoir en carton ondulé coûte peu et beaucoup de chats l’adorent pour griffer à l’horizontale. En forme de vague, il sert aussi de petit lit. Ce n’est pas une solution de hauteur, mais c’est parfait pour compléter un arbre ou des étagères : places-en un près du canapé ou à l’entrée, là où ton chat a l’habitude de griffer. Il s’use, donc compte le remplacer de temps en temps.</p>
+{amz("griffoir carton chat vague","griffoirs en carton")}</div>
+<h2>Quelle solution pour quel logement ?</h2>
+<table><thead><tr><th>Situation</th><th>Solution conseillée</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Studio ou petit salon</td><td>Arbre à chat compact</td><td>Stabilité du socle</td></tr>
+<tr><td>Propriétaire, murs libres</td><td>Étagères murales avec griffoir</td><td>Fixation solide</td></tr>
+<tr><td>Locataire</td><td>Arbre compact et griffoir en carton</td><td>Aucun perçage nécessaire</td></tr>
+<tr><td>Chat qui griffe le canapé</td><td>Griffoir en carton près du canapé</td><td>Le placer au bon endroit</td></tr>
+</tbody></table>
+<h2>Bien l’installer pour que ton chat l’adopte</h2>
+<ul>
+<li>Place l’arbre près d’une fenêtre : la vue sur l’extérieur est souvent ce qui le rend irrésistible.</li>
+<li>Mets le griffoir là où ton chat griffe déjà, plutôt que dans une pièce où il ne va jamais.</li>
+<li>Frotte un peu d’herbe à chat ou pose un jouet sur la plateforme les premiers jours.</li>
+<li>Félicite-le quand il l’utilise, et ne le force jamais à monter.</li>
+<li>Complète avec un <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif</a> pour qu’il se dépense aussi quand tu n’es pas là.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Mon chat a déjà un griffoir, a-t-il besoin d’un arbre à chat ?</h3>
+<p>Pas forcément, mais un chat d’intérieur aime avoir un point en hauteur pour observer et se reposer. Si ton chat grimpe sur les meubles ou le frigo, un arbre ou des étagères lui offrent un endroit à lui.</p>
+<h3>Quelle hauteur choisir en petit appartement ?</h3>
+<p>Entre 80 cm et 1,20 m, un arbre reste discret et suffit à la plupart des chats. Plus haut, il doit absolument être fixé au mur pour rester stable.</p>
+<h3>Comment empêcher mon chat de griffer le canapé ?</h3>
+<p>Propose-lui un griffoir juste à côté du canapé, dans un matériau qu’il aime, et rends le canapé moins attirant (plaid, housse). Ne le gronde pas : griffer est un besoin naturel, il faut juste lui offrir un meilleur endroit.</p>
+<h3>Où le placer dans un studio ?</h3>
+<p>Près d’une fenêtre et loin de la <a href="litiere-automatique-petit-appartement.html">litière</a> et de la gamelle. Un coin calme mais pas isolé, d’où il peut te voir.</p>
+<h2>Notre avis</h2>
+<p>Dans la plupart des petits appartements, un <strong>arbre à chat compact</strong> avec poteaux en sisal, complété par un <strong>griffoir en carton</strong> près du canapé, couvre l’essentiel pour un budget raisonnable. Si tu es propriétaire et que les murs sont libres, les <strong>étagères murales</strong> font gagner de la place au sol et plaisent beaucoup aux chats grimpeurs. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/arbre-chat-petit-appartement-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
- "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"]}
+ "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
+ "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
