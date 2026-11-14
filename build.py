@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-10"
+TODAY="2026-11-14"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -35,7 +35,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("budget-kit-chat-appartement-connecte.html","Kit débutant & budget"),
      ("jouet-interactif-chat-appartement-2026.html","Jouet interactif"),
      ("filet-protection-balcon-chat-appartement.html","Filet balcon"),
-     ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart")]
+     ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart"),
+     ("tapis-litiere-chat-appartement.html","Tapis de litière")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -149,6 +150,7 @@ page("index.html",
 <li>Vous hésitez à investir dans le haut de gamme : notre <a href="litter-robot-4-avis-2026.html">avis Litter-Robot 4 (2026)</a> et notre guide <a href="camera-chat-friandises-2026.html">caméra chat avec lanceur de friandises (Furbo, Petcube)</a>.</li>
 <li>Votre chat profite du balcon ou des fenêtres ouvertes : notre guide <a href="filet-protection-balcon-chat-appartement.html">filet de protection balcon pour chat</a> (filet, poteaux sans perçage, grille de fenêtre).</li>
 <li>Votre chat griffe le canapé ou grimpe partout : notre guide <a href="arbre-a-chat-petit-appartement.html">arbre à chat pour petit appartement</a> (arbre compact, étagères murales, griffoir en carton).</li>
+<li>Les grains de litière se baladent dans tout l’appartement : notre guide <a href="tapis-litiere-chat-appartement.html">tapis de litière pour chat</a> (nid d’abeille, silicone à rebords, grand tapis texturé).</li>
 <li>Votre chat s’ennuie quand vous êtes absent : notre guide <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif automatique pour chat d’appartement</a> (balle, laser, plume).</li>
 <li>Vous débutez et voulez maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>''',related=False)
@@ -1081,11 +1083,69 @@ page("arbre-a-chat-petit-appartement.html",
 <p>Dans la plupart des petits appartements, un <strong>arbre à chat compact</strong> avec poteaux en sisal, complété par un <strong>griffoir en carton</strong> près du canapé, couvre l’essentiel pour un budget raisonnable. Si tu es propriétaire et que les murs sont libres, les <strong>étagères murales</strong> font gagner de la place au sol et plaisent beaucoup aux chats grimpeurs. Pour équiper le reste de l’appartement, vois notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements 2026</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/arbre-chat-petit-appartement-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- tapis de litière (2026-11-14)
+page("tapis-litiere-chat-appartement.html",
+ "Tapis de litière pour chat : lequel choisir en appartement ? (2026)",
+ "Tapis de litière nid d’abeille, en silicone à rebords ou grand format : comment limiter les grains de litière qui se baladent dans l’appartement.",
+ "Tapis de litière pour chat : lequel choisir en appartement ?",
+ f'''<figure class="hero"><img src="images/tapis-litiere-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui sort d’un bac à litière couvert et pose les pattes sur un tapis de litière gris en nid d’abeille, dans le coin d’une salle de bain d’appartement" loading="eager"></figure>
+<p class="lead">En appartement, la litière est souvent à deux pas du salon ou de la chambre. Et chaque passage de ton chat laisse quelques grains collés à ses pattes, qui finissent sur le parquet, sous les meubles, parfois jusque dans le lit. Un bon tapis de litière retient l’essentiel de ces grains à la sortie du bac. Voici les trois types qui marchent le mieux, et comment choisir selon ta litière et la place dont tu disposes.</p>
+<h2>Les 4 points à vérifier avant d’acheter</h2>
+<ul>
+<li><strong>La taille</strong> : le tapis doit dépasser largement l’entrée du bac. Compte au moins deux à trois foulées de ton chat, soit souvent 60 cm de profondeur ou plus.</li>
+<li><strong>Le type de litière</strong> : les petits grains (agglomérante fine, silice) passent dans les trous d’un tapis nid d’abeille ; les gros granulés (bois, végétale) se retiennent mieux sur une surface texturée.</li>
+<li><strong>Le nettoyage</strong> : vérifie s’il se secoue, s’aspire, se rince à l’eau ou passe en machine. Un tapis difficile à vider finit vite au placard.</li>
+<li><strong>Le confort sous les pattes</strong> : certains chats évitent les surfaces trop dures ou piquantes. Une matière souple et antidérapante est plus facilement acceptée.</li>
+</ul>
+<h2>1. Le tapis double couche en nid d’abeille</h2>
+<div class="pick"><figure><img src="images/tapis-litiere-nid-abeille.webp" width="1152" height="864" alt="Tapis de litière gris double couche à alvéoles en nid d’abeille, avec quelques grains de litière piégés dans les trous, posé sur un parquet clair" loading="lazy"></figure>
+<h3>Le piège à grains le plus efficace</h3>
+<p>Les grains tombent à travers les alvéoles et restent coincés entre les deux couches. Pour vider, tu ouvres le tapis et tu reverses les grains dans le bac ou à la poubelle. C’est le modèle le plus populaire pour les litières agglomérantes fines. Choisis une version imperméable en dessous si ton chat a tendance à gratter fort ou à faire au bord du bac.</p>
+{amz("tapis litière chat double couche nid d'abeille","tapis nid d’abeille")}</div>
+<h2>2. Le tapis en silicone à rebords</h2>
+<div class="pick"><figure><img src="images/tapis-litiere-silicone-rebords.webp" width="1152" height="864" alt="Tapis de litière beige en silicone avec rebords relevés, placé sous un bac à litière blanc ouvert sur un sol carrelé" loading="lazy"></figure>
+<h3>Pour protéger le sol sous le bac</h3>
+<p>Ce tapis se glisse sous le bac et déborde devant. Ses rebords retiennent les grains projetés quand ton chat gratte, et il se rince en quelques secondes sous la douche. Il retient moins les grains collés aux pattes qu’un nid d’abeille, mais c’est l’idéal pour un bac ouvert ou un chat qui envoie de la litière partout. Bonus : il protège le parquet en cas de petit accident.</p>
+{amz("tapis litière chat silicone rebords imperméable","tapis en silicone")}</div>
+<h2>3. Le grand tapis texturé</h2>
+<div class="pick"><figure><img src="images/tapis-litiere-xl-grattoir.webp" width="1152" height="864" alt="Grand tapis de litière gris foncé à surface texturée devant un bac à litière à entrée par le dessus, avec un chat blanc qui marche dessus dans un couloir" loading="lazy"></figure>
+<h3>Le meilleur allié d’un bac à entrée par le dessus</h3>
+<p>Un grand tapis en PVC ou caoutchouc avec une surface à picots ou à brosses « nettoie » les coussinets à chaque pas. Il est particulièrement efficace avec un bac à entrée par le dessus, qui retient déjà beaucoup de grains. Il s’aspire facilement et se lave à l’eau. Si ton chat hésite à marcher dessus au début, préfère une texture plus douce.</p>
+{amz("grand tapis litière chat XL texturé antidérapant","grands tapis texturés")}</div>
+<h2>Quel tapis pour quelle situation ?</h2>
+<table><thead><tr><th>Situation</th><th>Tapis conseillé</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Litière agglomérante fine</td><td>Nid d’abeille double couche</td><td>Le vider régulièrement</td></tr>
+<tr><td>Bac ouvert, chat qui gratte fort</td><td>Silicone à rebords</td><td>Bien le centrer sous le bac</td></tr>
+<tr><td>Bac à entrée par le dessus</td><td>Grand tapis texturé</td><td>Texture acceptée par le chat</td></tr>
+<tr><td>Litière bois ou végétale</td><td>Grand tapis texturé</td><td>Aspirer plutôt que secouer</td></tr>
+</tbody></table>
+<h2>Nos astuces pour un appartement sans grains</h2>
+<ul>
+<li>Place le tapis dès la sortie du bac, sans espace entre les deux : le premier pas doit tomber dessus.</li>
+<li>Combine deux solutions si besoin : un tapis en silicone sous le bac et un nid d’abeille devant.</li>
+<li>Vide ou secoue le tapis tous les deux ou trois jours, avant qu’il ne déborde.</li>
+<li>Évite les tapis de bain en tissu : les grains s’y incrustent et ils gardent les odeurs.</li>
+<li>Si tu veux aussi réduire les corvées, jette un œil à notre guide <a href="litiere-automatique-petit-appartement.html">litière automatique en petit appartement</a>.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Un tapis de litière suffit-il à éviter toutes les traces ?</h3>
+<p>Il en retient la grande majorité, mais quelques grains peuvent encore passer, surtout avec une litière très fine. Un tapis assez grand et bien placé fait la plus grosse différence.</p>
+<h3>Comment nettoyer un tapis nid d’abeille ?</h3>
+<p>Ouvre les deux couches au-dessus de la poubelle ou du bac pour vider les grains, puis passe un coup d’aspirateur. La plupart se rincent à l’eau claire ; laisse-le bien sécher avant de le remettre.</p>
+<h3>Mon chat refuse de marcher sur le tapis, que faire ?</h3>
+<p>Certains chats n’aiment pas les surfaces trop rigides ou piquantes. Essaie un modèle plus souple, laisse-le le découvrir sans le forcer, et pose-le d’abord un peu plus loin du bac avant de le rapprocher.</p>
+<h3>Quelle taille de tapis choisir dans un petit appartement ?</h3>
+<p>Environ 60 × 45 cm couvre bien la sortie d’un bac standard. Dans une salle de bain étroite, un modèle long et étroit qui suit le passage du chat est souvent plus pratique qu’un grand carré.</p>
+<h2>Notre avis</h2>
+<p>Pour la plupart des appartements avec une litière agglomérante, le <strong>tapis double couche en nid d’abeille</strong> est le meilleur rapport efficacité et prix. Si ton chat projette la litière en grattant, ajoute un <strong>tapis en silicone à rebords</strong> sous le bac. Et avec un bac à entrée par le dessus, un <strong>grand tapis texturé</strong> complète parfaitement le dispositif. Pour le reste de l’équipement, vois notre <a href="equipement-chat-appartement.html">checklist complète pour chat d’appartement</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/tapis-litiere-chat-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
- "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"]}
+ "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"],
+ "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
