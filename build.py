@@ -44,6 +44,17 @@ CHECKLIST_GUMROAD="https://fluenthub.gumroad.com/l/dcbmyx"
 CHECKLIST_PRICE="6,90 €"
 CTA_BANNER=f'''<aside class="paid-cta"><p><strong>Guide payant — {PRODUCT} ({PRICE})</strong><br>En 7 jours, équipez votre chat d’appart (litière, eau, repas, sécurité, budget) sans tout acheter d’un coup.</p><p><a class="btn-paid" href="guide.html">Découvrir le plan en 7 jours</a></p><p class="note">Produit numérique payant, vendu séparément via Gumroad. Ce n’est pas un lien d’affiliation Amazon.</p></aside>'''
 AUDIT_LINK='<p class="note">Pas encore prêt à acheter ? Commencez par notre <a href="telechargement-audit.html">audit gratuit en 1 jour (PDF)</a>.</p>'
+ML_HEAD='''<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2748139');
+</script>
+'''
+ML_FORM='<div class="ml-embedded" data-form="Um0Zqt"></div>'
+AUDIT_FORM_BLOCK='''<section class="audit-form"><p>Audit gratuit : repère en 1 jour ce qui manque à ton chat d’appartement. Reçois le PDF par email.</p>
+'''+ML_FORM+'</section>'
 DISC='<p class="disc">Liens affiliés Amazon — nous pouvons toucher une commission sans surcoût pour vous.</p>'
 
 # ---------- AdSense (ca-pub-6018788861622975) — RGPD : meta seule dans <head>, script chargé uniquement après consentement
@@ -88,6 +99,8 @@ DP_PAGES={
  "camera-chat-friandises-2026.html":{"Furbo caméra chat":"B0C4XXBY44","Petcube Bites caméra friandises":"B09FF89CC3","distributeur croquettes chat caméra wifi":"B0DMNN4CSZ"},
 }
 def page(fn,title,desc,h1,body,related=True,head_extra=""):
+    if fn not in ("guide.html","affiliation.html","checklist.html") and "assets.mailerlite.com/js/universal.js" not in head_extra:
+        head_extra = ML_HEAD + head_extra
     nav="".join(f'<a href="{f}">{n}</a>' for f,n in NAV)+'<a class="nav-paid" href="guide.html">Plan 7 jours (12 €)</a><a class="nav-paid" href="checklist.html">Checklist (6,90 €)</a><a href="telechargement-audit.html">Audit gratuit (PDF)</a>'
     rel=""
     if related:
@@ -107,7 +120,7 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 <main>
 <h1>{h1}</h1>
 {body}
-{(CTA_BANNER+AUDIT_LINK) if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html","checklist.html") else ""}
+{(CTA_BANNER+AUDIT_FORM_BLOCK) if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html","checklist.html") else ""}
 {rel}
 {DISC if fn not in ("affiliation.html","guide.html","telechargement-audit.html","checklist.html") else ""}
 </main>
@@ -131,6 +144,7 @@ page("index.html",
 <p><a class="btn-paid" href="guide.html">Voir le contenu du plan</a> <a class="btn-paid alt" href="{GUMROAD}" target="_blank" rel="noopener">Acheter sur Gumroad – 12 €</a></p>
 <p class="note">Produit numérique payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. Il est distinct des liens d’affiliation Amazon du site.</p>
 <p class="note">Envie de commencer gratuitement ? Téléchargez notre <a href="telechargement-audit.html">audit en 1 jour (checklist PDF gratuite)</a>.</p>
+{AUDIT_FORM_BLOCK}
 <p class="note">Besoin seulement de savoir quoi acheter ? <a href="checklist.html">Checklist shopping du chat connecté</a> (produit payant, 6,90 € via Gumroad).</p></section>
 <h2>Nos guides</h2>
 <ul class="cards">{cards}</ul>
@@ -833,15 +847,6 @@ page("guide.html",
 <p class="note">Version courte : la <a href="checklist.html">checklist shopping du chat connecté</a> (quoi acheter, quoi éviter, combien prévoir) — produit payant, 6,90 € via Gumroad.</p>''',related=False)
 
 # ---------- lead magnet gratuit
-ML_HEAD='''<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2748139');
-</script>
-'''
-ML_FORM='<div class="ml-embedded" data-form="Um0Zqt"></div>'
 page("telechargement-audit.html",
  "Audit gratuit en 1 jour : ce dont votre chat d’appartement a vraiment besoin",
  "Checklist gratuite d’une page : en une journée, découvrez ce dont votre chat d’appartement a besoin et ce qu’il est inutile d’acheter.",
@@ -854,8 +859,8 @@ page("telechargement-audit.html",
 <li>Un mini guide pour lire vos résultats, savoir quoi prioriser… et ce qu’il est souvent inutile d’acheter.</li></ul>
 <h2>Recevoir l’audit par email</h2>
 <p>Laissez votre email : on vous envoie le PDF et quelques conseils pour équiper votre chat d’appart (désinscription en 1 clic, votre email n’est ni vendu ni partagé).</p>
+<p>Il faut confirmer l’inscription dans l’email reçu pour obtenir le PDF.</p>
 {ML_FORM}
-<p class="note">Vous préférez sans inscription ? <a href="produits/lead-magnet-audit-1-jour.pdf" download>Télécharger le PDF directement</a> · <a href="produits/lead-magnet-audit-1-jour.html">Lire en ligne</a>.</p>
 <h2>Et ensuite ?</h2>
 <p>Une fois l’audit fait, le <a href="guide.html">plan en 7 jours</a> vous guide étape par étape (litière, eau, repas, sécurité, budget). <a href="{GUMROAD}" target="_blank" rel="noopener">Voir le guide sur Gumroad ({PRICE})</a> — produit payant, pas un lien d’affiliation. Ou commencez par notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant gratuit</a>. Si l’audit pointe la litière, lisez notre <a href="litiere-automatique-chat-appartement.html">guide litière automatique pour chat d’appartement</a>.</p>''',related=False,head_extra=ML_HEAD)
 
