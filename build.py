@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-14"
+TODAY="2026-11-16"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -36,7 +36,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("jouet-interactif-chat-appartement-2026.html","Jouet interactif"),
      ("filet-protection-balcon-chat-appartement.html","Filet balcon"),
      ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart"),
-     ("tapis-litiere-chat-appartement.html","Tapis de litière")]
+     ("tapis-litiere-chat-appartement.html","Tapis de litière"),
+     ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -152,6 +153,7 @@ page("index.html",
 <p>Nous partons des fiches et manuels des fabricants, des retours d’utilisateurs et des contraintes concrètes d’un logement (surface, prises, Wi-Fi 2,4 GHz). Quand une donnée n’est pas claire ou varie selon les versions, nous le disons plutôt que d’inventer un chiffre. Les prix changent souvent : nous n’en affichons pas de précis, vérifiez-les sur la page du vendeur.</p>
 <h2>Par où commencer ?</h2>
 <ul>
+<li>Vous partez pour les fêtes : notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a> (kit pour 3 à 7 jours, visites à prévoir, checklist de départ).</li>
 <li>Vous accueillez un chat ou faites le point : notre <a href="equipement-chat-appartement.html">checklist complète de l’équipement pour chat d’appartement</a> (indispensable, utile, superflu).</li>
 <li>Vous découvrez le sujet : notre panorama des <a href="objets-connectes-chat.html">objets connectés pour chat</a> (litière, fontaine, distributeur, GPS, caméra) et l’ordre d’achat conseillé.</li>
 <li>Vous voulez l’essentiel en une page : notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements pour chat d’appartement 2026</a>.</li>
@@ -1145,7 +1147,98 @@ page("tapis-litiere-chat-appartement.html",
 <p>Pour la plupart des appartements avec une litière agglomérante, le <strong>tapis double couche en nid d’abeille</strong> est le meilleur rapport efficacité et prix. Si ton chat projette la litière en grattant, ajoute un <strong>tapis en silicone à rebords</strong> sous le bac. Et avec un bac à entrée par le dessus, un <strong>grand tapis texturé</strong> complète parfaitement le dispositif. Pour le reste de l’équipement, vois notre <a href="equipement-chat-appartement.html">checklist complète pour chat d’appartement</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/tapis-litiere-chat-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- chat seul vacances de Noël (2026-11-16)
+def dp(asin,label):
+    return f'<a class="btn" href="https://www.amazon.fr/dp/{asin}?tag={TAG}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon : {label}</a>'
+NOEL_FN="chat-seul-vacances-noel-appartement.html"
+NOEL_TITLE="Chat seul en appartement pendant les vacances de Noël : le kit connecté pour 3 à 7 jours"
+NOEL_DESC="Partir 3 à 7 jours à Noël sans stresser pour son chat d’appartement : litière, distributeur, fontaine, caméra, visites à prévoir et checklist de départ."
+NOEL_LD=json.dumps({"@context":"https://schema.org","@type":"Article","headline":NOEL_TITLE,"description":NOEL_DESC,
+ "image":[BASE+"images/pin-chat-seul-vacances-noel.png"],"datePublished":"2026-11-16","dateModified":"2026-11-16",
+ "inLanguage":"fr-FR","mainEntityOfPage":BASE+NOEL_FN,
+ "author":{"@type":"Organization","name":SITE,"url":BASE},"publisher":{"@type":"Organization","name":SITE,"url":BASE}},ensure_ascii=False)
+page(NOEL_FN, NOEL_TITLE, NOEL_DESC,
+ "Chat seul en appartement pendant les vacances de Noël : le kit connecté pour 3 à 7 jours",
+ f'''<p class="lead">Les fêtes approchent, tu pars quelques jours dans la famille et ton chat reste à l’appartement. C’est souvent la meilleure option pour lui : un chat tient à son territoire, et un trajet ou une pension peuvent le stresser davantage que ton absence. Encore faut-il bien préparer ces jours-là. Voici ce qu’il faut prévoir pour 3 jours et pour 7 jours, ce que les objets connectés font vraiment, et surtout ce qu’ils ne font pas.</p>
+<h2>La règle d’or : les objets connectés ne remplacent pas une personne</h2>
+<p>Commençons par l’essentiel, avant de parler matériel. Une litière automatique, un distributeur ou une caméra ne savent pas reconnaître un chat malade, ouvrir une fenêtre restée coincée ou réparer une panne de courant. Ils rendent l’absence plus confortable et te permettent de garder un œil sur ton chat, mais ils ne le surveillent pas à ta place.</p>
+<p>Les repères des vétérinaires vont dans le même sens. Le site vétérinaire <a href="https://www.chronovet.fr/vetconseil/chat/que-faire-de-votre-chat-pendant-les-vacances-les-meilleures-solutions-pour-partir-sereinement/" target="_blank" rel="noopener">Chronovet</a> indique qu’au-delà de 24 heures d’absence, une visite quotidienne est recommandée, et qu’au-delà de 48 heures, laisser un chat sans visite quotidienne est déconseillé. <a href="https://www.santevet.be/fr/articles/la-solitude-chez-chat" target="_blank" rel="noopener">Santévet</a> rappelle de son côté que le distributeur automatique et la caméra ne remplacent pas une présence humaine.</p>
+<p>Concrètement, voici ce que nous recommandons :</p>
+<ul>
+<li><strong>Idéalement, une visite humaine chaque jour</strong>, même courte : vérifier que le chat mange, boit, va à la litière et se comporte normalement.</li>
+<li><strong>Au minimum, une visite toutes les 24 à 48 heures</strong>, et seulement pour un chat adulte en bonne santé, habitué à rester seul.</li>
+<li><strong>Au-delà de 2 ou 3 jours, la visite d’un pet-sitter ou d’un voisin est indispensable</strong>, sans exception, quel que soit le matériel installé.</li>
+<li><strong>Chaton, chat âgé, malade ou sous traitement</strong> : demande conseil à ton vétérinaire. Ces chats ont souvent besoin de visites plus fréquentes.</li>
+</ul>
+<p>Le matériel connecté sert donc à deux choses : rendre les journées entre deux visites plus confortables, et te prévenir vite si quelque chose cloche. C’est dans cet esprit qu’il faut le choisir.</p>
+<h2>Le kit pour une absence de 3 jours</h2>
+<p>Pour un week-end prolongé de Noël, l’objectif est simple : que ton chat ait toujours de l’eau fraîche, des repas réguliers et une litière propre, et que la personne qui passe le voir n’ait presque rien à faire à part vérifier qu’il va bien et lui tenir compagnie.</p>
+<h3>1. Des repas fractionnés avec un distributeur programmable</h3>
+<p>Remplir une grande gamelle pour trois jours est une fausse bonne idée : un chat glouton peut tout manger le premier jour, et les croquettes laissées à l’air perdent de leur appétence. Un distributeur programmable sert plusieurs petits repas à heures fixes, ce qui respecte mieux le rythme du chat. Teste-le au moins une semaine avant le départ pour vérifier que ton chat l’accepte et que les croquettes ne bloquent pas. Notre guide du <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> détaille les critères : réservoir, piles de secours, application, taille des croquettes.</p>
+{dp("B0DMNN4CSZ","distributeur de croquettes avec caméra")}
+<h3>2. De l’eau qui donne envie de boire</h3>
+<p>Un chat boit souvent mieux une eau qui circule. Une fontaine bien nettoyée avant le départ, avec un filtre neuf, complète la gamelle d’eau classique. Garde toujours au moins un point d’eau sans électricité, dans une autre pièce : si la fontaine tombe en panne ou se vide, ton chat ne doit pas se retrouver à sec. Pour choisir le modèle, vois notre comparatif de la <a href="meilleure-fontaine-eau-chat-2026.html">meilleure fontaine à eau pour chat</a>.</p>
+<h3>3. Une litière propre jusqu’à la visite suivante</h3>
+<p>Sur trois jours, une litière classique se salit vite et certains chats refusent alors d’y aller. Deux solutions : ajouter un deuxième bac, ou installer une <a href="litiere-automatique-chat-appartement.html">litière automatique</a> à condition qu’elle soit en place depuis plusieurs semaines. Ne l’installe jamais juste avant de partir : un chat qui découvre un appareil bruyant et qui bouge peut décider de faire ailleurs. Si ton chat est déjà habitué, le bac à déchets doit être vidé et le sac changé la veille du départ.</p>
+{dp("B0CTCFWBQC","litière agglomérante")}
+<h2>Le kit pour une absence de 7 jours</h2>
+<p>Une semaine complète, c’est une autre organisation. Le matériel reste utile, mais la base devient la personne qui vient voir ton chat. Pour une absence d’une semaine, Santévet recommande même de prévoir au minimum deux visites quotidiennes. Le kit connecté sert alors à soulager cette personne et à te rassurer à distance.</p>
+<h3>1. Une litière automatique éprouvée</h3>
+<p>Sur sept jours, une litière automatique bien rodée garde le bac propre entre deux passages et limite les odeurs dans un petit appartement. La personne qui passe n’a plus qu’à vider le bac à déchets et à vérifier que l’appareil fonctionne. Les modèles les plus suivis sur notre site sont le Litter-Robot 4 et la PetKit Pura Max 2 : tu trouveras leurs différences dans notre duel <a href="litter-robot-4-vs-petkit-pura-max-2.html">Litter-Robot 4 vs PetKit Pura Max 2</a>.</p>
+{dp("B0CFTFRZ43","Litter-Robot 4")} {dp("B0D9QJZ7FG","PetKit Pura Max 2")}
+<h3>2. Une caméra pour voir, parler et être prévenu</h3>
+<p>Une caméra intérieure te permet de vérifier que ton chat est actif, qu’il mange et qu’il ne reste pas caché toute la journée. C’est aussi un bon moyen de contrôler que la personne est bien passée. Choisis un modèle avec vision nocturne et notifications, et place-le vers les zones de vie du chat : gamelles, litière, endroit préféré pour dormir. Notre guide de la <a href="camera-surveillance-chat-appartement.html">caméra de surveillance pour chat</a> explique comment la placer et régler la confidentialité.</p>
+{dp("B0C4XXBY44","caméra Furbo")} {dp("B09FF89CC3","caméra à friandises Petcube Bites")}
+<h3>3. Le distributeur et la fontaine, en version semaine</h3>
+<p>Sur sept jours, vérifie que le réservoir du distributeur couvre toute la durée avec une marge, et que la personne qui passe sait le recharger. Pour la fontaine, explique-lui comment la remplir et quoi faire si elle s’arrête. Laisse toujours des gamelles d’eau classiques en plus.</p>
+<h2>Quel kit pour quelle durée ?</h2>
+<table><thead><tr><th>Durée</th><th>Visites humaines</th><th>Matériel utile</th></tr></thead><tbody>
+<tr><td>Jusqu’à 24 h</td><td>Pas obligatoire pour un adulte en bonne santé, mais rassurant</td><td>Eau, repas, litière propre</td></tr>
+<tr><td>2 à 3 jours</td><td>Idéalement chaque jour, au minimum toutes les 24 à 48 h</td><td>Distributeur, fontaine plus gamelle, litière propre ou automatique</td></tr>
+<tr><td>4 à 7 jours</td><td>Pet-sitter ou voisin indispensable, au moins une fois par jour</td><td>Kit complet : litière automatique rodée, distributeur, fontaine, caméra</td></tr>
+</tbody></table>
+<p class="note">Ces repères concernent un chat adulte en bonne santé. Pour un chaton, un chat âgé ou malade, demande l’avis de ton vétérinaire.</p>
+<h2>La checklist de départ</h2>
+<h3>Deux à trois semaines avant</h3>
+<ul>
+<li>Trouve la personne qui passera : voisin, proche ou pet-sitter. En période de fêtes, les pet-sitters sont vite réservés.</li>
+<li>Installe et teste les nouveaux appareils maintenant, pas la veille du départ.</li>
+<li>Vérifie que les vaccins et le traitement antiparasitaire sont à jour, et qu’il reste assez de médicaments si ton chat en prend.</li>
+</ul>
+<h3>La semaine du départ</h3>
+<ul>
+<li>Organise une rencontre entre ton chat et la personne qui viendra, et montre-lui où tout se trouve.</li>
+<li>Prépare une fiche : horaires et quantités des repas, habitudes, cachettes, numéro du vétérinaire, ton numéro et un contact de secours.</li>
+<li>Achète assez de croquettes et de litière pour toute la durée, avec une marge. Ne change pas d’alimentation juste avant de partir.</li>
+<li>Vérifie le Wi-Fi au niveau des appareils et la charge des piles de secours du distributeur.</li>
+</ul>
+<h3>La veille et le jour J</h3>
+<ul>
+<li>Nettoie la fontaine, change le filtre et remplis-la.</li>
+<li>Remplis le distributeur et lance un repas test pour vérifier qu’il fonctionne.</li>
+<li>Vide le bac à déchets de la litière automatique, ou change entièrement la litière classique.</li>
+<li>Ferme les fenêtres et sécurise le balcon. Notre guide du <a href="filet-protection-balcon-chat-appartement.html">filet de protection balcon</a> peut t’aider.</li>
+<li>Range les décorations de Noël dangereuses : guirlandes, fils électriques, boules fragiles, plantes toxiques pour les chats comme le poinsettia ou le houx.</li>
+<li>Laisse des jouets et un vêtement porté qui garde ton odeur.</li>
+<li>Vérifie depuis ton téléphone que la caméra et l’application du distributeur répondent.</li>
+</ul>
+<h2>Pendant ton absence</h2>
+<p>Regarde la caméra une ou deux fois par jour plutôt qu’en continu, et demande à la personne qui passe de t’envoyer un court message après chaque visite. Les signes qui doivent alerter : un chat qui ne mange plus, qui reste caché, qui vomit, ou qui va souvent à la litière sans résultat. Dans ce dernier cas, il peut s’agir d’une urgence urinaire : la personne doit appeler le vétérinaire sans attendre. Si un appareil tombe en panne, elle doit savoir le remplacer par une gamelle ou un bac classique.</p>
+<h2>FAQ</h2>
+<h3>Peut-on laisser son chat seul 3 jours avec un distributeur et une fontaine ?</h3>
+<p>Pas sans visite. Même bien équipé, un chat doit être vu par quelqu’un, idéalement chaque jour et au minimum toutes les 24 à 48 heures. Le matériel ne détecte ni une maladie ni un accident.</p>
+<h3>Une caméra suffit-elle pour surveiller son chat à distance ?</h3>
+<p>Non. Elle permet de voir s’il est actif et de repérer un problème plus vite, mais tu ne peux rien faire à distance. Il faut toujours une personne capable de venir rapidement.</p>
+<h3>Faut-il acheter une litière automatique juste pour les vacances ?</h3>
+<p>Seulement si tu as le temps de l’installer plusieurs semaines avant. Pour un départ proche, un deuxième bac classique et des visites régulières sont plus sûrs.</p>
+<h2>Pour aller plus loin</h2>
+<p>Si tu veux équiper ton chat d’appartement étape par étape, sans tout acheter d’un coup, notre <a href="{GUMROAD}" target="_blank" rel="noopener">plan en 7 jours (guide payant, 12 €, sur Gumroad)</a> te guide jour après jour : litière, eau, repas, sécurité et budget. Tu préfères commencer gratuitement ? Inscris-toi ci-dessous pour recevoir l’audit gratuit en 1 jour, ou passe par la <a href="telechargement-audit.html">page de l’audit gratuit</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/pin-chat-seul-vacances-noel.png">\n<script type="application/ld+json">'+NOEL_LD+'</script>\n')
+# nettoyage typographique propre à cet article : pas de tiret cadratin ni d’emoji (gabarit commun inchangé ailleurs)
+_h=open(NOEL_FN).read().replace(" — "," : ").replace("—",", ").replace("🐱 ","")
+open(NOEL_FN,"w").write(_h)
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
