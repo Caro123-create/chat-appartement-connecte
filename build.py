@@ -37,7 +37,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("filet-protection-balcon-chat-appartement.html","Filet balcon"),
      ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart"),
      ("tapis-litiere-chat-appartement.html","Tapis de litière"),
-     ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël")]
+     ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël"),
+     ("cadeau-noel-chat-appartement.html","Cadeau de Noël pour chat")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -154,6 +155,7 @@ page("index.html",
 <h2>Par où commencer ?</h2>
 <ul>
 <li>Vous partez pour les fêtes : notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a> (kit pour 3 à 7 jours, visites à prévoir, checklist de départ).</li>
+<li>Vous cherchez un cadeau pour votre chat : nos <a href="cadeau-noel-chat-appartement.html">idées de cadeau de Noël pour chat d’appartement</a> (hamac de fenêtre, tunnel pliable, coussin autochauffant).</li>
 <li>Vous accueillez un chat ou faites le point : notre <a href="equipement-chat-appartement.html">checklist complète de l’équipement pour chat d’appartement</a> (indispensable, utile, superflu).</li>
 <li>Vous découvrez le sujet : notre panorama des <a href="objets-connectes-chat.html">objets connectés pour chat</a> (litière, fontaine, distributeur, GPS, caméra) et l’ordre d’achat conseillé.</li>
 <li>Vous voulez l’essentiel en une page : notre <a href="top-5-equipements-chat-appartement-2026.html">Top 5 des équipements pour chat d’appartement 2026</a>.</li>
@@ -1238,12 +1240,70 @@ page(NOEL_FN, NOEL_TITLE, NOEL_DESC,
 _h=open(NOEL_FN).read().replace(" — "," : ").replace("—",", ").replace("🐱 ","")
 open(NOEL_FN,"w").write(_h)
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- cadeau de Noël pour chat (2026-11-16)
+page("cadeau-noel-chat-appartement.html",
+ "Cadeau de Noël pour chat d’appartement : 3 idées utiles en 2026",
+ "Hamac de fenêtre, tunnel pliable, coussin autochauffant : 3 idées de cadeau de Noël pour un chat d’intérieur, qui servent toute l’année dans un petit appartement.",
+ "Cadeau de Noël pour chat d’appartement : 3 idées vraiment utiles",
+ f'''<figure class="hero"><img src="images/cadeau-noel-chat-hero.webp" width="1280" height="853" alt="Chat tigré qui renifle des paquets cadeaux en papier kraft avec rubans rouges sur un parquet, devant un sapin de Noël illuminé dans un salon d’appartement" loading="eager"></figure>
+<p class="lead">Ton chat ne sait pas que c’est Noël, mais il profitera très bien d’un cadeau bien choisi. En appartement, le bon cadeau n’est pas un gadget qui finit sous le canapé au bout de deux jours : c’est un objet qui lui offre un poste d’observation, un endroit pour jouer ou un coin chaud pour dormir. Voici trois idées qui servent toute l’année, prennent peu de place et restent dans un budget raisonnable.</p>
+<h2>Comment choisir un cadeau pour un chat d’intérieur</h2>
+<ul>
+<li><strong>Pense à ses habitudes</strong> : un chat qui passe ses journées à la fenêtre, un chat joueur qui court partout ou un chat frileux qui cherche le radiateur n’auront pas le même cadeau idéal.</li>
+<li><strong>Vérifie la place</strong> : dans un petit appartement, privilégie ce qui se fixe en hauteur, se plie ou se range facilement.</li>
+<li><strong>Regarde les matières</strong> : coutures solides, tissu lavable, pas de petites pièces qui se détachent facilement.</li>
+<li><strong>Garde le cadeau simple</strong> : un objet que ton chat utilise tous les jours vaut mieux que trois jouets qu’il ignore.</li>
+</ul>
+<h2>1. Le hamac de fenêtre à ventouses</h2>
+<div class="pick"><figure><img src="images/cadeau-chat-hamac-fenetre.webp" width="1280" height="853" alt="Chat gris allongé dans un hamac de fenêtre fixé par des ventouses sur une grande vitre, avec des toits enneigés en arrière-plan et un petit nœud rouge sur le cadre" loading="lazy"></figure>
+<h3>Le poste d’observation qui ne prend aucune place au sol</h3>
+<p>Un hamac qui se fixe directement sur la vitre donne à ton chat une vue imprenable sur la rue, les oiseaux et les passants. C’est souvent le cadeau qui a le plus de succès chez les chats d’intérieur, et il ne mange pas un centimètre de ton salon. Vérifie la charge maximale annoncée, nettoie bien la vitre avant de poser les ventouses et contrôle leur tenue de temps en temps. Si ta fenêtre ne s’y prête pas, il existe des modèles qui s’accrochent au rebord ou au radiateur.</p>
+{amz("hamac fenêtre chat ventouse","hamacs de fenêtre")}</div>
+<h2>2. Le tunnel pliable pour chat</h2>
+<div class="pick"><figure><img src="images/cadeau-chat-tunnel-pliable.webp" width="1280" height="853" alt="Chat roux qui sort la tête d’un tunnel de jeu pliable en tissu gris posé sur un tapis de salon, à côté de petits paquets cadeaux et de branches de sapin" loading="lazy"></figure>
+<h3>Le terrain de jeu qui se range dans un tiroir</h3>
+<p>Un tunnel en tissu, c’est une cachette, un parcours et un jeu de cache-cache en un seul objet. Ton chat s’y cache, en ressort pour attraper une plume, s’y endort parfois. Replié, il tient à plat derrière un meuble, ce qui est idéal quand l’espace est compté. Choisis un tissu épais qui résiste aux griffes, et un modèle à plusieurs entrées si tu as deux chats. Ajoute une ficelle ou un petit jouet à l’intérieur pour relancer son intérêt.</p>
+{amz("tunnel chat pliable","tunnels pour chat")}</div>
+<h2>3. Le coussin autochauffant</h2>
+<div class="pick"><figure><img src="images/cadeau-chat-coussin-autochauffant.webp" width="1280" height="853" alt="Chat noir et blanc endormi en boule dans un coussin rond en fausse fourrure beige, près d’un radiateur dans une chambre d’appartement décorée pour Noël" loading="lazy"></figure>
+<h3>Le coin douillet de l’hiver, sans prise électrique</h3>
+<p>Un coussin autochauffant contient une couche isolante qui renvoie la chaleur du corps de ton chat. Pas de câble, pas de consommation électrique, rien à surveiller. Les modèles ronds à bords relevés plaisent beaucoup aux chats qui aiment dormir en boule. Place-le dans un endroit calme, à l’abri des courants d’air, par exemple près d’une fenêtre ensoleillée ou à côté du radiateur. Vérifie que la housse se retire et passe en machine.</p>
+{amz("coussin autochauffant chat","coussins autochauffants")}</div>
+<h2>Quel cadeau pour quel chat ?</h2>
+<table><thead><tr><th>Profil de ton chat</th><th>Cadeau conseillé</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Passe ses journées à la fenêtre</td><td>Hamac de fenêtre</td><td>Charge maximale et tenue des ventouses</td></tr>
+<tr><td>Joueur, plein d’énergie</td><td>Tunnel pliable</td><td>Tissu épais et solide</td></tr>
+<tr><td>Frileux, adore dormir</td><td>Coussin autochauffant</td><td>Housse lavable</td></tr>
+<tr><td>Deux chats à la maison</td><td>Tunnel à plusieurs entrées</td><td>Assez de place pour deux</td></tr>
+</tbody></table>
+<h2>Nos astuces pour un Noël tranquille avec ton chat</h2>
+<ul>
+<li>Offre le cadeau sans emballage, ou retire vite les rubans et les ficelles : ce ne sont pas des jouets à laisser à sa portée.</li>
+<li>Pose le nouvel objet là où ton chat a déjà ses habitudes, et laisse-le l’explorer à son rythme.</li>
+<li>Fixe bien le sapin et garde guirlandes, boules fragiles et plantes de saison hors de sa portée.</li>
+<li>Si tu pars pendant les fêtes, prépare son séjour avec notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a>.</li>
+<li>Pour un chat qui s’ennuie quand tu es absent, vois aussi notre sélection de <a href="jouet-interactif-chat-appartement-2026.html">jouets interactifs</a>.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Quel est le meilleur cadeau de Noël pour un chat d’appartement ?</h3>
+<p>Celui qu’il utilisera tous les jours. Pour la plupart des chats d’intérieur, un hamac de fenêtre ou un coussin douillet a plus de succès qu’un jouet gadget, parce qu’il répond à un besoin quotidien : observer ou dormir au chaud.</p>
+<h3>Un hamac à ventouses tient-il vraiment sur une vitre ?</h3>
+<p>Oui, si la vitre est propre et lisse et que tu respectes la charge maximale annoncée. Appuie bien sur chaque ventouse à la pose, puis vérifie leur tenue régulièrement, surtout avec un chat lourd ou quand il fait très froid.</p>
+<h3>Mon chat ignore son cadeau, que faire ?</h3>
+<p>Laisse-lui du temps. Déplace l’objet vers un endroit qu’il fréquente déjà, mets-y un vêtement qui porte ton odeur ou une friandise, et joue avec lui autour. Beaucoup de chats adoptent un nouvel objet après quelques jours.</p>
+<h3>Quel budget prévoir pour un cadeau de chat ?</h3>
+<p>Ces trois idées se trouvent généralement dans une fourchette raisonnable, souvent entre 15 et 40 €. Les prix changent souvent, vérifie-les sur la page du vendeur.</p>
+<h2>Notre avis</h2>
+<p>Si tu ne dois offrir qu’un seul cadeau, le <strong>hamac de fenêtre</strong> est souvent celui qui plaît le plus à un chat d’intérieur, sans prendre de place au sol. Pour un chat joueur, le <strong>tunnel pliable</strong> est un excellent choix à petit prix, et pour un chat frileux, le <strong>coussin autochauffant</strong> devient vite son endroit préféré de l’hiver. Pour compléter l’équipement, vois notre <a href="arbre-a-chat-petit-appartement.html">guide arbre à chat pour petit appartement</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/cadeau-noel-chat-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
  "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"],
- "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"]}
+ "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"],
+ "cadeau-noel-chat-appartement.html":["cadeau-noel-chat-hero.webp","cadeau-chat-hamac-fenetre.webp","cadeau-chat-tunnel-pliable.webp","cadeau-chat-coussin-autochauffant.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
