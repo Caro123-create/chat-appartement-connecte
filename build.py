@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-16"
+TODAY="2026-11-17"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -38,7 +38,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("arbre-a-chat-petit-appartement.html","Arbre à chat petit appart"),
      ("tapis-litiere-chat-appartement.html","Tapis de litière"),
      ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël"),
-     ("cadeau-noel-chat-appartement.html","Cadeau de Noël pour chat")]
+     ("cadeau-noel-chat-appartement.html","Cadeau de Noël pour chat"),
+     ("gamelle-anti-glouton-chat-appartement.html","Gamelle anti-glouton")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -155,6 +156,7 @@ page("index.html",
 <h2>Par où commencer ?</h2>
 <ul>
 <li>Vous partez pour les fêtes : notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a> (kit pour 3 à 7 jours, visites à prévoir, checklist de départ).</li>
+<li>Votre chat mange trop vite : notre guide <a href="gamelle-anti-glouton-chat-appartement.html">gamelle anti-glouton pour chat d’appartement</a> (labyrinthe, tapis de léchage, gamelle surélevée).</li>
 <li>Vous cherchez un cadeau pour votre chat : nos <a href="cadeau-noel-chat-appartement.html">idées de cadeau de Noël pour chat d’appartement</a> (hamac de fenêtre, tunnel pliable, coussin autochauffant).</li>
 <li>Vous accueillez un chat ou faites le point : notre <a href="equipement-chat-appartement.html">checklist complète de l’équipement pour chat d’appartement</a> (indispensable, utile, superflu).</li>
 <li>Vous découvrez le sujet : notre panorama des <a href="objets-connectes-chat.html">objets connectés pour chat</a> (litière, fontaine, distributeur, GPS, caméra) et l’ordre d’achat conseillé.</li>
@@ -1297,13 +1299,73 @@ page("cadeau-noel-chat-appartement.html",
 <p>Si tu ne dois offrir qu’un seul cadeau, le <strong>hamac de fenêtre</strong> est souvent celui qui plaît le plus à un chat d’intérieur, sans prendre de place au sol. Pour un chat joueur, le <strong>tunnel pliable</strong> est un excellent choix à petit prix, et pour un chat frileux, le <strong>coussin autochauffant</strong> devient vite son endroit préféré de l’hiver. Pour compléter l’équipement, vois notre <a href="arbre-a-chat-petit-appartement.html">guide arbre à chat pour petit appartement</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/cadeau-noel-chat-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- gamelle anti-glouton (2026-11-17)
+page("gamelle-anti-glouton-chat-appartement.html",
+ "Gamelle anti-glouton pour chat : laquelle choisir en appartement ?",
+ "Gamelle labyrinthe, tapis de léchage, gamelle surélevée inclinée : 3 solutions pour que ton chat d’appartement mange plus lentement et plus calmement.",
+ "Gamelle anti-glouton pour chat : laquelle choisir en appartement ?",
+ f'''<figure class="hero"><img src="images/gamelle-anti-glouton-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui mange calmement dans une gamelle anti-glouton blanche à motif labyrinthe posée sur un set en silicone dans une cuisine d’appartement lumineuse" loading="eager"></figure>
+<p class="lead">Ton chat avale sa gamelle en trente secondes puis réclame encore ? En appartement, où il se dépense moins qu’un chat qui sort, le repas devient souvent le grand moment de la journée. Une gamelle anti-glouton ralentit le rythme, transforme le repas en petit jeu de fouille et occupe ton chat un peu plus longtemps. Voici trois types de gamelles utiles et comment choisir la bonne.</p>
+<h2>Comment choisir une gamelle anti-glouton</h2>
+<ul>
+<li><strong>Le type de nourriture</strong> : les reliefs en labyrinthe conviennent bien aux croquettes, le tapis de léchage est fait pour la pâtée ou les mousses.</li>
+<li><strong>La difficulté</strong> : commence par un modèle simple, avec des reliefs peu profonds. Un chat qui n’arrive pas à manger se décourage vite.</li>
+<li><strong>Le matériau</strong> : céramique ou inox pour la solidité, silicone ou plastique alimentaire sans BPA pour la légèreté. Vérifie que la gamelle passe au lave-vaisselle.</li>
+<li><strong>La stabilité</strong> : une base antidérapante ou un set en silicone évite que la gamelle glisse sur le carrelage ou le parquet.</li>
+</ul>
+<h2>1. La gamelle labyrinthe pour croquettes</h2>
+<div class="pick"><figure><img src="images/gamelle-anti-glouton-labyrinthe.webp" width="1152" height="864" alt="Gamelle anti-glouton grise pour chat avec des reliefs en labyrinthe et quelques croquettes, photo produit sur fond clair" loading="lazy"></figure>
+<h3>Le classique pour ralentir les repas</h3>
+<p>Les reliefs obligent ton chat à aller chercher les croquettes une par une avec la langue ou la patte. Le repas dure plus longtemps et devient une petite activité, ce qui est appréciable pour un chat d’intérieur qui s’ennuie entre deux siestes. Choisis une gamelle large et peu profonde pour que ses moustaches ne frottent pas sur les bords, avec des reliefs arrondis faciles à nettoyer.</p>
+{amz("gamelle anti glouton chat","gamelles anti-glouton")}</div>
+<h2>2. Le tapis de léchage pour pâtée</h2>
+<div class="pick"><figure><img src="images/tapis-lechage-chat.webp" width="1152" height="864" alt="Chat roux qui lèche de la pâtée étalée sur un tapis de léchage en silicone vert à picots posé sur un carrelage de cuisine" loading="lazy"></figure>
+<h3>L’option douce pour la nourriture humide</h3>
+<p>Un tapis en silicone couvert de picots et de rainures, sur lequel tu étales la pâtée. Ton chat lèche tranquillement et prend son temps. C’est aussi une bonne occupation à proposer quand tu pars quelques heures ou pendant un moment stressant, comme l’arrivée d’invités. Prends un modèle avec ventouses ou base lestée, et passe-le au lave-vaisselle après chaque utilisation.</p>
+{amz("tapis de léchage chat","tapis de léchage")}</div>
+<h2>3. La gamelle surélevée inclinée</h2>
+<div class="pick"><figure><img src="images/gamelle-surelevee-inclinee-chat.webp" width="1152" height="864" alt="Chat gris qui mange dans une gamelle en céramique blanche inclinée sur un support en bambou, posée sur le parquet d’un appartement" loading="lazy"></figure>
+<h3>Le confort de posture au moment du repas</h3>
+<p>Ce n’est pas une gamelle anti-glouton au sens strict, mais elle complète bien les deux autres. Surélevée et légèrement inclinée, elle place la nourriture à une hauteur plus confortable et rassemble les croquettes vers l’avant. Certains chats mangent ainsi plus posément. La céramique est lourde, donc stable, et le support en bambou s’intègre bien dans une cuisine ou un salon.</p>
+{amz("gamelle surélevée inclinée chat céramique","gamelles surélevées")}</div>
+<h2>Quelle gamelle pour quel chat ?</h2>
+<table><thead><tr><th>Situation</th><th>Gamelle conseillée</th><th>Point d’attention</th></tr></thead><tbody>
+<tr><td>Chat qui avale ses croquettes trop vite</td><td>Gamelle labyrinthe</td><td>Reliefs simples au début</td></tr>
+<tr><td>Chat nourri à la pâtée</td><td>Tapis de léchage</td><td>Nettoyage après chaque repas</td></tr>
+<tr><td>Chat âgé ou grand gabarit</td><td>Gamelle surélevée inclinée</td><td>Hauteur adaptée à sa taille</td></tr>
+<tr><td>Chat qui s’ennuie seul la journée</td><td>Gamelle labyrinthe ou tapis de léchage</td><td>Varier pour garder l’intérêt</td></tr>
+</tbody></table>
+<h2>Nos astuces pour bien démarrer</h2>
+<ul>
+<li>Introduis la nouvelle gamelle progressivement : mets d’abord une partie de la ration dedans, le reste dans l’ancienne.</li>
+<li>Garde la gamelle d’eau à part, loin de la nourriture : beaucoup de chats boivent davantage ainsi. Pour aller plus loin, vois notre <a href="meilleure-fontaine-eau-chat-2026.html">guide des fontaines à eau pour chat</a>.</li>
+<li>Place la gamelle dans un endroit calme, loin de la litière et des passages.</li>
+<li>Si tu distribues les repas à heures fixes en ton absence, un <a href="distributeur-croquettes-connecte.html">distributeur de croquettes connecté</a> peut compléter la gamelle anti-glouton.</li>
+<li>Si ton chat vomit souvent après ses repas ou change d’appétit, demande conseil à ton vétérinaire : une gamelle ne remplace pas un avis professionnel.</li>
+</ul>
+<h2>FAQ</h2>
+<h3>Une gamelle anti-glouton convient-elle à tous les chats ?</h3>
+<p>La plupart des chats s’y habituent, à condition de commencer par un modèle facile. Un chat âgé ou qui a des difficultés à manger peut préférer une gamelle classique ou surélevée. Observe-le les premiers jours.</p>
+<h3>Mon chat n’arrive pas à manger dans sa gamelle labyrinthe, que faire ?</h3>
+<p>Choisis un modèle avec des reliefs moins hauts ou plus espacés, ou remplis la gamelle au-dessus des reliefs au début. Tu peux aussi alterner avec son ancienne gamelle le temps qu’il comprenne le principe.</p>
+<h3>Peut-on mettre de la pâtée dans une gamelle labyrinthe ?</h3>
+<p>Oui, mais le nettoyage est plus fastidieux. Pour la nourriture humide, un tapis de léchage est souvent plus pratique et se lave plus facilement.</p>
+<h3>Comment nettoyer une gamelle anti-glouton ?</h3>
+<p>Rince-la après chaque repas et lave-la régulièrement à l’eau chaude savonneuse ou au lave-vaisselle si le fabricant l’autorise. Une petite brosse aide à atteindre le fond des reliefs.</p>
+<h3>Quel budget prévoir ?</h3>
+<p>Une gamelle labyrinthe ou un tapis de léchage se trouvent souvent pour une dizaine d’euros, une gamelle surélevée en céramique un peu plus. Les prix changent souvent, vérifie-les sur la page du vendeur.</p>
+<h2>Notre avis</h2>
+<p>Pour un chat qui dévore ses croquettes, la <strong>gamelle labyrinthe</strong> est le choix le plus simple et le plus efficace. Si ton chat mange surtout de la pâtée, le <strong>tapis de léchage</strong> est plus pratique au quotidien. La <strong>gamelle surélevée inclinée</strong> apporte un vrai confort aux chats âgés ou de grand gabarit. Pour compléter son coin repas et son équipement, vois notre <a href="equipement-chat-appartement.html">guide de l’équipement du chat en appartement</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/gamelle-anti-glouton-chat-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","gamelle-anti-glouton-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
  "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"],
  "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"],
- "cadeau-noel-chat-appartement.html":["cadeau-noel-chat-hero.webp","cadeau-chat-hamac-fenetre.webp","cadeau-chat-tunnel-pliable.webp","cadeau-chat-coussin-autochauffant.webp"]}
+ "cadeau-noel-chat-appartement.html":["cadeau-noel-chat-hero.webp","cadeau-chat-hamac-fenetre.webp","cadeau-chat-tunnel-pliable.webp","cadeau-chat-coussin-autochauffant.webp"],
+ "gamelle-anti-glouton-chat-appartement.html":["gamelle-anti-glouton-chat-hero.webp","gamelle-anti-glouton-labyrinthe.webp","tapis-lechage-chat.webp","gamelle-surelevee-inclinee-chat.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
