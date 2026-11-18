@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-17"
+TODAY="2026-11-18"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -39,7 +39,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("tapis-litiere-chat-appartement.html","Tapis de litière"),
      ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël"),
      ("cadeau-noel-chat-appartement.html","Cadeau de Noël pour chat"),
-     ("gamelle-anti-glouton-chat-appartement.html","Gamelle anti-glouton")]
+     ("gamelle-anti-glouton-chat-appartement.html","Gamelle anti-glouton"),
+     ("brosse-chat-poils-appartement.html","Brosse pour chat")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -156,6 +157,7 @@ page("index.html",
 <h2>Par où commencer ?</h2>
 <ul>
 <li>Vous partez pour les fêtes : notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a> (kit pour 3 à 7 jours, visites à prévoir, checklist de départ).</li>
+<li>Trop de poils sur le canapé : notre guide <a href="brosse-chat-poils-appartement.html">brosse pour chat d’appartement</a> (brosse autonettoyante, gant de toilettage, peigne et démêlage).</li>
 <li>Votre chat mange trop vite : notre guide <a href="gamelle-anti-glouton-chat-appartement.html">gamelle anti-glouton pour chat d’appartement</a> (labyrinthe, tapis de léchage, gamelle surélevée).</li>
 <li>Vous cherchez un cadeau pour votre chat : nos <a href="cadeau-noel-chat-appartement.html">idées de cadeau de Noël pour chat d’appartement</a> (hamac de fenêtre, tunnel pliable, coussin autochauffant).</li>
 <li>Vous accueillez un chat ou faites le point : notre <a href="equipement-chat-appartement.html">checklist complète de l’équipement pour chat d’appartement</a> (indispensable, utile, superflu).</li>
@@ -1358,14 +1360,76 @@ page("gamelle-anti-glouton-chat-appartement.html",
 <p>Pour un chat qui dévore ses croquettes, la <strong>gamelle labyrinthe</strong> est le choix le plus simple et le plus efficace. Si ton chat mange surtout de la pâtée, le <strong>tapis de léchage</strong> est plus pratique au quotidien. La <strong>gamelle surélevée inclinée</strong> apporte un vrai confort aux chats âgés ou de grand gabarit. Pour compléter son coin repas et son équipement, vois notre <a href="equipement-chat-appartement.html">guide de l’équipement du chat en appartement</a>.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/gamelle-anti-glouton-chat-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","gamelle-anti-glouton-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+# ---------- brosse chat poils (2026-11-18)
+page("brosse-chat-poils-appartement.html",
+ "Brosse pour chat : laquelle choisir pour limiter les poils en appartement ?",
+ "Brosse autonettoyante, gant de toilettage, peigne et outil de démêlage : 3 solutions pour brosser ton chat d’appartement et retrouver moins de poils sur le canapé.",
+ "Brosse pour chat : laquelle choisir pour limiter les poils en appartement ?",
+ f'''<figure class="hero"><img src="images/brosse-chat-poils-hero.webp" width="1152" height="648" alt="Chat gris à poils mi-longs allongé sur un canapé clair pendant qu’une main le brosse avec une brosse autonettoyante, une touffe de poils à côté, dans un salon d’appartement lumineux" loading="eager"></figure>
+<p class="lead">Des poils sur le canapé, sur le plaid, sur ton pull noir et jusque dans les coins du parquet ? En appartement, un chat d’intérieur perd ses poils dans un espace réduit, et ça se voit vite. Un brossage régulier récupère une bonne partie du poil mort avant qu’il ne finisse sur tes meubles, et c’est souvent un moment de calme apprécié par le chat. Voici trois outils utiles et comment choisir le bon selon son pelage.</p>
+<h2>Comment choisir une brosse pour chat</h2>
+<ul>
+<li><strong>Le type de pelage</strong> : un chat à poils courts se contente souvent d’un gant ou d’une brosse douce, un chat à poils mi-longs ou longs a besoin d’une brosse à picots et d’un peigne pour les nœuds.</li>
+<li><strong>Le nettoyage</strong> : une brosse autonettoyante, avec un bouton qui rétracte les picots, fait gagner beaucoup de temps et évite de retirer les poils à la main.</li>
+<li><strong>La douceur</strong> : préfère des picots à bout arrondi ou protégé. Si ton chat se raidit ou s’en va, la brosse est peut-être trop agressive.</li>
+<li><strong>La prise en main</strong> : un manche antidérapant et une tête pas trop large facilitent le passage sur le ventre, les pattes et derrière les oreilles.</li>
+</ul>
+<h2>1. La brosse autonettoyante à picots</h2>
+<div class="pick"><figure><img src="images/brosse-chat-autonettoyante.webp" width="1152" height="864" alt="Brosse autonettoyante pour chat blanche et grise à picots métalliques fins avec bouton de rétraction, photo produit sur fond clair" loading="lazy"></figure>
+<h3>La plus polyvalente au quotidien</h3>
+<p>Ses picots fins attrapent le sous-poil et le poil mort sur la plupart des pelages. Une fois le brossage terminé, tu appuies sur le bouton : les picots se rétractent et la touffe de poils se détache d’un coup, directement dans la poubelle. C’est l’outil le plus pratique si tu veux brosser ton chat quelques minutes plusieurs fois par semaine sans y passer du temps. Brosse dans le sens du poil, sans appuyer.</p>
+{amz("brosse autonettoyante chat","brosses autonettoyantes")}</div>
+<h2>2. Le gant de toilettage en silicone</h2>
+<div class="pick"><figure><img src="images/gant-toilettage-chat.webp" width="1152" height="864" alt="Main portant un gant de toilettage gris en silicone à picots qui caresse le dos d’un chat roux endormi sur un parquet, poils récupérés sur le gant" loading="lazy"></figure>
+<h3>L’option douce pour les chats méfiants</h3>
+<p>Le gant transforme le brossage en caresse : beaucoup de chats qui fuient la brosse acceptent le gant sans difficulté. Les picots en silicone récupèrent le poil mort en surface, idéal pour un chat à poils courts ou pour habituer un chaton au toilettage. Il se rince à l’eau en quelques secondes. Il est moins efficace sur un sous-poil épais, où il complète la brosse plutôt qu’il ne la remplace.</p>
+{amz("gant toilettage chat silicone","gants de toilettage")}</div>
+<h2>3. Le peigne et l’outil de démêlage</h2>
+<div class="pick"><figure><img src="images/peigne-demelage-chat.webp" width="1152" height="864" alt="Peigne de toilettage pour chat en inox à dents larges et serrées avec manche en bois, à côté d’un petit outil de démêlage à lame courte, sur un tissu en lin clair" loading="lazy"></figure>
+<h3>Pour les poils mi-longs, longs et les périodes de mue</h3>
+<p>Un peigne en inox à double denture repère et défait les petits nœuds derrière les oreilles, sous les pattes et sur le ventre, là où les poils longs s’emmêlent. L’outil de démêlage à lame courte retire une grande quantité de sous-poil pendant les mues de printemps et d’automne. Utilise-le avec légèreté et pas trop souvent : il est fait pour le sous-poil, pas pour être passé tous les jours. Si un nœud est trop serré, ne tire pas et ne coupe pas près de la peau.</p>
+{amz("peigne chat inox double denture","peignes pour chat")}</div>
+<h2>Quel outil pour quel chat ?</h2>
+<table><thead><tr><th>Situation</th><th>Outil conseillé</th><th>Rythme indicatif</th></tr></thead><tbody>
+<tr><td>Chat à poils courts</td><td>Gant de toilettage ou brosse autonettoyante</td><td>1 à 2 fois par semaine</td></tr>
+<tr><td>Chat à poils mi-longs ou longs</td><td>Brosse autonettoyante + peigne</td><td>Plusieurs fois par semaine</td></tr>
+<tr><td>Période de mue</td><td>Brosse autonettoyante, outil de démêlage avec modération</td><td>Plus souvent pendant quelques semaines</td></tr>
+<tr><td>Chat qui n’aime pas être brossé</td><td>Gant de toilettage</td><td>Séances courtes, au calme</td></tr>
+</tbody></table>
+<h2>Nos astuces pour un brossage sans stress</h2>
+<ul>
+<li>Commence par des séances très courtes, une à deux minutes, quand ton chat est détendu, par exemple après le repas ou au réveil.</li>
+<li>Brosse d’abord les zones qu’il aime (dos, joues), puis les zones sensibles (ventre, pattes) seulement s’il reste calme.</li>
+<li>Termine par une récompense : une friandise ou une session de jeu avec un <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif</a>.</li>
+<li>Pour les poils déjà sur les meubles, un plaid lavable sur son endroit préféré et un aspirateur adapté aux poils d’animaux font une vraie différence.</li>
+<li>Si tu remarques des plaques sans poils, des rougeurs, des démangeaisons ou une perte de poils inhabituelle, demande conseil à ton vétérinaire : une brosse ne remplace pas un avis professionnel.</li>
+</ul>
+<h3>Quel budget prévoir ?</h3>
+<p>Un gant de toilettage ou un peigne se trouvent souvent pour quelques euros à une dizaine d’euros, une brosse autonettoyante un peu plus. Les prix changent souvent, vérifie-les sur la page du vendeur.</p>
+<h2>FAQ</h2>
+<h3>À quelle fréquence brosser un chat d’appartement ?</h3>
+<p>Pour un chat à poils courts, une à deux fois par semaine suffit généralement. Un chat à poils mi-longs ou longs gagne à être brossé plusieurs fois par semaine, et plus souvent pendant les mues. Mieux vaut des séances courtes et régulières qu’une longue séance de temps en temps.</p>
+<h3>Mon chat refuse la brosse, que faire ?</h3>
+<p>Essaie le gant de toilettage, qui ressemble à une caresse. Propose-le quelques secondes, récompense, puis allonge peu à peu. Ne le retiens pas de force : un chat qui associe le brossage à une contrainte le refusera de plus en plus.</p>
+<h3>Faut-il brosser un chat à poils courts ?</h3>
+<p>Oui, même s’il fait sa toilette seul. Le brossage récupère le poil mort qui finirait sur tes meubles et te permet de vérifier l’état de son pelage et de sa peau. Un gant ou une brosse douce suffisent.</p>
+<h3>L’outil de démêlage peut-il s’utiliser tous les jours ?</h3>
+<p>Ce n’est pas conseillé. Il est conçu pour retirer le sous-poil en période de mue. Utilisé trop souvent ou en appuyant, il peut irriter la peau. Pour le quotidien, préfère la brosse autonettoyante ou le gant.</p>
+<h3>Une brosse suffit-elle à éviter les poils dans l’appartement ?</h3>
+<p>Elle limite nettement la quantité de poils, mais un chat en perd toujours un peu. Combine brossage régulier, plaid lavable sur ses endroits préférés et passage d’aspirateur. Pour son coin repos et le reste de son équipement, vois notre <a href="equipement-chat-appartement.html">guide de l’équipement du chat en appartement</a>.</p>
+<h2>Notre avis</h2>
+<p>Si tu ne prends qu’un seul outil, la <strong>brosse autonettoyante</strong> est la plus polyvalente. Le <strong>gant de toilettage</strong> est parfait pour un chat à poils courts ou un chat qui se méfie de la brosse. Le <strong>peigne et l’outil de démêlage</strong> deviennent utiles pour les poils mi-longs et longs et pendant les mues.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/brosse-chat-poils-hero.webp">')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","gamelle-anti-glouton-chat-appartement.html","brosse-chat-poils-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
 IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
  "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"],
  "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"],
  "cadeau-noel-chat-appartement.html":["cadeau-noel-chat-hero.webp","cadeau-chat-hamac-fenetre.webp","cadeau-chat-tunnel-pliable.webp","cadeau-chat-coussin-autochauffant.webp"],
- "gamelle-anti-glouton-chat-appartement.html":["gamelle-anti-glouton-chat-hero.webp","gamelle-anti-glouton-labyrinthe.webp","tapis-lechage-chat.webp","gamelle-surelevee-inclinee-chat.webp"]}
+ "gamelle-anti-glouton-chat-appartement.html":["gamelle-anti-glouton-chat-hero.webp","gamelle-anti-glouton-labyrinthe.webp","tapis-lechage-chat.webp","gamelle-surelevee-inclinee-chat.webp"],
+ "brosse-chat-poils-appartement.html":["brosse-chat-poils-hero.webp","brosse-chat-autonettoyante.webp","gant-toilettage-chat.webp","peigne-demelage-chat.webp"]}
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
