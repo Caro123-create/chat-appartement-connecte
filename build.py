@@ -14,7 +14,7 @@ def secondary(merchant, url_path=""):
         return ""
     return f' <a class="btn btn-secondary" href="{u}" rel="sponsored nofollow noopener" target="_blank">{label}</a>'
 SITE="Chat Appartement Connecté"
-TODAY="2026-11-18"
+TODAY="2026-11-19"
 def amz(q,label=None):
     u="https://www.amazon.fr/s?k="+urllib.parse.quote_plus(q)+"&tag="+TAG
     return f'<a class="btn" href="{u}" rel="sponsored nofollow noopener" target="_blank">Voir sur Amazon{(" – "+label) if label else ""}</a>'
@@ -40,7 +40,8 @@ NAV=[("equipement-chat-appartement.html","Équipement chat appart"),
      ("chat-seul-vacances-noel-appartement.html","Chat seul à Noël"),
      ("cadeau-noel-chat-appartement.html","Cadeau de Noël pour chat"),
      ("gamelle-anti-glouton-chat-appartement.html","Gamelle anti-glouton"),
-     ("brosse-chat-poils-appartement.html","Brosse pour chat")]
+     ("brosse-chat-poils-appartement.html","Brosse pour chat"),
+     ("griffoir-chat-appartement.html","Griffoir pour chat")]
 GUMROAD="https://fluenthub.gumroad.com/l/jvlfm"
 PRODUCT="Chat d’appartement connecté : le plan en 7 jours"
 PRICE="12 €"
@@ -156,6 +157,7 @@ page("index.html",
 <p>Nous partons des fiches et manuels des fabricants, des retours d’utilisateurs et des contraintes concrètes d’un logement (surface, prises, Wi-Fi 2,4 GHz). Quand une donnée n’est pas claire ou varie selon les versions, nous le disons plutôt que d’inventer un chiffre. Les prix changent souvent : nous n’en affichons pas de précis, vérifiez-les sur la page du vendeur.</p>
 <h2>Par où commencer ?</h2>
 <ul>
+<li>Votre chat griffe le canapé : notre guide <a href="griffoir-chat-appartement.html">griffoir pour chat d’appartement</a> (griffoir mural, carton incliné, poteau en sisal).</li>
 <li>Vous partez pour les fêtes : notre guide <a href="chat-seul-vacances-noel-appartement.html">chat seul en appartement pendant les vacances de Noël</a> (kit pour 3 à 7 jours, visites à prévoir, checklist de départ).</li>
 <li>Trop de poils sur le canapé : notre guide <a href="brosse-chat-poils-appartement.html">brosse pour chat d’appartement</a> (brosse autonettoyante, gant de toilettage, peigne et démêlage).</li>
 <li>Votre chat mange trop vite : notre guide <a href="gamelle-anti-glouton-chat-appartement.html">gamelle anti-glouton pour chat d’appartement</a> (labyrinthe, tapis de léchage, gamelle surélevée).</li>
@@ -1421,9 +1423,72 @@ page("brosse-chat-poils-appartement.html",
 <p>Si tu ne prends qu’un seul outil, la <strong>brosse autonettoyante</strong> est la plus polyvalente. Le <strong>gant de toilettage</strong> est parfait pour un chat à poils courts ou un chat qui se méfie de la brosse. Le <strong>peigne et l’outil de démêlage</strong> deviennent utiles pour les poils mi-longs et longs et pendant les mues.</p>''',
  head_extra='<meta property="og:image" content="'+BASE+'images/brosse-chat-poils-hero.webp">')
 
-urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","gamelle-anti-glouton-chat-appartement.html","brosse-chat-poils-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
+
+# ---------- griffoir chat (2026-11-19)
+page('griffoir-chat-appartement.html',
+ 'Griffoir pour chat : lequel choisir pour protéger ton canapé en appartement ?',
+ 'Griffoir mural, griffoir en carton incliné ou poteau en sisal : 3 solutions pour que ton chat d’appartement fasse ses griffes ailleurs que sur le canapé.',
+ 'Griffoir pour chat : lequel choisir pour protéger ton canapé en appartement ?',
+ f'''<figure class="hero"><img src="images/griffoir-chat-hero.webp" width="1200" height="675" alt="Chat tigré dressé sur ses pattes arrière qui fait ses griffes sur un grand poteau en sisal à côté d’un canapé gris clair, dans un salon d’appartement lumineux" loading="eager"></figure>
+<p class="lead">Le dossier du canapé en lambeaux, le coin du matelas effiloché, le papier peint qui part en bandes ? Faire ses griffes est un besoin naturel du chat : il entretient ses griffes, s’étire et laisse son odeur. En appartement, la solution n’est pas de l’en empêcher mais de lui proposer une surface qui lui plaît plus que tes meubles. Voici trois types de griffoirs efficaces et comment choisir le bon.</p>
+<h2>Comment choisir un griffoir pour chat</h2>
+<ul>
+<li><strong>La direction</strong> : observe où ton chat griffe. Contre le canapé ou les portes, il lui faut une surface verticale. Sur le tapis ou le sol, une surface horizontale ou inclinée.</li>
+<li><strong>La hauteur</strong> : un griffoir vertical doit lui permettre de s’étirer de tout son long. Un poteau trop court ne remplacera pas le dossier du canapé.</li>
+<li><strong>La stabilité</strong> : un griffoir qui bouge ou bascule fait peur et sera abandonné. Base large et lourde, ou fixation solide au mur.</li>
+<li><strong>La matière</strong> : le sisal et le carton ondulé sont les plus appréciés. Évite les surfaces trop molles, où les griffes n’accrochent pas.</li>
+</ul>
+<h2>1. Le griffoir mural</h2>
+<div class="pick"><figure><img src="images/griffoir-chat-mural.webp" width="1152" height="864" alt="Chat gris debout sur ses pattes arrière qui griffe un panneau en sisal fixé verticalement sur un mur blanc dans un couloir d’appartement" loading="lazy"></figure>
+<h3>Le meilleur gain de place</h3>
+<p>Fixé au mur ou posé dans un angle, il n’occupe aucune surface au sol : idéal dans un studio ou un couloir étroit. Tu peux le placer à la hauteur qui convient à ton chat, souvent un peu plus haut qu’un poteau classique, pour qu’il s’étire complètement. Il est particulièrement utile juste à côté d’une zone déjà griffée, comme un angle de mur ou le côté d’une porte. Vérifie le type de fixation proposé et adapte les chevilles à ton mur.</p>
+{amz("griffoir mural chat sisal","griffoirs muraux")}</div>
+<h2>2. Le griffoir en carton incliné</h2>
+<div class="pick"><figure><img src="images/griffoir-chat-carton.webp" width="1152" height="864" alt="Chat roux allongé sur un griffoir en carton ondulé en forme de vague posé sur un tapis de salon" loading="lazy"></figure>
+<h3>Le plus apprécié pour griffer et se coucher</h3>
+<p>Le carton ondulé offre une prise très agréable pour les griffes et beaucoup de chats l’adoptent tout de suite. Les modèles inclinés ou en forme de vague servent aussi de couchette : ton chat griffe, puis s’y installe. Léger, il se déplace facilement d’une pièce à l’autre. Il laisse quelques miettes de carton et s’use plus vite que le sisal, mais il coûte peu et de nombreux modèles sont réversibles ou rechargeables.</p>
+{amz("griffoir carton chat incliné","griffoirs en carton")}</div>
+<h2>3. Le poteau griffoir haut en sisal</h2>
+<div class="pick"><figure><img src="images/griffoir-chat-poteau-sisal.webp" width="1152" height="864" alt="Grand poteau griffoir entouré de corde en sisal naturel sur une large base carrée recouverte de peluche beige, avec une petite balle suspendue" loading="lazy"></figure>
+<h3>Le classique pour remplacer le dossier du canapé</h3>
+<p>Un poteau haut, entouré de corde de sisal, reproduit ce que ton chat cherche sur le canapé : une surface verticale, rugueuse et stable. Choisis-le assez grand pour qu’il s’étire pattes tendues, avec une base large qui ne bascule pas quand il tire dessus. Posé juste à côté du canapé, il détourne souvent les griffes en quelques jours. Si tu as la place pour plus grand, vois aussi notre guide <a href="arbre-a-chat-petit-appartement.html">arbre à chat pour petit appartement</a>.</p>
+{amz("poteau griffoir chat sisal haut","poteaux griffoirs")}</div>
+<h2>Quel griffoir pour quelle situation ?</h2>
+<table><thead><tr><th>Situation</th><th>Griffoir conseillé</th><th>Où le placer</th></tr></thead><tbody>
+<tr><td>Il griffe le dossier ou les côtés du canapé</td><td>Poteau haut en sisal</td><td>Collé à la zone griffée</td></tr>
+<tr><td>Il griffe le tapis ou la moquette</td><td>Griffoir en carton à plat ou incliné</td><td>Sur ou à côté du tapis</td></tr>
+<tr><td>Studio ou très petit espace</td><td>Griffoir mural</td><td>Angle de mur, couloir, côté de porte</td></tr>
+<tr><td>Chaton ou chat qui découvre le griffoir</td><td>Carton incliné, puis poteau</td><td>Près de son couchage</td></tr>
+</tbody></table>
+<h2>Nos astuces pour qu’il adopte le griffoir</h2>
+<ul>
+<li>Place le griffoir là où il griffe déjà, pas dans un coin oublié. Tu pourras le décaler petit à petit une fois l’habitude prise.</li>
+<li>Mets-en un près de son couchage : beaucoup de chats font leurs griffes en se réveillant.</li>
+<li>Frotte un peu d’herbe à chat sur la surface et joue avec un <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif</a> ou une canne à plumes autour pour l’inciter à y planter ses griffes.</li>
+<li>Pendant la transition, couvre la zone du canapé qu’il griffe avec un plaid épais pour la rendre moins intéressante.</li>
+<li>Ne le gronde pas quand il griffe un meuble : redirige-le calmement vers le griffoir et récompense-le quand il l’utilise.</li>
+</ul>
+<h3>Quel budget prévoir ?</h3>
+<p>Un griffoir en carton est généralement l’option la moins chère, un griffoir mural ou un poteau en sisal demandent un peu plus selon la taille et la finition. Les prix changent souvent, vérifie-les sur la page du vendeur.</p>
+<h2>FAQ</h2>
+<h3>Pourquoi mon chat griffe-t-il le canapé alors qu’il a un griffoir ?</h3>
+<p>Le plus souvent, le griffoir n’est pas au bon endroit ou ne correspond pas à sa façon de griffer. Un chat qui griffe le dossier du canapé cherche une surface verticale, haute et stable : un petit tapis au sol ne l’intéresse pas. Place un poteau ou un griffoir mural juste à côté de la zone griffée.</p>
+<h3>Griffoir vertical ou horizontal, que choisir ?</h3>
+<p>Observe ton chat. S’il s’étire debout contre les meubles, choisis un poteau ou un griffoir mural. S’il griffe les tapis et le sol, un griffoir en carton à plat ou incliné lui conviendra mieux. Beaucoup de chats apprécient d’avoir les deux.</p>
+<h3>Combien de griffoirs faut-il dans un appartement ?</h3>
+<p>Au moins un par pièce où ton chat passe du temps, en priorité près de son couchage (il griffe souvent au réveil) et près de l’entrée ou du canapé. Dans un petit appartement, un griffoir mural et un carton suffisent souvent.</p>
+<h3>Comment apprendre à mon chat à utiliser le griffoir ?</h3>
+<p>Place-le là où il griffe déjà, frotte un peu d’herbe à chat dessus et joue avec une canne à plumes à proximité pour qu’il y plante ses griffes. Récompense-le quand il l’utilise. Ne le gronde pas et ne le porte pas de force vers le griffoir.</p>
+<h3>Quand faut-il remplacer un griffoir ?</h3>
+<p>Quand la surface est trop usée pour accrocher les griffes : carton lissé et creusé, sisal effiloché jusqu’au support. Un carton se remplace plus souvent, mais beaucoup de modèles ont des recharges ou sont réversibles. Un poteau en sisal dure plus longtemps et certains se regarnissent.</p>
+<h2>Notre avis</h2>
+<p>Si ton chat griffe le canapé, commence par un <strong>poteau haut en sisal</strong> placé juste à côté. Le <strong>griffoir en carton incliné</strong> est le complément idéal, apprécié de presque tous les chats et peu cher. Le <strong>griffoir mural</strong> est la meilleure solution quand la place manque. Pour le reste de son équipement, vois notre <a href="equipement-chat-appartement.html">guide de l’équipement du chat en appartement</a>.</p>''',
+ head_extra='<meta property="og:image" content="'+BASE+'images/griffoir-chat-hero.webp">'+'<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Pourquoi mon chat griffe-t-il le canapé alors qu’il a un griffoir ?", "acceptedAnswer": {"@type": "Answer", "text": "Le plus souvent, le griffoir n’est pas au bon endroit ou ne correspond pas à sa façon de griffer. Un chat qui griffe le dossier du canapé cherche une surface verticale, haute et stable : un petit tapis au sol ne l’intéresse pas. Place un poteau ou un griffoir mural juste à côté de la zone griffée."}}, {"@type": "Question", "name": "Griffoir vertical ou horizontal, que choisir ?", "acceptedAnswer": {"@type": "Answer", "text": "Observe ton chat. S’il s’étire debout contre les meubles, choisis un poteau ou un griffoir mural. S’il griffe les tapis et le sol, un griffoir en carton à plat ou incliné lui conviendra mieux. Beaucoup de chats apprécient d’avoir les deux."}}, {"@type": "Question", "name": "Combien de griffoirs faut-il dans un appartement ?", "acceptedAnswer": {"@type": "Answer", "text": "Au moins un par pièce où ton chat passe du temps, en priorité près de son couchage (il griffe souvent au réveil) et près de l’entrée ou du canapé. Dans un petit appartement, un griffoir mural et un carton suffisent souvent."}}, {"@type": "Question", "name": "Comment apprendre à mon chat à utiliser le griffoir ?", "acceptedAnswer": {"@type": "Answer", "text": "Place-le là où il griffe déjà, frotte un peu d’herbe à chat dessus et joue avec une canne à plumes à proximité pour qu’il y plante ses griffes. Récompense-le quand il l’utilise. Ne le gronde pas et ne le porte pas de force vers le griffoir."}}, {"@type": "Question", "name": "Quand faut-il remplacer un griffoir ?", "acceptedAnswer": {"@type": "Answer", "text": "Quand la surface est trop usée pour accrocher les griffes : carton lissé et creusé, sisal effiloché jusqu’au support. Un carton se remplace plus souvent, mais beaucoup de modèles ont des recharges ou sont réversibles. Un poteau en sisal dure plus longtemps et certains se regarnissent."}}]}</script>')
+
+urls=["","equipement-chat-appartement.html","top-5-equipements-chat-appartement-2026.html","meilleure-litiere-automatique-2026.html","gps-chat-tractive-vs-airtag.html","meilleure-fontaine-eau-chat-2026.html","distributeur-croquettes-connecte.html","litter-robot-4-vs-petkit-pura-max-2.html","litter-robot-4-avis-2026.html","camera-surveillance-chat-appartement.html","camera-chat-friandises-2026.html","collier-gps-chat-sans-abonnement.html","litiere-automatique-petit-appartement.html","litiere-automatique-chat-appartement.html","objets-connectes-chat.html","budget-kit-chat-appartement-connecte.html","jouet-interactif-chat-appartement-2026.html","filet-protection-balcon-chat-appartement.html","arbre-a-chat-petit-appartement.html","tapis-litiere-chat-appartement.html","chat-seul-vacances-noel-appartement.html","cadeau-noel-chat-appartement.html","gamelle-anti-glouton-chat-appartement.html","brosse-chat-poils-appartement.html","griffoir-chat-appartement.html","guide.html","telechargement-audit.html","checklist.html","affiliation.html"]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls)+"</urlset>\n")
-IMGMAP={"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
+IMGMAP={"griffoir-chat-appartement.html":["griffoir-chat-hero.webp", "griffoir-chat-mural.webp", "griffoir-chat-carton.webp", "griffoir-chat-poteau-sisal.webp"],
+"jouet-interactif-chat-appartement-2026.html":["jouet-interactif-chat-hero.webp","jouet-chat-balle-automatique.webp","jouet-chat-laser-automatique.webp","jouet-chat-plume-electronique.webp"],
  "filet-protection-balcon-chat-appartement.html":["filet-balcon-chat-hero.webp","filet-protection-chat-kit.webp","filet-chat-poteaux-telescopiques.webp","grille-fenetre-chat.webp"],
  "arbre-a-chat-petit-appartement.html":["arbre-chat-petit-appartement-hero.webp","arbre-chat-compact.webp","griffoir-mural-etageres-chat.webp","griffoir-carton-chat.webp"],
  "tapis-litiere-chat-appartement.html":["tapis-litiere-chat-hero.webp","tapis-litiere-nid-abeille.webp","tapis-litiere-silicone-rebords.webp","tapis-litiere-xl-grattoir.webp"],
