@@ -850,10 +850,7 @@ page("guide.html",
 <div class="paid-cta"><p><strong>{PRODUCT}</strong><br>Guide numérique (PDF) — <strong>{PRICE}</strong></p>
 <p><a class="btn-paid" href="{GUMROAD}" target="_blank" rel="noopener">Acheter le plan sur Gumroad – {PRICE}</a></p>
 <p class="note">Paiement et livraison du fichier gérés par Gumroad. Prix TTC affiché sur Gumroad au moment de l’achat.</p></div>
-<h2>Guide payant ou liens d’affiliation : quelle différence ?</h2>
-<ul><li><strong>Ce guide</strong> est un produit payant édité par Chat Appartement Connecté et vendu séparément via Gumroad. En l’achetant, vous payez directement ce contenu.</li>
-<li><strong>Les boutons « Voir sur Amazon »</strong> de nos autres pages sont des liens d’affiliation : en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Amazon ne vend pas ce guide.</li></ul>
-<p>Plus de détails sur notre page <a href="affiliation.html">affiliation &amp; mentions légales</a>. Vous préférez commencer gratuitement ? Lisez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant et budget</a>.</p>
+<p>Vous préférez commencer gratuitement ? Lisez notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant et budget</a>.</p>
 <p class="note">Version courte : la <a href="checklist.html">checklist shopping du chat connecté</a> (quoi acheter, quoi éviter, combien prévoir) — produit payant, 6,90 € via Gumroad.</p>''',related=False)
 
 # ---------- lead magnet gratuit
