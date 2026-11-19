@@ -19,8 +19,8 @@ Pour publier un nouvel article, le flux habituel reste valable, à condition de 
 
 5. Ajouter un appel `page("slug.html", titre, description, h1, corps, head_extra=...)` juste avant la ligne `urls=[`.
 6. Insérer le slug dans `urls=` juste avant `"guide.html"`.
-7. Ajouter les images dans `images/` (WebP de préférence) et une entrée `IMGMAP` (l'image d'ouverture en premier). Le fichier `sitemap-images.xml` est régénéré à partir de `IMGMAP`.
-8. Dans le corps de l'article : tutoiement, aucun tiret cadratin ni demi-cadratin, une image principale en ouverture (`<figure><img ...>`) et, si possible, `og:image` dans `head_extra`.
+7. Ajouter les images dans `images/` (WebP de préférence) et une entrée `IMGMAP` (l'image d'ouverture en premier). Le fichier `sitemap-images.xml` est régénéré à partir de `IMGMAP`. Pour qu'un nouvel article ait une photo de carte sur l'accueil, une image d'ouverture et une balise `og:image`, ajouter aussi le slug dans `HEROES` (nom de fichier, texte alternatif) et un court chapô dans `CARD_EXCERPT`. `page()` insère alors automatiquement l'image d'ouverture et `og:image` si le corps n'a pas encore de balise `<img>`. Les images déjà listées dans `HEROES` sont aussi fusionnées au début de `IMGMAP` au moment de la génération.
+8. Dans le corps de l'article : tutoiement, aucun tiret cadratin ni demi-cadratin. Si `HEROES` n'a pas d'entrée, ajouter une image principale en ouverture (`<figure><img ...>`) et, si possible, `og:image` dans `head_extra`.
 9. Optionnel : ajouter le slug dans le bon groupe de `RELATED_GROUPS` pour un « À lire aussi » plus pertinent. Sinon, l'article recevra les 4 guides généraux.
 10. Ne pas recréer l'ancienne navigation longue, ni multiplier les encarts payants ou les mentions « pas un lien d'affiliation ». `page()` pose déjà le menu court, un encart payant discret en fin d'article, et une seule ligne d'affiliation Amazon en bas.
 11. Lancer `python3 build.py`, vérifier les liens Amazon `rappelalertes-21`, puis commit et `git push origin main` (images, `build.py`, HTML générés, `sitemap.xml`, `sitemap-images.xml`).

@@ -132,10 +132,78 @@ DP_PAGES={
  "litter-robot-4-avis-2026.html":{"Litter-Robot 4":"B0CFTFRZ43","litière agglomérante chat sans parfum":"B0CTCFWBQC","PetKit Pura Max 2":"B0D9QJZ7FG","Whisker Litter-Robot 4 litière automatique":"B0CFTFRZ43"},
  "camera-chat-friandises-2026.html":{"Furbo caméra chat":"B0C4XXBY44","Petcube Bites caméra friandises":"B09FF89CC3","distributeur croquettes chat caméra wifi":"B0DMNN4CSZ"},
 }
+FONT_HEAD='<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">\n'
+LOGO='<a class="logo" href="./"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#A84B32"/><path d="M10 28c0-7 4.2-12 10-12s10 5 10 12H10z" fill="#FFF8F3"/><path d="M14.2 16.2l-3.4-6.2 5.3 3.1 3.9-3.5 3.9 3.5 5.3-3.1-3.4 6.2" fill="#FFF8F3"/><circle cx="16.4" cy="22.2" r="1.1" fill="#221E1A"/><circle cx="23.6" cy="22.2" r="1.1" fill="#221E1A"/></svg><span class="logo-text"><strong>Chat Appartement</strong><span>Connecté</span></span></a>'
+# Image d'ouverture + chapô des cartes. La routine peut ajouter une entrée HEROES
+# pour qu'un nouvel article ait une photo sur l'accueil et une image principale ; sinon la carte reste textuelle.
+HEROES={'meilleure-litiere-automatique-2026.html': ('litiere-automatique-hero.webp',
+                                             'Chat tigré qui s’approche d’une litière automatique beige dans un appartement lumineux'),
+ 'litiere-automatique-petit-appartement.html': ('litiere-petit-appart-hero.webp',
+                                                'Chat gris assis près d’une litière automatique compacte dans un petit salon'),
+ 'litiere-automatique-chat-appartement.html': ('litiere-chat-appart-hero.webp',
+                                               'Chat tigré qui inspecte une litière automatique blanche dans une salle de bain d’appartement'),
+ 'litter-robot-4-avis-2026.html': ('litter-robot-4-avis-hero.webp', 'Chat tigré qui sort d’une litière automatique en forme de globe beige'),
+ 'litter-robot-4-vs-petkit-pura-max-2.html': ('litter-robot-vs-petkit-hero.webp', 'Chat tigré assis entre deux litières automatiques de formes différentes'),
+ 'gps-chat-tractive-vs-airtag.html': ('gps-tractive-airtag-hero.webp',
+                                      'Chat tigré sur un balcon parisien, avec un petit traceur GPS noir au collier et un filet de protection'),
+ 'collier-gps-chat-sans-abonnement.html': ('gps-sans-abonnement-hero.webp', 'Chat tigré à la fenêtre, collier clair avec une médaille-traceur ronde'),
+ 'meilleure-fontaine-eau-chat-2026.html': ('fontaine-eau-chat-hero.webp', 'Chat tigré qui boit à une fontaine à eau blanche et inox dans une cuisine'),
+ 'distributeur-croquettes-connecte.html': ('distributeur-croquettes-hero.webp',
+                                           'Chat tigré qui mange dans le bol d’un distributeur de croquettes automatique blanc'),
+ 'camera-surveillance-chat-appartement.html': ('camera-surveillance-chat-hero.webp',
+                                               'Petite caméra blanche sur une table basse, un chat endormi sur le canapé en arrière-plan'),
+ 'camera-chat-friandises-2026.html': ('camera-friandises-hero.webp', 'Chat tigré qui regarde une caméra blanche avec lanceur de friandises'),
+ 'budget-kit-chat-appartement-connecte.html': ('budget-kit-hero.webp', 'Kit de départ pour chat d’appartement : bac, gamelles, griffoir en carton et coussin'),
+ 'equipement-chat-appartement.html': ('equipement-chat-hero.webp',
+                                      'Coin d’appartement équipé : arbre à chat près de la fenêtre, griffoir, litière et gamelles'),
+ 'objets-connectes-chat.html': ('objets-connectes-hero.webp', 'Chat tigré qui passe devant un distributeur, une fontaine et une caméra dans un salon'),
+ 'top-5-equipements-chat-appartement-2026.html': ('top5-equipements-hero.webp',
+                                                  'Chat tigré sur un poteau en sisal, avec distributeur, fontaine, hamac de fenêtre et caméra'),
+ 'chat-seul-vacances-noel-appartement.html': ('chat-seul-vacances-noel-hero.webp',
+                                              'Chat tigré reposant sur un canapé, distributeur et caméra en arrière-plan dans un salon de Noël'),
+ 'griffoir-chat-appartement.html': ('griffoir-chat-hero.webp', 'Chat tigré qui utilise un poteau griffoir en sisal dans un salon d’appartement'),
+ 'brosse-chat-poils-appartement.html': ('brosse-chat-poils-hero.webp', 'Brosse pour chat dans un intérieur d’appartement'),
+ 'filet-protection-balcon-chat-appartement.html': ('filet-balcon-chat-hero.webp', 'Filet de protection sur un balcon d’appartement'),
+ 'arbre-a-chat-petit-appartement.html': ('arbre-chat-petit-appartement-hero.webp', 'Arbre à chat compact dans un petit appartement'),
+ 'gamelle-anti-glouton-chat-appartement.html': ('gamelle-anti-glouton-chat-hero.webp', 'Chat qui mange dans une gamelle anti-glouton'),
+ 'jouet-interactif-chat-appartement-2026.html': ('jouet-interactif-chat-hero.webp', 'Chat qui joue avec un jouet interactif dans un salon'),
+ 'tapis-litiere-chat-appartement.html': ('tapis-litiere-chat-hero.webp', 'Tapis de litière posé au sol dans un appartement'),
+ 'cadeau-noel-chat-appartement.html': ('cadeau-noel-chat-hero.webp', 'Idées de cadeaux pour un chat d’appartement')}
+CARD_EXCERPT={'equipement-chat-appartement.html': 'La checklist complète : indispensable, utile ou superflu en appartement.',
+ 'objets-connectes-chat.html': 'Litière, fontaine, distributeur, GPS, caméra : ce qui change vraiment le quotidien.',
+ 'top-5-equipements-chat-appartement-2026.html': 'Cinq équipements utiles, dans un ordre d’achat raisonnable.',
+ 'meilleure-litiere-automatique-2026.html': 'Litter-Robot, PetKit et alternatives : bruit, taille, coût d’usage.',
+ 'gps-chat-tractive-vs-airtag.html': 'Suivi en temps réel ou repérage de proximité : comment choisir.',
+ 'meilleure-fontaine-eau-chat-2026.html': 'Capacité, entretien, bruit de pompe : laquelle adopter en appartement.',
+ 'distributeur-croquettes-connecte.html': 'Programmer les repas quand tu rentres tard, sans te tromper de modèle.',
+ 'litter-robot-4-vs-petkit-pura-max-2.html': 'Globe haut de gamme ou modèle plus compact : le duel point par point.',
+ 'litter-robot-4-avis-2026.html': 'Pour qui ça vaut le coup, et quels frais prévoir sur la durée.',
+ 'camera-surveillance-chat-appartement.html': 'Voir ton chat en journée, sans tout miser sur un abonnement cloud.',
+ 'camera-chat-friandises-2026.html': 'Caméra avec lanceur : utile pour jouer à distance, ou trop de gadget.',
+ 'collier-gps-chat-sans-abonnement.html': 'Ce qu’un vrai GPS exige, et les alternatives sans frais mensuels.',
+ 'litiere-automatique-petit-appartement.html': 'Bruit, encombrement et odeurs quand on manque de place.',
+ 'litiere-automatique-chat-appartement.html': 'Les critères qui comptent : taille, Wi-Fi, entretien, poids du chat.',
+ 'budget-kit-chat-appartement-connecte.html': 'Trois niveaux de budget pour équiper ton chat sans tout acheter d’un coup.',
+ 'jouet-interactif-chat-appartement-2026.html': 'Balle, laser ou plume automatique pour les moments où tu n’es pas là.',
+ 'filet-protection-balcon-chat-appartement.html': 'Filet, poteaux sans perçage ou grille de fenêtre : sécuriser le balcon.',
+ 'arbre-a-chat-petit-appartement.html': 'Modèle compact, étagères murales ou griffoir : gagner de la hauteur.',
+ 'tapis-litiere-chat-appartement.html': 'Limiter les grains qui voyagent dans tout l’appartement.',
+ 'chat-seul-vacances-noel-appartement.html': 'Kit pour 3 à 7 jours, visites à prévoir et checklist de départ.',
+ 'cadeau-noel-chat-appartement.html': 'Hamac de fenêtre, tunnel, coussin : des idées utiles en intérieur.',
+ 'gamelle-anti-glouton-chat-appartement.html': 'Labyrinthe, tapis de léchage ou gamelle surélevée pour ralentir les repas.',
+ 'brosse-chat-poils-appartement.html': 'Moins de poils sur le canapé : brosse, gant ou peigne, selon le pelage.',
+ 'griffoir-chat-appartement.html': 'Mural, carton incliné ou poteau en sisal : lequel pour protéger ton canapé.'}
+
 def page(fn,title,desc,h1,body,related=True,head_extra=""):
     if fn in ("index.html","telechargement-audit.html") and "assets.mailerlite.com/js/universal.js" not in head_extra:
         head_extra = ML_HEAD + head_extra
-    nav='<a href="index.html#guides">Guides</a><a href="a-propos.html">À propos</a><a href="telechargement-audit.html">Audit gratuit</a>'
+    if fn in HEROES:
+        img,alt=HEROES[fn]
+        if "<img" not in body:
+            body='<figure class="article-hero"><img src="images/'+img+'" width="1152" height="864" alt="'+alt+'"></figure>\n'+body
+        if "og:image" not in head_extra:
+            head_extra='<meta property="og:image" content="'+BASE+"images/"+img+'">'+head_extra
+    nav='<a href="index.html#guides">Guides</a><a href="a-propos.html">À propos</a><a class="btn-nav" href="telechargement-audit.html">Audit gratuit</a>'
     rel=""
     if related:
         rel='<section class="related"><h2>À lire aussi</h2><ul>'+"".join(f'<li><a href="{f}">{n}</a></li>' for f,n in related_for(fn))+'</ul></section>'
@@ -144,6 +212,8 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
     if fn not in ("index.html","guide.html","affiliation.html","telechargement-audit.html","checklist.html","a-propos.html"):
         paid=CTA_BANNER
     disc=DISC if fn not in ("affiliation.html","guide.html","telechargement-audit.html","checklist.html","a-propos.html") else ""
+    h1_html=f"<h1>{h1}</h1>\n" if h1 else ""
+    body_class=' class="home"' if fn=="index.html" else ""
     html=f"""<!doctype html>
 <html lang="fr"><head><meta charset="utf-8">
 {ADS_META}
@@ -152,20 +222,24 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canon}">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="article"><meta property="og:url" content="{canon}">
+<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="{"website" if fn=="index.html" else "article"}"><meta property="og:url" content="{canon}">
+{FONT_HEAD}
 <link rel="stylesheet" href="styles.css">
-{head_extra}</head><body>
-<header><div class="header-inner"><a class="logo" href="./">{SITE}</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button><nav id="menu-principal">{nav}</nav></div></header>
+{head_extra}</head><body{body_class}>
+<header class="site-header"><div class="header-inner">{LOGO}<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button><nav id="menu-principal">{nav}</nav></div></header>
 <main>
-<h1>{h1}</h1>
-{body}
+{h1_html}{body}
 {paid}
 {rel}
 {disc}
 </main>
-<footer><p>{SITE} : guides pour équiper un chat d’intérieur. Mis à jour le {date_fr(TODAY)}.</p>
-<p>Partenaire Amazon · <a href="affiliation.html">Affiliation et mentions légales</a></p>
-<p>Les guides ne remplacent pas l’avis d'un vétérinaire.</p></footer>
+<footer class="site-footer"><div class="footer-grid wrap">
+<div><h2>{SITE}</h2><p>Guides pour équiper un chat d’intérieur. Derniers articles publiés le {date_fr(TODAY)}.</p></div>
+<div><h2>Guides</h2><ul><li><a href="index.html#guides">Tous les guides</a></li><li><a href="telechargement-audit.html">Audit gratuit</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+<div><h2>Mentions</h2><ul><li><a href="affiliation.html">Affiliation et mentions légales</a></li><li><a href="guide.html">Plan en 7 jours</a></li></ul></div>
+</div>
+<div class="legal-line"><p>Partenaire Amazon · <a href="affiliation.html">Affiliation et mentions légales</a></p>
+<p>Les guides ne remplacent pas l’avis d’un vétérinaire.</p></div></footer>
 {CONSENT}
 <script>
 (function(){{
@@ -183,16 +257,36 @@ def page(fn,title,desc,h1,body,related=True,head_extra=""):
     open(fn,"w").write(html)
 
 # ---------- index
-cards="".join(f'<li><a href="{f}"><strong>{n}</strong></a></li>' for f,n in NAV)
+def card_item(fn,label):
+    img=HEROES.get(fn, (None,None))[0]
+    excerpt=CARD_EXCERPT.get(fn,"")
+    if img:
+        return f'<li><a class="card" href="{fn}"><img src="images/{img}" width="1152" height="864" alt=""><div class="card-body"><h3>{label}</h3>'+(f'<p>{excerpt}</p>' if excerpt else '')+'</div></a></li>'
+    return f'<li><a class="card" href="{fn}"><div class="card-body"><h3>{label}</h3>'+(f'<p>{excerpt}</p>' if excerpt else '')+'</div></a></li>'
+cards="".join(card_item(f,n) for f,n in reversed(NAV))
 page("index.html",
  "Objets connectés pour chat d'appartement : guide 2026",
  "Litière automatique, fontaine, GPS, distributeur : des guides pour bien équiper ton chat d'appartement. Audit gratuit en 1 jour.",
- "Équiper son chat d’appartement avec des objets connectés utiles",
- f'''<p class="lead">Un chat qui vit en intérieur dépend entièrement de son environnement : une litière propre, de l’eau qui donne envie de boire, des repas réguliers même quand tu rentres tard. Les objets connectés peuvent aider, à condition de bien les choisir. Ici, on compare les modèles réels du marché, sans promesse miracle, avec les points qui comptent vraiment en appartement : bruit, encombrement, coût d’usage et sécurité.</p>
-<h2 id="guides">Nos guides</h2>
+ "",
+ f'''<section class="hero"><div class="wrap hero-grid"><div>
+<p class="eyebrow">Guides d’équipement pour chat d’intérieur</p>
+<h1>Équiper ton chat d’appartement, sans tout acheter d’un coup</h1>
+<p class="lead">On compare les objets vraiment utiles en petit logement : bruit, encombrement, budget et sécurité. Des guides concrets pour protéger le canapé, limiter les odeurs et faciliter les journées hors de chez toi.</p>
+<div class="hero-actions"><a class="btn-primary" href="#guides">Voir les guides</a> <a class="btn-ghost" href="telechargement-audit.html">Recevoir l’audit gratuit</a></div>
+<p class="trust-line">Pas de promesse miracle, pas d’avis vétérinaire déguisé. Juste des critères pour bien choisir.</p>
+</div>
+<figure class="hero-photo"><img src="images/griffoir-chat-hero.webp" width="1152" height="864" alt="Chat tigré qui utilise un poteau griffoir en sisal dans un salon d’appartement"><figcaption>Un bon griffoir, bien placé, protège le canapé plus sûrement qu’un rappel à l’ordre.</figcaption></figure>
+</div></section>
+<section class="method" aria-label="Notre méthode"><div class="wrap method-grid">
+<div><h2>Des cas réels d’appartement</h2><p>On part du studio, du canapé, du balcon et du rythme de la semaine, pas d’une fiche marketing.</p></div>
+<div><h2>Des critères utiles</h2><p>Taille, bruit, entretien, coût sur la durée. Si une donnée n’est pas claire, on le dit.</p></div>
+<div><h2>Des liens transparents</h2><p>Certains liens Amazon sont affiliés. Une mention le rappelle en bas d’article, sans en faire un bandeau.</p></div>
+</div></section>
+<section class="guides wrap" id="guides">
+<div class="section-head"><h2>Les guides</h2><p>Chaque fiche aide à choisir un équipement précis, avec des exemples concrets pour la vie en intérieur. Les plus récents apparaissent en premier.</p></div>
 <ul class="cards">{cards}</ul>
-<h2>Notre méthode</h2>
-<p>On part des fiches et manuels des fabricants, des retours d’utilisateurs et des contraintes concrètes d’un logement (surface, prises, Wi-Fi 2,4 GHz). Quand une donnée n’est pas claire ou varie selon les versions, on le dit plutôt que d’inventer un chiffre. Les prix changent souvent : on n’en affiche pas de précis, vérifie-les sur la page du vendeur.</p>
+</section>
+<section class="start">
 <h2>Par où commencer ?</h2>
 <ul>
 <li>Ton chat griffe le canapé : notre guide <a href="griffoir-chat-appartement.html">griffoir pour chat d’appartement</a> (griffoir mural, carton incliné, poteau en sisal).</li>
@@ -216,8 +310,20 @@ page("index.html",
 <li>Ton chat s’ennuie quand tu es absent : notre guide <a href="jouet-interactif-chat-appartement-2026.html">jouet interactif automatique pour chat d’appartement</a> (balle, laser, plume).</li>
 <li>Tu débutes et tu veux maîtriser le budget : notre <a href="budget-kit-chat-appartement-connecte.html">kit débutant chat connecté</a>.</li>
 </ul>
+</section>
+<div class="split">
+<section class="panel" id="a-propos-extrait">
+<h2>À propos</h2>
+<p>Chat Appartement Connecté publie des guides pour la vie d’un chat en intérieur : confort, litière, repas, sécurité. Les textes s’appuient sur les fiches des fabricants, les retours d’usage et les contraintes d’un vrai appartement.</p>
+<p>Ces guides ne remplacent pas l’avis d’un vétérinaire.</p>
+<a class="btn-ghost" href="a-propos.html">Lire la page À propos</a>
+</section>
+<section class="panel audit" id="audit">
+<h2>L’audit gratuit en 1 jour</h2>
 {AUDIT_FORM_BLOCK}
-<aside class="paid-cta"><p>Un <a href="guide.html">plan en 7 jours</a> (12 €) et une <a href="checklist.html">checklist shopping</a> (6,90 €) sont aussi disponibles, en dehors des articles.</p></aside>''',related=False)
+</section>
+</div>
+<aside class="paid-cta home-paid"><p>Un <a href="guide.html">plan en 7 jours</a> (12 €) et une <a href="checklist.html">checklist shopping</a> (6,90 €) sont aussi disponibles, en dehors des articles.</p></aside>''',related=False)
 
 # ---------- 1 litière
 page("meilleure-litiere-automatique-2026.html",
@@ -964,7 +1070,7 @@ page("jouet-interactif-chat-appartement-2026.html",
  "Jouet interactif automatique pour chat d'appartement : lequel choisir ? (2026)",
  "Balle roulante intelligente, laser automatique, plume électronique : quel jouet interactif choisir pour occuper ton chat d'appartement quand tu n'es pas là ?",
  "Jouet interactif automatique pour chat d’appartement : lequel choisir ?",
- f'''<figure class="hero"><img src="images/jouet-interactif-chat-hero.webp" width="1024" height="576" alt="Chat tigré qui joue avec une balle roulante automatique et une plume rotative dans un salon d’appartement lumineux" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/jouet-interactif-chat-hero.webp" width="1024" height="576" alt="Chat tigré qui joue avec une balle roulante automatique et une plume rotative dans un salon d’appartement lumineux" loading="eager"></figure>
 <p class="lead">Un chat d’intérieur s’ennuie vite quand tu pars travailler. Un jouet interactif automatique ne remplace pas une vraie séance de jeu avec toi, mais il peut lui offrir quelques moments de chasse dans la journée. Voici les trois familles de jouets qui marchent le mieux en appartement, avec ce qu’il faut vérifier avant d’acheter : bruit, autonomie, sécurité et facilité d’entretien.</p>
 <h2>Les 3 points à vérifier avant d’acheter</h2>
 <ul>
@@ -1019,7 +1125,7 @@ page("filet-protection-balcon-chat-appartement.html",
  "Filet de protection balcon pour chat : lequel choisir en appartement ? (2026)",
  "Filet anti-chute, kit avec poteaux télescopiques sans perçage, grille de fenêtre : comment sécuriser ton balcon et tes fenêtres quand ton chat vit en appartement.",
  "Filet de protection balcon pour chat : lequel choisir en appartement ?",
- f'''<figure class="hero"><img src="images/filet-balcon-chat-hero.webp" width="1280" height="720" alt="Chat tigré assis sur un balcon parisien fermé par un filet de protection transparent, plantes en pot et toits en arrière-plan" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/filet-balcon-chat-hero.webp" width="1280" height="720" alt="Chat tigré assis sur un balcon parisien fermé par un filet de protection transparent, plantes en pot et toits en arrière-plan" loading="eager"></figure>
 <p class="lead">Un chat d’appartement adore le balcon : air frais, oiseaux, soleil. Mais un oiseau qui passe ou un bruit soudain suffit pour qu’il saute ou glisse de la rambarde, même s’il est d’habitude prudent. La solution la plus simple pour en profiter sans stress, c’est un filet de protection. Voici les trois options qui marchent le mieux en appartement, locataire ou propriétaire, et ce qu’il faut vérifier avant d’acheter.</p>
 <h2>Les 4 points à vérifier avant d’acheter</h2>
 <ul>
@@ -1076,7 +1182,7 @@ page("arbre-a-chat-petit-appartement.html",
  "Arbre à chat pour petit appartement : lequel choisir ? (2026)",
  "Arbre à chat compact, étagères murales avec griffoir, griffoir en carton : comment offrir de la hauteur et un coin à griffer à ton chat quand l’appartement est petit.",
  "Arbre à chat pour petit appartement : lequel choisir ?",
- f'''<figure class="hero"><img src="images/arbre-chat-petit-appartement-hero.webp" width="1280" height="720" alt="Chat tigré couché en haut d’un arbre à chat compact en sisal, dans le coin d’un salon lumineux d’appartement parisien" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/arbre-chat-petit-appartement-hero.webp" width="1280" height="720" alt="Chat tigré couché en haut d’un arbre à chat compact en sisal, dans le coin d’un salon lumineux d’appartement parisien" loading="eager"></figure>
 <p class="lead">En appartement, ton chat n’a pas de jardin ni d’arbres à escalader. Il a pourtant besoin de deux choses chaque jour : griffer pour entretenir ses griffes et marquer son territoire, et prendre de la hauteur pour observer tranquillement. Sans solution prévue pour ça, il se rabat sur le canapé et le haut des meubles. Bonne nouvelle : pas besoin d’un arbre géant de deux mètres. Voici les trois options qui marchent le mieux quand la place manque.</p>
 <h2>Les 4 points à vérifier avant d’acheter</h2>
 <ul>
@@ -1133,7 +1239,7 @@ page("tapis-litiere-chat-appartement.html",
  "Tapis de litière pour chat : lequel choisir en appartement ? (2026)",
  "Tapis de litière nid d’abeille, en silicone à rebords ou grand format : comment limiter les grains de litière qui se baladent dans l’appartement.",
  "Tapis de litière pour chat : lequel choisir en appartement ?",
- f'''<figure class="hero"><img src="images/tapis-litiere-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui sort d’un bac à litière couvert et pose les pattes sur un tapis de litière gris en nid d’abeille, dans le coin d’une salle de bain d’appartement" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/tapis-litiere-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui sort d’un bac à litière couvert et pose les pattes sur un tapis de litière gris en nid d’abeille, dans le coin d’une salle de bain d’appartement" loading="eager"></figure>
 <p class="lead">En appartement, la litière est souvent à deux pas du salon ou de la chambre. Et chaque passage de ton chat laisse quelques grains collés à ses pattes, qui finissent sur le parquet, sous les meubles, parfois jusque dans le lit. Un bon tapis de litière retient l’essentiel de ces grains à la sortie du bac. Voici les trois types qui marchent le mieux, et comment choisir selon ta litière et la place dont tu disposes.</p>
 <h2>Les 4 points à vérifier avant d’acheter</h2>
 <ul>
@@ -1281,7 +1387,7 @@ page("cadeau-noel-chat-appartement.html",
  "Cadeau de Noël pour chat d’appartement : 3 idées utiles en 2026",
  "Hamac de fenêtre, tunnel pliable, coussin autochauffant : 3 idées de cadeau de Noël pour un chat d’intérieur, qui servent toute l’année dans un petit appartement.",
  "Cadeau de Noël pour chat d’appartement : 3 idées vraiment utiles",
- f'''<figure class="hero"><img src="images/cadeau-noel-chat-hero.webp" width="1280" height="853" alt="Chat tigré qui renifle des paquets cadeaux en papier kraft avec rubans rouges sur un parquet, devant un sapin de Noël illuminé dans un salon d’appartement" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/cadeau-noel-chat-hero.webp" width="1280" height="853" alt="Chat tigré qui renifle des paquets cadeaux en papier kraft avec rubans rouges sur un parquet, devant un sapin de Noël illuminé dans un salon d’appartement" loading="eager"></figure>
 <p class="lead">Ton chat ne sait pas que c’est Noël, mais il profitera très bien d’un cadeau bien choisi. En appartement, le bon cadeau n’est pas un gadget qui finit sous le canapé au bout de deux jours : c’est un objet qui lui offre un poste d’observation, un endroit pour jouer ou un coin chaud pour dormir. Voici trois idées qui servent toute l’année, prennent peu de place et restent dans un budget raisonnable.</p>
 <h2>Comment choisir un cadeau pour un chat d’intérieur</h2>
 <ul>
@@ -1338,7 +1444,7 @@ page("gamelle-anti-glouton-chat-appartement.html",
  "Gamelle anti-glouton pour chat : laquelle choisir en appartement ?",
  "Gamelle labyrinthe, tapis de léchage, gamelle surélevée inclinée : 3 solutions pour que ton chat d’appartement mange plus lentement et plus calmement.",
  "Gamelle anti-glouton pour chat : laquelle choisir en appartement ?",
- f'''<figure class="hero"><img src="images/gamelle-anti-glouton-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui mange calmement dans une gamelle anti-glouton blanche à motif labyrinthe posée sur un set en silicone dans une cuisine d’appartement lumineuse" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/gamelle-anti-glouton-chat-hero.webp" width="1280" height="720" alt="Chat tigré qui mange calmement dans une gamelle anti-glouton blanche à motif labyrinthe posée sur un set en silicone dans une cuisine d’appartement lumineuse" loading="eager"></figure>
 <p class="lead">Ton chat avale sa gamelle en trente secondes puis réclame encore ? En appartement, où il se dépense moins qu’un chat qui sort, le repas devient souvent le grand moment de la journée. Une gamelle anti-glouton ralentit le rythme, transforme le repas en petit jeu de fouille et occupe ton chat un peu plus longtemps. Voici trois types de gamelles utiles et comment choisir la bonne.</p>
 <h2>Comment choisir une gamelle anti-glouton</h2>
 <ul>
@@ -1397,7 +1503,7 @@ page("brosse-chat-poils-appartement.html",
  "Brosse pour chat : laquelle choisir pour limiter les poils en appartement ?",
  "Brosse autonettoyante, gant de toilettage, peigne et outil de démêlage : 3 solutions pour brosser ton chat d’appartement et retrouver moins de poils sur le canapé.",
  "Brosse pour chat : laquelle choisir pour limiter les poils en appartement ?",
- f'''<figure class="hero"><img src="images/brosse-chat-poils-hero.webp" width="1152" height="648" alt="Chat gris à poils mi-longs allongé sur un canapé clair pendant qu’une main le brosse avec une brosse autonettoyante, une touffe de poils à côté, dans un salon d’appartement lumineux" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/brosse-chat-poils-hero.webp" width="1152" height="648" alt="Chat gris à poils mi-longs allongé sur un canapé clair pendant qu’une main le brosse avec une brosse autonettoyante, une touffe de poils à côté, dans un salon d’appartement lumineux" loading="eager"></figure>
 <p class="lead">Des poils sur le canapé, sur le plaid, sur ton pull noir et jusque dans les coins du parquet ? En appartement, un chat d’intérieur perd ses poils dans un espace réduit, et ça se voit vite. Un brossage régulier récupère une bonne partie du poil mort avant qu’il ne finisse sur tes meubles, et c’est souvent un moment de calme apprécié par le chat. Voici trois outils utiles et comment choisir le bon selon son pelage.</p>
 <h2>Comment choisir une brosse pour chat</h2>
 <ul>
@@ -1459,7 +1565,7 @@ page('griffoir-chat-appartement.html',
  'Griffoir pour chat : lequel choisir pour protéger ton canapé en appartement ?',
  'Griffoir mural, griffoir en carton incliné ou poteau en sisal : 3 solutions pour que ton chat d’appartement fasse ses griffes ailleurs que sur le canapé.',
  'Griffoir pour chat : lequel choisir pour protéger ton canapé en appartement ?',
- f'''<figure class="hero"><img src="images/griffoir-chat-hero.webp" width="1200" height="675" alt="Chat tigré dressé sur ses pattes arrière qui fait ses griffes sur un grand poteau en sisal à côté d’un canapé gris clair, dans un salon d’appartement lumineux" loading="eager"></figure>
+ f'''<figure class="article-hero"><img src="images/griffoir-chat-hero.webp" width="1200" height="675" alt="Chat tigré dressé sur ses pattes arrière qui fait ses griffes sur un grand poteau en sisal à côté d’un canapé gris clair, dans un salon d’appartement lumineux" loading="eager"></figure>
 <p class="lead">Le dossier du canapé en lambeaux, le coin du matelas effiloché, le papier peint qui part en bandes ? Faire ses griffes est un besoin naturel du chat : il entretient ses griffes, s’étire et laisse son odeur. En appartement, la solution n’est pas de l’en empêcher mais de lui proposer une surface qui lui plaît plus que tes meubles. Voici trois types de griffoirs efficaces et comment choisir le bon.</p>
 <h2>Comment choisir un griffoir pour chat</h2>
 <ul>
@@ -1541,6 +1647,13 @@ IMGMAP={"chat-seul-vacances-noel-appartement.html":["pin-chat-seul-vacances-noel
  "cadeau-noel-chat-appartement.html":["cadeau-noel-chat-hero.webp","cadeau-chat-hamac-fenetre.webp","cadeau-chat-tunnel-pliable.webp","cadeau-chat-coussin-autochauffant.webp"],
  "gamelle-anti-glouton-chat-appartement.html":["gamelle-anti-glouton-chat-hero.webp","gamelle-anti-glouton-labyrinthe.webp","tapis-lechage-chat.webp","gamelle-surelevee-inclinee-chat.webp"],
  "brosse-chat-poils-appartement.html":["brosse-chat-poils-hero.webp","brosse-chat-autonettoyante.webp","gant-toilettage-chat.webp","peigne-demelage-chat.webp"]}
+
+# Ajoute les images d'ouverture au sitemap, sans écraser les photos déjà listées.
+for _fn,(_img,_alt) in HEROES.items():
+    _imgs=list(IMGMAP.get(_fn,[]))
+    if _img not in _imgs:
+        IMGMAP[_fn]=[_img]+_imgs
+
 open("sitemap-images.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'+"".join(f"  <url><loc>{BASE}{u}</loc>"+"".join(f"<image:image><image:loc>{BASE}images/{i}</image:loc></image:image>" for i in imgs)+"</url>\n" for u,imgs in IMGMAP.items())+"</urlset>\n")
 open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-images.xml\n")
 open("ads.txt","w").write(ADS_TXT)
