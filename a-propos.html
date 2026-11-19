@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="google-adsense-account" content="ca-pub-6018788861622975">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>À propos : Chat Appartement Connecté</title>
+<meta name="description" content="Pourquoi ce site, comment les guides sont écrits, et les limites : ces pages ne remplacent pas l’avis d’un vétérinaire.">
+<link rel="canonical" href="https://caro123-create.github.io/chat-appartement-connecte/a-propos.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="À propos : Chat Appartement Connecté"><meta property="og:description" content="Pourquoi ce site, comment les guides sont écrits, et les limites : ces pages ne remplacent pas l’avis d’un vétérinaire."><meta property="og:type" content="article"><meta property="og:url" content="https://caro123-create.github.io/chat-appartement-connecte/a-propos.html">
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header><div class="header-inner"><a class="logo" href="./">Chat Appartement Connecté</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button><nav id="menu-principal"><a href="index.html#guides">Guides</a><a href="a-propos.html">À propos</a><a href="telechargement-audit.html">Audit gratuit</a></nav></div></header>
+<main>
+<h1>À propos</h1>
+<p class="lead">Chat Appartement Connecté publie des guides pour équiper un chat qui vit en intérieur : confort, litière, repas, sécurité.</p>
+<h2>Pourquoi ce site</h2>
+<p>Pour t’aider à choisir ce qui est vraiment utile en appartement, et éviter d’acheter tout d’un coup. Les textes parlent de bruit, d’encombrement, de budget et de sécurité, tels qu’ils se posent dans un vrai logement.</p>
+<h2>Méthode</h2>
+<p>Les guides s’appuient sur les fiches des fabricants, les retours d’usage et les contraintes concrètes d’un appartement (place, prises, Wi-Fi 2,4 GHz, coût sur la durée). Quand une donnée n’est pas claire ou varie selon les versions, on le dit plutôt que d’inventer un chiffre. Les prix changent souvent : on n’en affiche pas de précis, vérifie-les sur la page du vendeur.</p>
+<h2>Ce que ces guides ne sont pas</h2>
+<p>Ces pages sont informatives. Elles ne remplacent pas l’avis d’un vétérinaire. En cas de doute sur la santé de ton chat, consulte un vétérinaire.</p>
+<p>Certains liens vers Amazon sont affiliés : une commission peut être versée, sans surcoût pour toi. Le détail est indiqué en bas des articles et sur la page <a href="affiliation.html">Affiliation et mentions légales</a>.</p>
+
+
+
+</main>
+<footer><p>Chat Appartement Connecté : guides pour équiper un chat d’intérieur. Mis à jour le 19 novembre 2026.</p>
+<p>Partenaire Amazon · <a href="affiliation.html">Affiliation et mentions légales</a></p>
+<p>Les guides ne remplacent pas l’avis d'un vétérinaire.</p></footer>
+<!-- cookie-consent:start -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+<div class="cookie-banner-inner">
+<p>Chat Appartement Connecté utilise des cookies pour l’affiliation Amazon et, si tu acceptes, pour la publicité. <a href="affiliation.html#cookies">Confidentialité</a></p>
+<div class="cookie-banner-actions">
+<button type="button" class="cookie-refuse" id="cookie-refuse">Refuser</button>
+<button type="button" class="cookie-accept" id="cookie-accept">Accepter</button>
+</div></div></div>
+<script>
+/* v2-consent-gated: AdSense loads ONLY after consent === 'accepted' */
+(function(){
+  var KEY='chatappartementconnecte_cookie_consent';
+  function loadAds(){
+    if(window.__siteAdsLoaded) return; window.__siteAdsLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6018788861622975';
+    document.head.appendChild(s);
+  }
+  var v=null; try{ v=localStorage.getItem(KEY); }catch(e){}
+  if(v==='accepted') loadAds();
+  var b=document.getElementById('cookie-banner');
+  if(!b) return;
+  function set(val){ try{ localStorage.setItem(KEY,val);}catch(e){} b.hidden=true; if(val==='accepted') loadAds(); }
+  if(v==='accepted'||v==='refused'){ b.hidden=true; return; }
+  b.hidden=false;
+  document.getElementById('cookie-accept').onclick=function(){ set('accepted'); };
+  document.getElementById('cookie-refuse').onclick=function(){ set('refused'); };
+})();
+</script>
+<!-- cookie-consent:end -->
+
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle'), nav=document.getElementById('menu-principal');
+  if(!btn||!nav) return;
+  btn.addEventListener('click', function(){
+    var open=nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open?'true':'false');
+  });
+})();
+</script>
+</body></html>

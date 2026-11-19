@@ -1,3 +1,4 @@
 produits/*
 !produits/lead-magnet-audit-1-jour.pdf
 !produits/lead-magnet-audit-1-jour.html
+__pycache__/
